@@ -1,82 +1,15 @@
-# 04｜KV Cache 和 Prompt Cache 有什么区别
+# KV Cache 与 Prompt Cache
 
-这两个概念很容易混在一起，但关注点不同。
+> 来源章节：https://bojieli.github.io/ai-agent-book/book/chapter2/#kv-cache
+> 本文为学习整理与重新讲解。
 
-## KV Cache
+KV Cache 与 Prompt Cache 有联系，但不是同一个层级。
 
-KV Cache 是**单次推理/生成过程中**对历史 token 的 K/V 中间结果进行复用。
+- **KV Cache**：主要描述一次推理/会话生成过程中，对历史 token 中间 K/V 状态的复用。
+- **Prompt Cache / Prefix Cache**：服务系统尝试跨请求复用相同 Prompt 前缀已经完成的 Prefill 计算。
 
-它解决的是：
+如果很多 Agent 请求都拥有很长、完全相同的 system prompt 和工具定义，Prefix/Prompt Cache 可以显著降低重复 Prefill 成本。要获得这种收益，前缀必须尽量稳定。
 
-> 同一个请求继续生成时，不要反复计算已经处理过的历史 token。
+## 一句话记忆
 
-典型场景：
-
-```text
-Prompt → 生成 token1 → token2 → token3 → ...
-```
-
-生成后续 token 时复用之前的 K/V。
-
-## Prompt Cache
-
-Prompt Cache 更偏向**多个请求之间**复用相同前缀的计算结果。
-
-例如很多请求都有相同的 System Prompt：
-
-```text
-[固定 System Prompt][用户问题 A]
-[固定 System Prompt][用户问题 B]
-[固定 System Prompt][用户问题 C]
-```
-
-如果推理平台支持 Prompt Caching，那么固定前缀对应的计算结果可能直接复用。
-
-这意味着，不同请求只需要重点处理变化的后半部分。
-
-## 对比
-
-| 对比项 | KV Cache | Prompt Cache |
-|---|---|---|
-| 主要作用范围 | 一次生成过程 | 多次请求之间 |
-| 缓存对象 | Attention 的 K/V | 已计算的公共 Prompt 前缀 |
-| 目标 | 加速逐 token Decode | 减少重复 Prefill |
-| 是否依赖稳定前缀 | 需要历史上下文稳定 | 非常依赖公共前缀一致 |
-
-## 两者为什么都强调“稳定前缀”
-
-假设 Agent 的 System Prompt 每次都加入当前时间：
-
-```text
-当前时间：10:01:01
-你是一个代码助手……
-```
-
-下一次变成：
-
-```text
-当前时间：10:01:05
-你是一个代码助手……
-```
-
-虽然真正变化的只有时间，但因为变化发生在最前面，后续很长的一段内容都难以作为相同前缀复用。
-
-更好的方式是：
-
-```text
-[长期稳定的 System Prompt]
-[稳定的工具说明]
-[稳定的规则]
-[动态时间]
-[用户请求]
-```
-
-## 一个工程判断标准
-
-写 Agent Prompt 时，可以问自己：
-
-> 这段动态内容真的需要放在前面吗？
-
-如果不需要，就尽量向上下文后部移动。
-
-稳定的大块内容放前面，动态内容放后面，更容易得到缓存收益。
+KV Cache 偏单次生成状态复用，Prompt Cache 偏跨请求前缀复用。
