@@ -10,7 +10,6 @@
 
 - [查看完整学习进度](./progress.md)
 - [查看第 2 章](../notes/chapter2/README.md)
-- [ChatGPT 项目说明模板](./chatgpt-project-instructions.md)
 
 ## 在 ChatGPT 项目里怎么用
 
