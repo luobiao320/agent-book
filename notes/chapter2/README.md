@@ -13,11 +13,9 @@
 5. [动态提示词与 Agent Skills](./05-动态提示词与Agent-Skills/README.md)
 6. [Agent 状态栏：通过元信息增强轨迹管理](./06-Agent状态栏/README.md)
 7. [上下文压缩策略](./07-上下文压缩策略/README.md)
-8. [本章小结](./08-本章小结/README.md)
-9. [思考题](./09-思考题/README.md)
 
 ## 说明
 
 - 每个文件聚焦一个小知识块，方便逐个学习和更新进度。
-- 旧的 [`kv-cache/`](./kv-cache/README.md) 专题笔记暂时保留，可作为 KV Cache 的扩展练习材料。
+- 本章小结和思考题不纳入拆分目录。
 - 来源、许可证和拆分规则见 [`SOURCE.md`](./SOURCE.md)。
