@@ -34,3 +34,5 @@ jobs:
           fi
           git commit -m "Regenerate chapter notes by source structure"
           git push
+
+# This workflow is intentionally self-triggered when its definition changes.
