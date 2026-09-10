@@ -1,0 +1,36 @@
+name: Restructure chapter notes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/restructure_all_chapters.py'
+      - '.github/workflows/restructure-notes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restructure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate chapter notes
+        run: python tools/restructure_all_chapters.py
+
+      - name: Commit generated notes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add notes/chapter1 notes/chapter3 notes/chapter4 notes/chapter5 notes/chapter6 notes/chapter7 notes/chapter8 notes/chapter9 notes/chapter10
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Regenerate chapter notes by source structure"
+          git push
