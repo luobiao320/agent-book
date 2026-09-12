@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：两朵乌云](../01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md) · [下一篇：思考题参考答案](../../reference-answers/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：两朵乌云](../01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md)
 
 > 所属章节：[后记：回到 Agent = LLM + 上下文 + 工具](../README.md)
 >
@@ -32,4 +32,4 @@ Agent 技术仍在飞速演进，一本书追不上所有变化。但如果这�
 
 ---
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：两朵乌云](../01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md) · [下一篇：思考题参考答案](../../reference-answers/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：两朵乌云](../01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md)

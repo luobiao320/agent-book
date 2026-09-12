@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter6/07-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：一条评估任务的解剖：τ²-bench 的 telecom 领域](01-%E4%B8%80%E6%9D%A1%E8%AF%84%E4%BC%B0%E4%BB%BB%E5%8A%A1%E7%9A%84%E8%A7%A3%E5%89%96%EF%BC%9A%CF%84%C2%B2-bench%E7%9A%84telecom%E9%A2%86%E5%9F%9F/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：从仿真环境到真实机器人](../chapter6/05-%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%EF%BC%9A%E4%BB%A5XLeRobot%E6%95%B4%E7%90%86%E6%A1%8C%E9%9D%A2%E4%B8%BA%E4%BE%8B/07-%E4%BB%8E%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83%E5%88%B0%E7%9C%9F%E5%AE%9E%E6%9C%BA%E5%99%A8%E4%BA%BA.md) · [下一篇：一条评估任务的解剖：τ²-bench 的 telecom 领域](01-%E4%B8%80%E6%9D%A1%E8%AF%84%E4%BC%B0%E4%BB%BB%E5%8A%A1%E7%9A%84%E8%A7%A3%E5%89%96%EF%BC%9A%CF%84%C2%B2-bench%E7%9A%84telecom%E9%A2%86%E5%9F%9F/README.md)
 
 > 所属章节：[第7章：Agent 的评估](README.md)
 >
@@ -52,9 +52,7 @@
 - [从 Benchmark 报告到系统改进](09-%E4%BB%8EBenchmark%E6%8A%A5%E5%91%8A%E5%88%B0%E7%B3%BB%E7%BB%9F%E6%94%B9%E8%BF%9B/README.md)
 - [从外部评估到内部评估：生产级 Agent 的评估基础设施](10-%E4%BB%8E%E5%A4%96%E9%83%A8%E8%AF%84%E4%BC%B0%E5%88%B0%E5%86%85%E9%83%A8%E8%AF%84%E4%BC%B0%EF%BC%9A%E7%94%9F%E4%BA%A7%E7%BA%A7Agent%E7%9A%84%E8%AF%84%E4%BC%B0%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/README.md)
 - [仿真环境：从评估到后训练的桥梁](11-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83%EF%BC%9A%E4%BB%8E%E8%AF%84%E4%BC%B0%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83%E7%9A%84%E6%A1%A5%E6%A2%81/README.md)
-- [本章小结](12-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
-- [思考题](13-%E6%80%9D%E8%80%83%E9%A2%98/README.md)
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter6/07-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：一条评估任务的解剖：τ²-bench 的 telecom 领域](01-%E4%B8%80%E6%9D%A1%E8%AF%84%E4%BC%B0%E4%BB%BB%E5%8A%A1%E7%9A%84%E8%A7%A3%E5%89%96%EF%BC%9A%CF%84%C2%B2-bench%E7%9A%84telecom%E9%A2%86%E5%9F%9F/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：从仿真环境到真实机器人](../chapter6/05-%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%EF%BC%9A%E4%BB%A5XLeRobot%E6%95%B4%E7%90%86%E6%A1%8C%E9%9D%A2%E4%B8%BA%E4%BE%8B/07-%E4%BB%8E%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83%E5%88%B0%E7%9C%9F%E5%AE%9E%E6%9C%BA%E5%99%A8%E4%BA%BA.md) · [下一篇：一条评估任务的解剖：τ²-bench 的 telecom 领域](01-%E4%B8%80%E6%9D%A1%E8%AF%84%E4%BC%B0%E4%BB%BB%E5%8A%A1%E7%9A%84%E8%A7%A3%E5%89%96%EF%BC%9A%CF%84%C2%B2-bench%E7%9A%84telecom%E9%A2%86%E5%9F%9F/README.md)

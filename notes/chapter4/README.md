@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter3/05-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：工具的分类](01-%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%86%E7%B1%BB/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：前沿探索：多模态记忆](../chapter3/03-%E8%B6%85%E8%B6%8A%E6%89%81%E5%B9%B3%E6%96%87%E6%9C%AC%EF%BC%9A%E7%9F%A5%E8%AF%86%E7%9A%84%E7%BB%84%E7%BB%87%E4%B8%8E%E6%A3%80%E7%B4%A2/07-%E5%89%8D%E6%B2%BF%E6%8E%A2%E7%B4%A2%EF%BC%9A%E5%A4%9A%E6%A8%A1%E6%80%81%E8%AE%B0%E5%BF%86.md) · [下一篇：工具的分类](01-%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%86%E7%B1%BB/README.md)
 
 > 所属章节：[第4章：工具](README.md)
 >
@@ -28,9 +28,7 @@
 - [感知工具](05-%E6%84%9F%E7%9F%A5%E5%B7%A5%E5%85%B7/README.md)
 - [执行工具](06-%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7/README.md)
 - [协作工具](07-%E5%8D%8F%E4%BD%9C%E5%B7%A5%E5%85%B7/README.md)
-- [本章小结](08-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
-- [思考题](09-%E6%80%9D%E8%80%83%E9%A2%98/README.md)
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter3/05-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：工具的分类](01-%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%86%E7%B1%BB/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：前沿探索：多模态记忆](../chapter3/03-%E8%B6%85%E8%B6%8A%E6%89%81%E5%B9%B3%E6%96%87%E6%9C%AC%EF%BC%9A%E7%9F%A5%E8%AF%86%E7%9A%84%E7%BB%84%E7%BB%87%E4%B8%8E%E6%A3%80%E7%B4%A2/07-%E5%89%8D%E6%B2%BF%E6%8E%A2%E7%B4%A2%EF%BC%9A%E5%A4%9A%E6%A8%A1%E6%80%81%E8%AE%B0%E5%BF%86.md) · [下一篇：工具的分类](01-%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%86%E7%B1%BB/README.md)

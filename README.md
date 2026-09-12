@@ -1,6 +1,6 @@
 # Agent Book 分块阅读版
 
-按原书目录拆分《深入理解 AI Agent》，保留完整原文、图片、代码、公式、表格、例子、小结、思考题和参考资料。
+按原书目录拆分《深入理解 AI Agent》，保留正文、图片、代码、公式、表格、例子和参考资料；阅读版不包含各章小结、思考题及参考答案。
 
 [从引言开始阅读](notes/introduction/README.md) · [学习入口](learning/README.md) · [个人笔记](personal/README.md)
 
@@ -18,7 +18,6 @@
 - [第9章：Agent 的持续进化](notes/chapter9/README.md)
 - [第10章：多 Agent 协作](notes/chapter10/README.md)
 - [后记：回到 Agent = LLM + 上下文 + 工具](notes/afterword/README.md)
-- [思考题参考答案](notes/reference-answers/README.md)
 
 二级标题对应主题目录，三级标题对应独立知识块；更深层标题保留在块内。章节及主题首页的导读也是正文，请按“下一篇”顺序阅读。
 
@@ -39,6 +38,6 @@ python3 tools/restructure_all_chapters.py --check
 
 - [原书网站](https://bojieli.github.io/ai-agent-book/) · [原始项目](https://github.com/bojieli/ai-agent-book)
 - [固定来源版本与同步记录](source/README.md) · [原文快照](source/book/) · [原项目许可证](source/LICENSE)
-- 本仓库正文为原文拆分重排，不是摘要；调整仅限目录导航、链接、锚点、脚注补齐和 Markdown 排版适配。
+- 本仓库正文为原文拆分重排，不是摘要；除明确排除的小结、思考题及参考答案外，调整仅限目录导航、链接、锚点、脚注补齐和 Markdown 排版适配。章节原文快照原样保留，以便核对来源。
 - `notes/` 和 `source/` 为生成内容；心得与补充放在 `personal/`，不会被同步修改。
 - [迁移前的旧笔记](personal/legacy/notes/)已完整保留，其中第2章包含原来的学习摘要。归档不属于新版阅读目录。

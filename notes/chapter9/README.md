@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter8/17-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：从运行轨迹中获得学习信号](01-%E4%BB%8E%E8%BF%90%E8%A1%8C%E8%BD%A8%E8%BF%B9%E4%B8%AD%E8%8E%B7%E5%BE%97%E5%AD%A6%E4%B9%A0%E4%BF%A1%E5%8F%B7/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：后训练实践要点](../chapter8/15-%E5%90%8E%E8%AE%AD%E7%BB%83%E5%AE%9E%E8%B7%B5%E8%A6%81%E7%82%B9/README.md) · [下一篇：从运行轨迹中获得学习信号](01-%E4%BB%8E%E8%BF%90%E8%A1%8C%E8%BD%A8%E8%BF%B9%E4%B8%AD%E8%8E%B7%E5%BE%97%E5%AD%A6%E4%B9%A0%E4%BF%A1%E5%8F%B7/README.md)
 
 > 所属章节：[第9章：Agent 的持续进化](README.md)
 >
@@ -36,9 +36,7 @@
 - [从运行轨迹中获得学习信号](01-%E4%BB%8E%E8%BF%90%E8%A1%8C%E8%BD%A8%E8%BF%B9%E4%B8%AD%E8%8E%B7%E5%BE%97%E5%AD%A6%E4%B9%A0%E4%BF%A1%E5%8F%B7/README.md)
 - [Agent 持续进化的四种方法](02-Agent%E6%8C%81%E7%BB%AD%E8%BF%9B%E5%8C%96%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%96%B9%E6%B3%95/README.md)
 - [构建可长期运行的持续进化闭环](03-%E6%9E%84%E5%BB%BA%E5%8F%AF%E9%95%BF%E6%9C%9F%E8%BF%90%E8%A1%8C%E7%9A%84%E6%8C%81%E7%BB%AD%E8%BF%9B%E5%8C%96%E9%97%AD%E7%8E%AF/README.md)
-- [本章小结](04-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
-- [思考题](05-%E6%80%9D%E8%80%83%E9%A2%98/README.md)
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter8/17-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：从运行轨迹中获得学习信号](01-%E4%BB%8E%E8%BF%90%E8%A1%8C%E8%BD%A8%E8%BF%B9%E4%B8%AD%E8%8E%B7%E5%BE%97%E5%AD%A6%E4%B9%A0%E4%BF%A1%E5%8F%B7/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：后训练实践要点](../chapter8/15-%E5%90%8E%E8%AE%AD%E7%BB%83%E5%AE%9E%E8%B7%B5%E8%A6%81%E7%82%B9/README.md) · [下一篇：从运行轨迹中获得学习信号](01-%E4%BB%8E%E8%BF%90%E8%A1%8C%E8%BD%A8%E8%BF%B9%E4%B8%AD%E8%8E%B7%E5%BE%97%E5%AD%A6%E4%B9%A0%E4%BF%A1%E5%8F%B7/README.md)

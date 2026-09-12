@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：Harness 五要素与「构建」部分的对应](../02-Harness%E5%B7%A5%E7%A8%8B%EF%BC%9A%E6%A8%A1%E5%9E%8B%E4%B9%8B%E5%A4%96%E7%9A%84%E7%AB%9E%E4%BA%89%E5%8A%9B/06-Harness%E4%BA%94%E8%A6%81%E7%B4%A0%E4%B8%8E%E3%80%8C%E6%9E%84%E5%BB%BA%E3%80%8D%E9%83%A8%E5%88%86%E7%9A%84%E5%AF%B9%E5%BA%94.md) · [下一篇：本章小结](../04-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：Harness 五要素与「构建」部分的对应](../02-Harness%E5%B7%A5%E7%A8%8B%EF%BC%9A%E6%A8%A1%E5%9E%8B%E4%B9%8B%E5%A4%96%E7%9A%84%E7%AB%9E%E4%BA%89%E5%8A%9B/06-Harness%E4%BA%94%E8%A6%81%E7%B4%A0%E4%B8%8E%E3%80%8C%E6%9E%84%E5%BB%BA%E3%80%8D%E9%83%A8%E5%88%86%E7%9A%84%E5%AF%B9%E5%BA%94.md) · [下一篇：上下文工程](../../chapter2/README.md)
 
 > 所属章节：[第1章：AI Agent 入门](../README.md)
 >
@@ -29,4 +29,4 @@
 
 ---
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：Harness 五要素与「构建」部分的对应](../02-Harness%E5%B7%A5%E7%A8%8B%EF%BC%9A%E6%A8%A1%E5%9E%8B%E4%B9%8B%E5%A4%96%E7%9A%84%E7%AB%9E%E4%BA%89%E5%8A%9B/06-Harness%E4%BA%94%E8%A6%81%E7%B4%A0%E4%B8%8E%E3%80%8C%E6%9E%84%E5%BB%BA%E3%80%8D%E9%83%A8%E5%88%86%E7%9A%84%E5%AF%B9%E5%BA%94.md) · [下一篇：本章小结](../04-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：Harness 五要素与「构建」部分的对应](../02-Harness%E5%B7%A5%E7%A8%8B%EF%BC%9A%E6%A8%A1%E5%9E%8B%E4%B9%8B%E5%A4%96%E7%9A%84%E7%AB%9E%E4%BA%89%E5%8A%9B/06-Harness%E4%BA%94%E8%A6%81%E7%B4%A0%E4%B8%8E%E3%80%8C%E6%9E%84%E5%BB%BA%E3%80%8D%E9%83%A8%E5%88%86%E7%9A%84%E5%AF%B9%E5%BA%94.md) · [下一篇：上下文工程](../../chapter2/README.md)

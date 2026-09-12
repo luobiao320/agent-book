@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：案例 3：编辑文件经常失败](../14-%E4%BB%8E%E9%97%AE%E9%A2%98%E6%A1%88%E4%BE%8B%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83/03-%E6%A1%88%E4%BE%8B3%EF%BC%9A%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B6%E7%BB%8F%E5%B8%B8%E5%A4%B1%E8%B4%A5.md) · [下一篇：本章小结](../16-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：案例 3：编辑文件经常失败](../14-%E4%BB%8E%E9%97%AE%E9%A2%98%E6%A1%88%E4%BE%8B%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83/03-%E6%A1%88%E4%BE%8B3%EF%BC%9A%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B6%E7%BB%8F%E5%B8%B8%E5%A4%B1%E8%B4%A5.md) · [下一篇：Agent 的持续进化](../../chapter9/README.md)
 
 > 所属章节：[第8章：模型后训练](../README.md)
 >
@@ -39,4 +39,4 @@
 
 ---
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：案例 3：编辑文件经常失败](../14-%E4%BB%8E%E9%97%AE%E9%A2%98%E6%A1%88%E4%BE%8B%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83/03-%E6%A1%88%E4%BE%8B3%EF%BC%9A%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B6%E7%BB%8F%E5%B8%B8%E5%A4%B1%E8%B4%A5.md) · [下一篇：本章小结](../16-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：案例 3：编辑文件经常失败](../14-%E4%BB%8E%E9%97%AE%E9%A2%98%E6%A1%88%E4%BE%8B%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83/03-%E6%A1%88%E4%BE%8B3%EF%BC%9A%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B6%E7%BB%8F%E5%B8%B8%E5%A4%B1%E8%B4%A5.md) · [下一篇：Agent 的持续进化](../../chapter9/README.md)

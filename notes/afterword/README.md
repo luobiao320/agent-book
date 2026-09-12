@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter10/08-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：两朵乌云](01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：信息不对称下的策略博弈：狼人杀](../chapter10/06-Agent%E7%A4%BE%E4%BC%9A/06-%E4%BF%A1%E6%81%AF%E4%B8%8D%E5%AF%B9%E7%A7%B0%E4%B8%8B%E7%9A%84%E7%AD%96%E7%95%A5%E5%8D%9A%E5%BC%88%EF%BC%9A%E7%8B%BC%E4%BA%BA%E6%9D%80.md) · [下一篇：两朵乌云](01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md)
 
 > 所属章节：[后记：回到 Agent = LLM + 上下文 + 工具](README.md)
 >
@@ -32,4 +32,4 @@
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter10/08-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：两朵乌云](01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：信息不对称下的策略博弈：狼人杀](../chapter10/06-Agent%E7%A4%BE%E4%BC%9A/06-%E4%BF%A1%E6%81%AF%E4%B8%8D%E5%AF%B9%E7%A7%B0%E4%B8%8B%E7%9A%84%E7%AD%96%E7%95%A5%E5%8D%9A%E5%BC%88%EF%BC%9A%E7%8B%BC%E4%BA%BA%E6%9D%80.md) · [下一篇：两朵乌云](01-%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91/README.md)

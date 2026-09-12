@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter9/05-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：多 Agent 协作的分类框架](01-%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C%E7%9A%84%E5%88%86%E7%B1%BB%E6%A1%86%E6%9E%B6/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：睡眠学习：整合、遗忘与能力保鲜](../chapter9/03-%E6%9E%84%E5%BB%BA%E5%8F%AF%E9%95%BF%E6%9C%9F%E8%BF%90%E8%A1%8C%E7%9A%84%E6%8C%81%E7%BB%AD%E8%BF%9B%E5%8C%96%E9%97%AD%E7%8E%AF/03-%E7%9D%A1%E7%9C%A0%E5%AD%A6%E4%B9%A0%EF%BC%9A%E6%95%B4%E5%90%88%E3%80%81%E9%81%97%E5%BF%98%E4%B8%8E%E8%83%BD%E5%8A%9B%E4%BF%9D%E9%B2%9C.md) · [下一篇：多 Agent 协作的分类框架](01-%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C%E7%9A%84%E5%88%86%E7%B1%BB%E6%A1%86%E6%9E%B6/README.md)
 
 > 所属章节：[第10章：多 Agent 协作](README.md)
 >
@@ -31,9 +31,7 @@
 - [不共享上下文的多 Agent 协作](04-%E4%B8%8D%E5%85%B1%E4%BA%AB%E4%B8%8A%E4%B8%8B%E6%96%87%E7%9A%84%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C/README.md)
 - [多 Agent 协作的失败模式](05-%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C%E7%9A%84%E5%A4%B1%E8%B4%A5%E6%A8%A1%E5%BC%8F/README.md)
 - [Agent 社会](06-Agent%E7%A4%BE%E4%BC%9A/README.md)
-- [本章小结](07-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
-- [思考题](08-%E6%80%9D%E8%80%83%E9%A2%98/README.md)
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter9/05-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：多 Agent 协作的分类框架](01-%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C%E7%9A%84%E5%88%86%E7%B1%BB%E6%A1%86%E6%9E%B6/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：睡眠学习：整合、遗忘与能力保鲜](../chapter9/03-%E6%9E%84%E5%BB%BA%E5%8F%AF%E9%95%BF%E6%9C%9F%E8%BF%90%E8%A1%8C%E7%9A%84%E6%8C%81%E7%BB%AD%E8%BF%9B%E5%8C%96%E9%97%AD%E7%8E%AF/03-%E7%9D%A1%E7%9C%A0%E5%AD%A6%E4%B9%A0%EF%BC%9A%E6%95%B4%E5%90%88%E3%80%81%E9%81%97%E5%BF%98%E4%B8%8E%E8%83%BD%E5%8A%9B%E4%BF%9D%E9%B2%9C.md) · [下一篇：多 Agent 协作的分类框架](01-%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C%E7%9A%84%E5%88%86%E7%B1%BB%E6%A1%86%E6%9E%B6/README.md)

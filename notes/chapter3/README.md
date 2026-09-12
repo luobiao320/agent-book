@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter2/09-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：用户记忆系统](01-%E7%94%A8%E6%88%B7%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：隔离优于压缩：子 Agent 上下文隔离](../chapter2/07-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8E%8B%E7%BC%A9%E7%AD%96%E7%95%A5/06-%E9%9A%94%E7%A6%BB%E4%BC%98%E4%BA%8E%E5%8E%8B%E7%BC%A9%EF%BC%9A%E5%AD%90Agent%E4%B8%8A%E4%B8%8B%E6%96%87%E9%9A%94%E7%A6%BB.md) · [下一篇：用户记忆系统](01-%E7%94%A8%E6%88%B7%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/README.md)
 
 > 所属章节：[第3章：用户记忆和知识库](README.md)
 >
@@ -32,9 +32,7 @@
 - [用户记忆系统](01-%E7%94%A8%E6%88%B7%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/README.md)
 - [RAG 基础：构建 Agent 的知识获取管道](02-RAG%E5%9F%BA%E7%A1%80%EF%BC%9A%E6%9E%84%E5%BB%BAAgent%E7%9A%84%E7%9F%A5%E8%AF%86%E8%8E%B7%E5%8F%96%E7%AE%A1%E9%81%93/README.md)
 - [超越扁平文本：知识的组织与检索](03-%E8%B6%85%E8%B6%8A%E6%89%81%E5%B9%B3%E6%96%87%E6%9C%AC%EF%BC%9A%E7%9F%A5%E8%AF%86%E7%9A%84%E7%BB%84%E7%BB%87%E4%B8%8E%E6%A3%80%E7%B4%A2/README.md)
-- [本章小结](04-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
-- [思考题](05-%E6%80%9D%E8%80%83%E9%A2%98/README.md)
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter2/09-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：用户记忆系统](01-%E7%94%A8%E6%88%B7%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：隔离优于压缩：子 Agent 上下文隔离](../chapter2/07-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8E%8B%E7%BC%A9%E7%AD%96%E7%95%A5/06-%E9%9A%94%E7%A6%BB%E4%BC%98%E4%BA%8E%E5%8E%8B%E7%BC%A9%EF%BC%9A%E5%AD%90Agent%E4%B8%8A%E4%B8%8B%E6%96%87%E9%9A%94%E7%A6%BB.md) · [下一篇：用户记忆系统](01-%E7%94%A8%E6%88%B7%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/README.md)

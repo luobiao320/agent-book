@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter7/13-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：从预训练到 RL：四阶段全景](01-%E4%BB%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E5%88%B0RL%EF%BC%9A%E5%9B%9B%E9%98%B6%E6%AE%B5%E5%85%A8%E6%99%AF/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：保真度权衡与领域随机化](../chapter7/11-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83%EF%BC%9A%E4%BB%8E%E8%AF%84%E4%BC%B0%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83%E7%9A%84%E6%A1%A5%E6%A2%81/01-%E4%BF%9D%E7%9C%9F%E5%BA%A6%E6%9D%83%E8%A1%A1%E4%B8%8E%E9%A2%86%E5%9F%9F%E9%9A%8F%E6%9C%BA%E5%8C%96.md) · [下一篇：从预训练到 RL：四阶段全景](01-%E4%BB%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E5%88%B0RL%EF%BC%9A%E5%9B%9B%E9%98%B6%E6%AE%B5%E5%85%A8%E6%99%AF/README.md)
 
 > 所属章节：[第8章：模型后训练](README.md)
 >
@@ -55,9 +55,7 @@
 - [蒸馏：提升样本效率](13-%E8%92%B8%E9%A6%8F%EF%BC%9A%E6%8F%90%E5%8D%87%E6%A0%B7%E6%9C%AC%E6%95%88%E7%8E%87/README.md)
 - [从问题案例到后训练](14-%E4%BB%8E%E9%97%AE%E9%A2%98%E6%A1%88%E4%BE%8B%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83/README.md)
 - [后训练实践要点](15-%E5%90%8E%E8%AE%AD%E7%BB%83%E5%AE%9E%E8%B7%B5%E8%A6%81%E7%82%B9/README.md)
-- [本章小结](16-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
-- [思考题](17-%E6%80%9D%E8%80%83%E9%A2%98/README.md)
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter7/13-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：从预训练到 RL：四阶段全景](01-%E4%BB%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E5%88%B0RL%EF%BC%9A%E5%9B%9B%E9%98%B6%E6%AE%B5%E5%85%A8%E6%99%AF/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：保真度权衡与领域随机化](../chapter7/11-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83%EF%BC%9A%E4%BB%8E%E8%AF%84%E4%BC%B0%E5%88%B0%E5%90%8E%E8%AE%AD%E7%BB%83%E7%9A%84%E6%A1%A5%E6%A2%81/01-%E4%BF%9D%E7%9C%9F%E5%BA%A6%E6%9D%83%E8%A1%A1%E4%B8%8E%E9%A2%86%E5%9F%9F%E9%9A%8F%E6%9C%BA%E5%8C%96.md) · [下一篇：从预训练到 RL：四阶段全景](01-%E4%BB%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E5%88%B0RL%EF%BC%9A%E5%9B%9B%E9%98%B6%E6%AE%B5%E5%85%A8%E6%99%AF/README.md)

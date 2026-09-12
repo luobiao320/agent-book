@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：执行工具](../06-%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7/README.md) · [下一篇：本章小结](../08-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：执行工具](../06-%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7/README.md) · [下一篇：Coding Agent 与通用 Agent](../../chapter5/README.md)
 
 > 所属章节：[第4章：工具](../README.md)
 >
@@ -62,4 +62,4 @@
 
 ---
 
-[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：执行工具](../06-%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7/README.md) · [下一篇：本章小结](../08-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：执行工具](../06-%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7/README.md) · [下一篇：Coding Agent 与通用 Agent](../../chapter5/README.md)

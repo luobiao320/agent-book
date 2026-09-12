@@ -23,7 +23,8 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "bojieli/ai-agent-book"
-DOCUMENTS = ["introduction", *[f"chapter{n}" for n in range(1, 11)], "afterword", "reference-answers"]
+DOCUMENTS = ["introduction", *[f"chapter{n}" for n in range(1, 11)], "afterword"]
+SKIP_SECTIONS = {"本章小结", "小结", "思考题"}
 MANIFEST = "source/manifest.json"
 HEADING = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
 ATTRIBUTE = re.compile(r"[ \t]*\{(?:\s*#[\w.:-]+|\s*\.[\w-]+|\s*[\w-]+=[^{}]*)+\s*\}")
@@ -99,11 +100,14 @@ def load_snapshot(directory):
         raise ValueError("原文快照缺少章节或许可证")
     files = {}
     for name, expected in metadata["files"].items():
+        if name == "book/reference-answers.md":
+            continue
         data = checked_path(directory, name).read_bytes()
         actual = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
         if actual != expected:
             raise ValueError(f"原文快照被修改或损坏：{name}")
         files[name] = data
+    metadata["files"] = {name: metadata["files"][name] for name in files}
     return metadata, files
 
 
@@ -184,7 +188,8 @@ class Book:
         self.pages, self.headings, self.lines, self.masks = [], {}, {}, {}
         self.anchors, self.definitions = {}, {}
         self.warnings, self.remote_paths = set(), set()
-        self.links, self.coverage = [], []
+        self.links, self.coverage, self.excluded = [], [], []
+        self.excluded_anchors = set()
         self.outputs = {}
         for name in DOCUMENTS:
             self.split(f"book/{name}.md")
@@ -223,10 +228,28 @@ class Book:
                 cuts.append((i, path, title_text(title), folder + "/README.md"))
         pages = [Page(source, path, title, start, cuts[n+1][0] if n+1 < len(cuts) else len(lines), parent)
                  for n, (start, path, title, parent) in enumerate(cuts)]
-        if "".join("".join(lines[p.start:p.end]) for p in pages) != self.files[source].decode("utf-8"):
-            raise ValueError(f"原文切分存在遗漏或重复：{source}")
+        # 跳过整个二级标题区间，仍使用原始边界，避免小结泄漏到上一知识块。
+        excluded = []
+        for index, (start, level, title, _, _) in enumerate(headings):
+            if level == 2 and title_text(title) in SKIP_SECTIONS:
+                end = next((h[0] for h in headings[index+1:] if h[1] <= level), len(lines))
+                excluded.append((start, end))
+                self.excluded.append({"source": source, "title": title_text(title),
+                                      "start_line": start+1, "end_line": end})
+        pages = [p for p in pages if not any(start <= p.start < end for start, end in excluded)]
+        # 保留区间和明确排除区间必须恰好覆盖整篇原文。
+        cursor = 0
+        for start, end in sorted([(p.start, p.end) for p in pages] + excluded):
+            if start != cursor:
+                raise ValueError(f"原文切分存在遗漏或重复：{source}")
+            cursor = end
+        if cursor != len(lines):
+            raise ValueError(f"原文尾部未覆盖：{source}")
         for i, _, _, anchor, explicit in headings:
-            page = next(p for p in pages if p.start <= i < p.end)
+            page = next((p for p in pages if p.start <= i < p.end), None)
+            if page is None:
+                self.excluded_anchors.update((source, a) for a in (anchor, explicit) if a)
+                continue
             self.anchors[source, anchor] = page.path
             if explicit:
                 self.anchors[source, explicit] = page.path
@@ -267,7 +290,8 @@ class Book:
             if fragment:
                 target = self.anchors.get((source, fragment))
                 if not target:
-                    self.warnings.add(f"原文锚点不存在：{page.source} → {value}")
+                    if (source, fragment) not in self.excluded_anchors:
+                        self.warnings.add(f"原文锚点不存在：{page.source} → {value}")
                     return f"https://github.com/{REPOSITORY}/blob/{self.metadata['commit']}/{quote(source)}#{quote(fragment)}"
             self.links.append((page.path, target, fragment))
             result = relative(page.path, target, fragment)
@@ -383,7 +407,8 @@ class Book:
         self.outputs["source/upstream.json"] = json_bytes(metadata)
         report = ["# 同步记录", "", f"上游：{REPOSITORY}", f"", f"固定版本：`{metadata['commit']}`", "",
                   f"完整原文：{len(DOCUMENTS)} 篇；阅读页面：{len(self.pages)}；图片资源：{sum(p.startswith('book/images/') for p in self.files)}。", "",
-                  "已核对全部原文切片连续覆盖、源文件内容校验和、本地图片及内部链接。", "", "## 上游内容问题", ""]
+                  "阅读版排除各章小结、思考题及参考答案；章节原文快照原样保留，用于核对来源。", "",
+                  "已核对保留内容与明确排除区间共同覆盖原文、源文件内容校验和、本地图片及内部链接。", "", "## 上游内容问题", ""]
         report += sorted(self.warnings) if self.warnings else ["本次未发现缺失的上游目标或脚注定义。"]
         self.outputs["source/README.md"] = ("\n".join(report) + "\n").encode()
         return self.outputs
@@ -393,7 +418,7 @@ class Book:
         toc = "\n".join(f"- [{label(self.document_title(p.source))}]({quote(p.path, safe='/')})" for p in roots)
         self.outputs["README.md"] = f"""# Agent Book 分块阅读版
 
-按原书目录拆分《深入理解 AI Agent》，保留完整原文、图片、代码、公式、表格、例子、小结、思考题和参考资料。
+按原书目录拆分《深入理解 AI Agent》，保留正文、图片、代码、公式、表格、例子和参考资料；阅读版不包含各章小结、思考题及参考答案。
 
 [从引言开始阅读](notes/introduction/README.md) · [学习入口](learning/README.md) · [个人笔记](personal/README.md)
 
@@ -420,7 +445,7 @@ python3 tools/restructure_all_chapters.py --check
 
 - [原书网站](https://bojieli.github.io/ai-agent-book/) · [原始项目](https://github.com/{REPOSITORY})
 - [固定来源版本与同步记录](source/README.md) · [原文快照](source/book/) · [原项目许可证](source/LICENSE)
-- 本仓库正文为原文拆分重排，不是摘要；调整仅限目录导航、链接、锚点、脚注补齐和 Markdown 排版适配。
+- 本仓库正文为原文拆分重排，不是摘要；除明确排除的小结、思考题及参考答案外，调整仅限目录导航、链接、锚点、脚注补齐和 Markdown 排版适配。章节原文快照原样保留，以便核对来源。
 - `notes/` 和 `source/` 为生成内容；心得与补充放在 `personal/`，不会被同步修改。
 - [迁移前的旧笔记](personal/legacy/notes/)已完整保留，其中第2章包含原来的学习摘要。归档不属于新版阅读目录。
 """.encode()
@@ -428,7 +453,7 @@ python3 tools/restructure_all_chapters.py --check
 
 [打开完整阅读目录](../README.md) · [从引言开始](../notes/introduction/README.md)
 
-每页提供来源、返回目录、上一篇和下一篇。先阅读章前导读及主题说明，再进入知识块；原文图片、代码、脚注、小结和思考题均保留。
+每页提供来源、返回目录、上一篇和下一篇。先阅读章前导读及主题说明，再进入知识块；正文图片、代码和脚注均保留；小结、思考题及参考答案不进入阅读目录。
 
 [个人笔记](../personal/README.md)用于保存自己的解释、疑问和阅读位置。
 
@@ -574,7 +599,7 @@ def main():
         book = Book(metadata, files)
         outputs = book.render()
         manifest = {"version": 1, "upstream_commit": metadata["commit"],
-                    "files": {name: digest(data) for name, data in sorted(outputs.items())}, "coverage": book.coverage}
+                    "files": {name: digest(data) for name, data in sorted(outputs.items())}, "coverage": book.coverage, "excluded": book.excluded}
         outputs[MANIFEST] = json_bytes(manifest)
         check_reading_links(ROOT, outputs, archive, old_files)
         if args.check:

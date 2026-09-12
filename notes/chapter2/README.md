@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter1/05-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：上下文：决定 Agent 能力上限的关键](01-%E4%B8%8A%E4%B8%8B%E6%96%87%EF%BC%9A%E5%86%B3%E5%AE%9AAgent%E8%83%BD%E5%8A%9B%E4%B8%8A%E9%99%90%E7%9A%84%E5%85%B3%E9%94%AE/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：贯穿全书的设计模式](../chapter1/03-%E8%B4%AF%E7%A9%BF%E5%85%A8%E4%B9%A6%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/README.md) · [下一篇：上下文：决定 Agent 能力上限的关键](01-%E4%B8%8A%E4%B8%8B%E6%96%87%EF%BC%9A%E5%86%B3%E5%AE%9AAgent%E8%83%BD%E5%8A%9B%E4%B8%8A%E9%99%90%E7%9A%84%E5%85%B3%E9%94%AE/README.md)
 
 > 所属章节：[第2章：上下文工程](README.md)
 >
@@ -28,9 +28,7 @@
 - [动态提示词与 Agent Skills](05-%E5%8A%A8%E6%80%81%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%B8%8EAgentSkills/README.md)
 - [Agent 状态栏：通过元信息增强 Agent 轨迹管理](06-Agent%E7%8A%B6%E6%80%81%E6%A0%8F%EF%BC%9A%E9%80%9A%E8%BF%87%E5%85%83%E4%BF%A1%E6%81%AF%E5%A2%9E%E5%BC%BAAgent%E8%BD%A8%E8%BF%B9%E7%AE%A1%E7%90%86/README.md)
 - [上下文压缩策略](07-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8E%8B%E7%BC%A9%E7%AD%96%E7%95%A5/README.md)
-- [本章小结](08-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
-- [思考题](09-%E6%80%9D%E8%80%83%E9%A2%98/README.md)
 
 ---
 
-[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：思考题](../chapter1/05-%E6%80%9D%E8%80%83%E9%A2%98/README.md) · [下一篇：上下文：决定 Agent 能力上限的关键](01-%E4%B8%8A%E4%B8%8B%E6%96%87%EF%BC%9A%E5%86%B3%E5%AE%9AAgent%E8%83%BD%E5%8A%9B%E4%B8%8A%E9%99%90%E7%9A%84%E5%85%B3%E9%94%AE/README.md)
+[全书目录](../../README.md) · [上级目录](../../README.md) · [上一篇：贯穿全书的设计模式](../chapter1/03-%E8%B4%AF%E7%A9%BF%E5%85%A8%E4%B9%A6%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/README.md) · [下一篇：上下文：决定 Agent 能力上限的关键](01-%E4%B8%8A%E4%B8%8B%E6%96%87%EF%BC%9A%E5%86%B3%E5%AE%9AAgent%E8%83%BD%E5%8A%9B%E4%B8%8A%E9%99%90%E7%9A%84%E5%85%B3%E9%94%AE/README.md)

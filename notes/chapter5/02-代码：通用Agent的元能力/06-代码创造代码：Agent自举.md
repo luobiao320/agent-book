@@ -1,6 +1,6 @@
 <!-- 自动生成；个人补充请写入 personal/。 -->
 
-[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：代码作为生成式 UI](05-%E4%BB%A3%E7%A0%81%E4%BD%9C%E4%B8%BA%E7%94%9F%E6%88%90%E5%BC%8FUI.md) · [下一篇：本章小结](../03-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：代码作为生成式 UI](05-%E4%BB%A3%E7%A0%81%E4%BD%9C%E4%B8%BA%E7%94%9F%E6%88%90%E5%BC%8FUI.md) · [下一篇：交互：观察与动作空间的扩展](../../chapter6/README.md)
 
 > 所属章节：[第5章：Coding Agent 与通用 Agent](../README.md)
 >
@@ -62,4 +62,4 @@ Agent 接到开发新 Agent 的任务时，应首先复制自己的代码（或�
 
 ---
 
-[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：代码作为生成式 UI](05-%E4%BB%A3%E7%A0%81%E4%BD%9C%E4%B8%BA%E7%94%9F%E6%88%90%E5%BC%8FUI.md) · [下一篇：本章小结](../03-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93/README.md)
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：代码作为生成式 UI](05-%E4%BB%A3%E7%A0%81%E4%BD%9C%E4%B8%BA%E7%94%9F%E6%88%90%E5%BC%8FUI.md) · [下一篇：交互：观察与动作空间的扩展](../../chapter6/README.md)
