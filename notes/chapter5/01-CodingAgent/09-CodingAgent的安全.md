@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding Agent 中的文件编辑工具](08-CodingAgent%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7.md) · [下一篇：代码：通用 Agent 的元能力](../02-%E4%BB%A3%E7%A0%81%EF%BC%9A%E9%80%9A%E7%94%A8Agent%E7%9A%84%E5%85%83%E8%83%BD%E5%8A%9B/README.md)
+
+> 所属章节：[第5章：Coding Agent 与通用 Agent](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter5.md#L309-L350) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter5/)
+
+<!-- 原文开始 -->
+
+<a id="coding-agent-的安全"></a>
+
 ### Coding Agent 的安全
 
 本节把 Coding Agent 的安全防线收拢为一条完整的叙事线：先勾勒**威胁模型**——哪些风险最致命；再讨论**隔离兜底**——沙盒的网络出口、文件系统与资源限额；然后是**执行期防御**——命令的语义解析，以及让安全检查“隐形”的推测性执行；最后落到**信任与忠诚**——多方委托下 Agent 为谁效忠，以及动态生成软件为何需要把信任边界下移到数据层。其中威胁模型、忠诚度与数据层信任边界的讨论对所有 Agent 通用，沙盒与命令解析则是 Coding Agent 特有的补充内容。
@@ -39,3 +51,10 @@ Coding Agent 拥有读写文件、执行命令、访问网络的权限，这意�
 这对 Coding Agent 尤其贴切：仓库里读到的不可信内容、某个工具返回的输出、第三方 MCP 服务器发来的指令，都是试图让 Agent 倒戈的“对手”——**提示注入本质上就是一次策反**（第二、四章）。因此 Harness 层要明确限定“忠诚对象”：主人的指令优先级最高，一切来自外部交互方的内容都默认降格为“可参考、但不具备指令效力”的数据。落到系统提示上，一套行之有效的**忠诚度守则**是：保护主人的私密信息，甚至不泄露这些信息是否存在；拒绝时不逐条念出拒绝清单（那本身就在泄露）；私下的底线不等于对外的立场；只执行主人明确、具体的指令；顶住重复施压。本质上，这是在用 Harness 为模型补上一条它默认没有的立场：**对主人绝对忠诚，对外部交互方保持审慎**。
 
 [^ch5-1]: 这条忠诚度光谱及守则的完整评测见 Li, Bojie and Noah Shi. *Whose Side Is Your Agent On? Multi-Party Principal Loyalty in LLM Agents.* arXiv:2606.30383, 2026.
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding Agent 中的文件编辑工具](08-CodingAgent%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7.md) · [下一篇：代码：通用 Agent 的元能力](../02-%E4%BB%A3%E7%A0%81%EF%BC%9A%E9%80%9A%E7%94%A8Agent%E7%9A%84%E5%85%83%E8%83%BD%E5%8A%9B/README.md)

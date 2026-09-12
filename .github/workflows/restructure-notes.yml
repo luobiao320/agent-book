@@ -1,38 +1,42 @@
-name: Restructure chapter notes
+name: Sync complete reading blocks
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/restructure_all_chapters.py'
-      - '.github/workflows/restructure-notes.yml'
   workflow_dispatch:
+    inputs:
+      source_ref:
+        description: '上游分支、标签或提交 SHA（默认 main）'
+        required: false
+        default: main
 
 permissions:
   contents: write
 
+concurrency:
+  group: reading-blocks-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  restructure:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          fetch-depth: 0
-
-      - name: Generate chapter notes
-        run: python tools/restructure_all_chapters.py
-
-      - name: Commit generated notes
+          python-version: '3.12'
+      - name: Download, split and validate the book
+        env:
+          SOURCE_REF: ${{ inputs.source_ref }}
+        run: python tools/restructure_all_chapters.py --sync --ref "$SOURCE_REF"
+      - name: Commit complete reading content
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add notes/chapter1 notes/chapter3 notes/chapter4 notes/chapter5 notes/chapter6 notes/chapter7 notes/chapter8 notes/chapter9 notes/chapter10
+          git add README.md learning/README.md notes source
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "Regenerate chapter notes by source structure"
+          git commit -m "Sync complete reading blocks and original images"
           git push
-
-# This workflow is intentionally self-triggered when its definition changes.

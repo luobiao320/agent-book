@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding Agent](README.md) · [下一篇：案例：从 Manus 到 OpenClaw——通用 Agent 的 Coding 内核](02-%E6%A1%88%E4%BE%8B%EF%BC%9A%E4%BB%8EManus%E5%88%B0OpenClaw%E2%80%94%E2%80%94%E9%80%9A%E7%94%A8Agent%E7%9A%84Coding%E5%86%85%E6%A0%B8.md)
+
+> 所属章节：[第5章：Coding Agent 与通用 Agent](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter5.md#L15-L57) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter5/)
+
+<!-- 原文开始 -->
+
+<a id="coding-是-agent-的基础能力"></a>
+
 ### Coding 是 Agent 的基础能力
 
 **代码生成不是少数专门化 Agent 的专利，而是每个通用 Agent 都该具备的基础能力**。在当前 SOTA 模型的加持下，具备基本 coding 能力并不需要复杂的架构。
@@ -40,3 +52,10 @@ Agent：已整理完毕，共发现 3 个 TODO 项，清单保存在 TODO_LIST.m
 读者可能会问，为什么是七个工具，不是六个工具？事实上，只要一个 Bash Shell 工具就足够了。OpenAI Codex 就只提供 Bash Shell 一个工具，用这一个工具完成所有文件读写、查找操作。但其他一些 Agent 仍然保留单独的文件读写工具。本书的七个工具是为了方便读者理解 Coding Agent 所需的基本能力。
 
 为什么每个通用 Agent 都应该具备 coding 能力？因为代码生成不只是写程序，它是一种通用的问题解决手段。遇到数学推理，可以写段代码交给求解器算出精确答案；需要固化业务规则，代码比自然语言描述精确得多；缺少某个工具，可以临时写一个；数据格式变了，动态生成解析逻辑。本章后续会逐一展开这些场景。一个具备基本 coding 能力的 Agent，即使工具箱中只有上述七个简单工具，也能在遇到新需求时动态扩展自己的能力边界。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding Agent](README.md) · [下一篇：案例：从 Manus 到 OpenClaw——通用 Agent 的 Coding 内核](02-%E6%A1%88%E4%BE%8B%EF%BC%9A%E4%BB%8EManus%E5%88%B0OpenClaw%E2%80%94%E2%80%94%E9%80%9A%E7%94%A8Agent%E7%9A%84Coding%E5%86%85%E6%A0%B8.md)

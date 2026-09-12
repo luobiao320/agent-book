@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：多 Agent 何时真正优于单 Agent](../02-%E5%A4%9AAgent%E4%BD%95%E6%97%B6%E7%9C%9F%E6%AD%A3%E4%BC%98%E4%BA%8E%E5%8D%95Agent/README.md) · [下一篇：不共享上下文的多 Agent 协作](../04-%E4%B8%8D%E5%85%B1%E4%BA%AB%E4%B8%8A%E4%B8%8B%E6%96%87%E7%9A%84%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C/README.md)
+
+> 所属章节：[第10章：多 Agent 协作](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter10.md#L79-L101) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter10/)
+
+<!-- 原文开始 -->
+
+<a id="共享上下文的多-agent-协作"></a>
+
 ## 共享上下文的多 Agent 协作
 
 共享上下文的多 Agent 协作中，每个阶段都是一个独立的 Agent（拥有自己的系统提示词和工具集），但它继承了前序 Agent 的完整轨迹——就像接班的同事能翻阅前任留下的所有工作日志。这种 “继承式协作” 的核心优势在于信息不会丢失，每个 Agent 都能回顾之前任何阶段的细节。挑战则在于如何让当前 Agent 专注于自己的核心职责，而不被继承来的大量历史信息所干扰。
@@ -20,3 +32,10 @@
 > **路径一：系统提示词切换**。五种角色为 triage（用户需求收集，默认入口）、research（信息检索）、coding（编程）、data_analysis（数据分析）和 writing（写作）。每个角色只看到自己的专属工具和 `transfer_to_agent`；调用移交时保存历史、加载目标角色提示词/工具集，再继续调用。旧实现保留在配套项目中，作为这一实验分支的基线。
 >
 > **路径二：Skill**。system prompt 和完整工具全集在整个会话中固定；模型按需调用 `load_skill(name)`，读取的 `SKILL.md` 作为 tool result 进入共享轨迹。这样静态前缀不因角色变化而重写，但工具仍然可见，硬权限由 harness 中的规则保证。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：多 Agent 何时真正优于单 Agent](../02-%E5%A4%9AAgent%E4%BD%95%E6%97%B6%E7%9C%9F%E6%AD%A3%E4%BC%98%E4%BA%8E%E5%8D%95Agent/README.md) · [下一篇：不共享上下文的多 Agent 协作](../04-%E4%B8%8D%E5%85%B1%E4%BA%AB%E4%B8%8A%E4%B8%8B%E6%96%87%E7%9A%84%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C/README.md)

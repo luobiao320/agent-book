@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：上下文：Agent 的眼睛](04-%E4%B8%8A%E4%B8%8B%E6%96%87%EF%BC%9AAgent%E7%9A%84%E7%9C%BC%E7%9D%9B.md) · [下一篇：Harness 工程：模型之外的竞争力](../02-Harness%E5%B7%A5%E7%A8%8B%EF%BC%9A%E6%A8%A1%E5%9E%8B%E4%B9%8B%E5%A4%96%E7%9A%84%E7%AB%9E%E4%BA%89%E5%8A%9B/README.md)
+
+> 所属章节：[第1章：AI Agent 入门](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter1.md#L161-L262) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter1/)
+
+<!-- 原文开始 -->
+
+<a id="react-循环"></a>
+
 ### ReAct 循环
 
 了解了 Agent 的三大组件后，一个自然的问题是：它们如何协同工作？ReAct 循环就是将 LLM、上下文和工具串联起来的核心机制——让我们看看一个 Agent 是如何一步步思考和行动的。
@@ -6,7 +18,7 @@ Agent 执行任务的核心模式叫做 **ReAct**（Reasoning + Acting）。虽�
 
 让我们通过一个多币种收入汇总的具体例子来理解 Agent 的**轨迹**（trajectory）。轨迹是 Agent 在执行任务过程中不断积累的消息历史——用户消息、模型回复（包括思考过程和工具调用）、工具执行结果。每一次调用 LLM 时，它接收的完整上下文由**静态前缀**（系统提示词 + 工具定义）和**轨迹**（动态消息历史）两部分组成（图1-4）。这揭示了一个关键事实：**Agent 的上下文 = 静态前缀 + 轨迹**。具体地说，静态前缀对应前文五个组件中的前两项（系统提示词 + 工具定义），轨迹对应后三项（用户消息 + 模型回复 + 工具执行结果，随交互不断增长）。基于这个完整上下文，LLM 生成下一步的响应，然后这个响应又追加到轨迹中，供下一次调用使用。
 
-![图1-4 Agent 轨迹——多币种汇总任务的 ReAct 循环](images/fig1-4.svg)
+![图1-4 Agent 轨迹——多币种汇总任务的 ReAct 循环](../../../source/book/images/fig1-4.svg)
 
 先看最小运行骨架。它说明的是**机制如何运行**：Model 只负责决定下一步，Harness 负责组装上下文、校验并执行工具，Environment 负责产生真实状态变化和观察。本书后续也沿用 Python 风格伪代码；伪代码不能直接运行，也不对应某个 SDK。具体的可执行代码在本书配套代码仓库中。
 
@@ -98,4 +110,11 @@ repeat:
 >
 > 图1-5 展示了“模型即 Agent”范式下原生工具调用的完整架构，以及 Kimi K3 / GPT-5.6 在实际任务中的 ReAct 执行过程。
 >
-> ![图1-5 “模型即 Agent” 架构——原生工具调用](images/fig1-5.svg)
+> ![图1-5 “模型即 Agent” 架构——原生工具调用](../../../source/book/images/fig1-5.svg)
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：上下文：Agent 的眼睛](04-%E4%B8%8A%E4%B8%8B%E6%96%87%EF%BC%9AAgent%E7%9A%84%E7%9C%BC%E7%9D%9B.md) · [下一篇：Harness 工程：模型之外的竞争力](../02-Harness%E5%B7%A5%E7%A8%8B%EF%BC%9A%E6%A8%A1%E5%9E%8B%E4%B9%8B%E5%A4%96%E7%9A%84%E7%AB%9E%E4%BA%89%E5%8A%9B/README.md)

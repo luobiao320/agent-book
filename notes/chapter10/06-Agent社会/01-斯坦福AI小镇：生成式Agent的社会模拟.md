@@ -1,7 +1,19 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Agent 社会](README.md) · [下一篇：Agentopia：十年尺度的长期生活模拟](02-Agentopia%EF%BC%9A%E5%8D%81%E5%B9%B4%E5%B0%BA%E5%BA%A6%E7%9A%84%E9%95%BF%E6%9C%9F%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F.md)
+
+> 所属章节：[第10章：多 Agent 协作](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter10.md#L591-L634) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter10/)
+
+<!-- 原文开始 -->
+
+<a id="斯坦福-ai-小镇生成式-agent-的社会模拟"></a>
+
 ### 斯坦福 AI 小镇：生成式 Agent 的社会模拟
 
 
-![图10-10 AI 小镇架构](images/fig10-10.svg)
+![图10-10 AI 小镇架构](../../../source/book/images/fig10-10.svg)
 
 
 2023 年，斯坦福大学和 Google 研究团队发表了具有里程碑意义的论文《Generative Agents: Interactive Simulacra of Human Behavior》，提出了“生成式 Agent”的概念。核心创新在于不再局限于让 Agent 完成预定义的任务，而是赋予 Agent 接近人类的记忆、反思和规划能力，使它们能够在开放的社会环境中自主生活、社交和发展。
@@ -41,3 +53,10 @@ Smallville 是一个类似《模拟人生》的 2D 虚拟小镇，里面有咖�
 > - 信息如何在没有中心控制的情况下在 Agent 之间传播
 > - Agent 的长期记忆和反思如何影响其人格的连贯性
 >
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Agent 社会](README.md) · [下一篇：Agentopia：十年尺度的长期生活模拟](02-Agentopia%EF%BC%9A%E5%8D%81%E5%B9%B4%E5%B0%BA%E5%BA%A6%E7%9A%84%E9%95%BF%E6%9C%9F%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F.md)

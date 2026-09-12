@@ -1,8 +1,20 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：多轮任务的核心挑战](01-%E5%A4%9A%E8%BD%AE%E4%BB%BB%E5%8A%A1%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8C%91%E6%88%98.md) · [下一篇：奖励设计：如何把任务目标变成学习信号](../12-%E5%A5%96%E5%8A%B1%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%A6%82%E4%BD%95%E6%8A%8A%E4%BB%BB%E5%8A%A1%E7%9B%AE%E6%A0%87%E5%8F%98%E6%88%90%E5%AD%A6%E4%B9%A0%E4%BF%A1%E5%8F%B7/README.md)
+
+> 所属章节：[第8章：模型后训练](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter8.md#L584-L609) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter8/)
+
+<!-- 原文开始 -->
+
+<a id="工具调用把环境带进-agent"></a>
+
 ### 工具调用：把环境带进 Agent
 
 多轮任务一旦接入外部工具，动作就不再只是“移动或回答”，而是搜索、执行代码、修改文件、查询数据库和组合多个 API。因此，信用分配、环境工程和安全约束都成了工具调用中的核心问题。
 
-![图8-16 工具调用 RL 奖励循环](images/fig8-16.svg)
+![图8-16 工具调用 RL 奖励循环](../../../source/book/images/fig8-16.svg)
 
 Search-R1[^ch8-25]代表检索增强路线：模型自主决定何时搜索、搜索什么，并利用返回结果继续推理。ReTool 则把代码解释器嵌入思考循环，模型需要学会何时执行代码、如何读取反馈、如何根据报错修正。AWorld-train 提供 MCP 多工具沙盒，进一步引入工具选择、依赖管理、状态重置和可重放性问题。
 
@@ -10,7 +22,7 @@ Search-R1[^ch8-25]代表检索增强路线：模型自主决定何时搜索、�
 
 > **实验 8-14 ★★★：ReTool——代码解释器增强数学解题**
 >
-> ![图8-17 ReTool 交织文本-代码思考与沙盒执行反馈循环](images/fig8-17.svg)
+> ![图8-17 ReTool 交织文本-代码思考与沙盒执行反馈循环](../../../source/book/images/fig8-17.svg)
 >
 > ReTool 在 SFT 预热后，用交织的文本思考、代码执行和解释器反馈进行 PPO 训练。它展示了工具反馈如何改变思考策略：模型逐渐学会主动执行、读取错误并自我修正。训练数据来自 DAPO-Math-17k，但优化算法仍是标准 PPO[^ch8-26][^ch8-27]。
 >
@@ -18,8 +30,23 @@ Search-R1[^ch8-25]代表检索增强路线：模型自主决定何时搜索、�
 
 > **实验 8-15 ★★★：AWorld-train——在沙盒中学习使用工具**
 >
-> ![图8-18 AWorld-train MCP 沙盒训练架构与工具生态](images/fig8-18.svg)
+> ![图8-18 AWorld-train MCP 沙盒训练架构与工具生态](../../../source/book/images/fig8-18.svg)
 >
 > AWorld-train 使用 MCP 服务器沙盒，提供 Web、文档、多媒体、代码和知识检索等工具。这个开放式实验的重点不是刷新 GAIA 指标，而是跑通可重置、可重放的多工具训练链路，并观察工具调用成功率和组合策略是否随训练改善。
 
 这些场景共同说明：多轮 Agent 的训练难点不是“有没有一个更复杂的优化器”，而是环境反馈是否可靠、动作链是否可验证，以及最终奖励该如何归因到中间决策。
+
+
+<!-- 原文结束 -->
+
+<!-- 补齐本页引用的原文定义 -->
+
+[^ch8-25]: Jin, Bowen et al., “Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning”, 2025. arXiv:2503.09516. https://arxiv.org/abs/2503.09516
+
+[^ch8-26]: Feng, Jiazhan et al., “ReTool: Reinforcement Learning for Strategic Tool Use in LLMs”, 2025. arXiv:2504.11536. https://arxiv.org/abs/2504.11536
+
+[^ch8-27]: Yu, Qiying et al., “DAPO: An Open-Source LLM Reinforcement Learning System at Scale”, 2025. arXiv:2503.14476. https://arxiv.org/abs/2503.14476
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：多轮任务的核心挑战](01-%E5%A4%9A%E8%BD%AE%E4%BB%BB%E5%8A%A1%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8C%91%E6%88%98.md) · [下一篇：奖励设计：如何把任务目标变成学习信号](../12-%E5%A5%96%E5%8A%B1%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%A6%82%E4%BD%95%E6%8A%8A%E4%BB%BB%E5%8A%A1%E7%9B%AE%E6%A0%87%E5%8F%98%E6%88%90%E5%AD%A6%E4%B9%A0%E4%BF%A1%E5%8F%B7/README.md)

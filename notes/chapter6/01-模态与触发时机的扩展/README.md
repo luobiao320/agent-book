@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：交互：观察与动作空间的扩展](../README.md) · [下一篇：异步与事件驱动：当世界主动找上门](../02-%E5%BC%82%E6%AD%A5%E4%B8%8E%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%EF%BC%9A%E5%BD%93%E4%B8%96%E7%95%8C%E4%B8%BB%E5%8A%A8%E6%89%BE%E4%B8%8A%E9%97%A8/README.md)
+
+> 所属章节：[第6章：交互：观察与动作空间的扩展](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter6.md#L5-L28) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter6/)
+
+<!-- 原文开始 -->
+
+<a id="模态与触发时机的扩展"></a>
+
 ## 模态与触发时机的扩展
 
 把观察空间和动作空间摊开，会发现它们各有两个可以扩展的方向。
@@ -21,3 +33,16 @@
 | 10 毫秒 — 1 秒 | 语音           | 边说边听，不等一句说完       | 边想边说，可被打断          |
 | 亚秒 — 秒      | Computer Use | 屏幕在两帧之间持续变化       | 动作后必须重新确认现实是否仍符合计划 |
 | 毫秒          | 机器人          | 传感器连续回流           | 动作分块：一次规划一小段，可被抢占  |
+
+
+<!-- 原文结束 -->
+
+<!-- 补齐本页引用的原文定义 -->
+
+[^ch6-22]: OpenAI, “[Async tool calling](https://developers.openai.com/api/docs/guides/async-tool-calling)”；“[Using GPT-6 Astra](https://developers.openai.com/api/docs/guides/latest-model)”，核对日期：2026-09-05。
+
+[^ch6-23]: OpenAI, “[Mid-turn steering](https://developers.openai.com/api/docs/guides/steering)”，核对日期：2026-09-05。
+
+---
+
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：交互：观察与动作空间的扩展](../README.md) · [下一篇：异步与事件驱动：当世界主动找上门](../02-%E5%BC%82%E6%AD%A5%E4%B8%8E%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%EF%BC%9A%E5%BD%93%E4%B8%96%E7%95%8C%E4%B8%BB%E5%8A%A8%E6%89%BE%E4%B8%8A%E9%97%A8/README.md)

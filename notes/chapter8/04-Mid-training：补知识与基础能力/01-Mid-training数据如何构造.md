@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Mid-training：补知识与基础能力](README.md) · [下一篇：SFT（监督微调）](../05-SFT%EF%BC%88%E7%9B%91%E7%9D%A3%E5%BE%AE%E8%B0%83%EF%BC%89/README.md)
+
+> 所属章节：[第8章：模型后训练](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter8.md#L287-L313) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter8/)
+
+<!-- 原文开始 -->
+
+<a id="mid-training-数据如何构造"></a>
+
 ### Mid-training 数据如何构造
 
 1. **从失败分布反推数据。** 先按主题、语言、文档类型、代码模式与上下文长度切分评估，确认低 `pass@k` 来自哪类底座缺口；只针对知识和能力缺口补数据，避免把输出格式错误误诊成知识不足。
@@ -24,3 +36,10 @@
 > 本实验也说明继续预训练可能带来的灾难性遗忘问题：韩语最终阶段的盲评分改善，英语能力却有下降。继续预训练可以把目标分布写进参数，但不能免除保留集、事实评估和数据质量审计。
 
 具备足够的知识与基础能力后，才能使用下面的 SFT、RL 等后训练方法构建实用的 Agent。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Mid-training：补知识与基础能力](README.md) · [下一篇：SFT（监督微调）](../05-SFT%EF%BC%88%E7%9B%91%E7%9D%A3%E5%BE%AE%E8%B0%83%EF%BC%89/README.md)

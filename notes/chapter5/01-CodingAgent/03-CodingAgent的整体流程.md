@@ -1,7 +1,19 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：案例：从 Manus 到 OpenClaw——通用 Agent 的 Coding 内核](02-%E6%A1%88%E4%BE%8B%EF%BC%9A%E4%BB%8EManus%E5%88%B0OpenClaw%E2%80%94%E2%80%94%E9%80%9A%E7%94%A8Agent%E7%9A%84Coding%E5%86%85%E6%A0%B8.md) · [下一篇：Harness 工程在 Coding Agent 中的实践](04-Harness%E5%B7%A5%E7%A8%8B%E5%9C%A8CodingAgent%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5.md)
+
+> 所属章节：[第5章：Coding Agent 与通用 Agent](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter5.md#L84-L126) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter5/)
+
+<!-- 原文开始 -->
+
+<a id="coding-agent-的整体流程"></a>
+
 ### Coding Agent 的整体流程
 
 
-![图5-2 Coding Agent 工作流程](images/fig5-2.svg)
+![图5-2 Coding Agent 工作流程](../../../source/book/images/fig5-2.svg)
 
 **项目文档化。**
 
@@ -40,3 +52,10 @@ Coding Agent 的工作始于对项目的系统性理解。当 Agent 首次接触
 需要注意，上面介绍的是**推荐的工程化流程**。现实中的 Coding Agent（如 Claude Code、Codex）会按需裁剪这套流程，简单 bug 修复任务会跳过生成设计文档，只有当任务复杂、影响面大时才会完整走完各阶段。
 
 不同模型裁剪这套流程的方式并不相同。有些 Coding 模型会在第一次修改前广泛阅读目录、实现、调用方和测试；另一些则会读少数最可能相关的文件，马上提交一个补丁，再把编译与测试反馈当作调查的一部分。更换 Harness 后，这种“何时停止收集信息、开始行动”的阈值仍可能随模型保持不变；而在同一个 Harness 中切换模型时，阈值也可能随之改变。因此，它首先是**模型学到的行为策略**，而不只是 Coding 产品的界面风格。Harness 的提示词、工具和预算仍能放大或抑制它，但不必是它的来源。第七章将在固定 Harness 中衡量这一差异，第八章再从后训练角度解释它可能如何写入参数。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：案例：从 Manus 到 OpenClaw——通用 Agent 的 Coding 内核](02-%E6%A1%88%E4%BE%8B%EF%BC%9A%E4%BB%8EManus%E5%88%B0OpenClaw%E2%80%94%E2%80%94%E9%80%9A%E7%94%A8Agent%E7%9A%84Coding%E5%86%85%E6%A0%B8.md) · [下一篇：Harness 工程在 Coding Agent 中的实践](04-Harness%E5%B7%A5%E7%A8%8B%E5%9C%A8CodingAgent%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5.md)

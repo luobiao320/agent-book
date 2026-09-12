@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：能看动画、能听声音的 Computer Use Agent](03-%E8%83%BD%E7%9C%8B%E5%8A%A8%E7%94%BB%E3%80%81%E8%83%BD%E5%90%AC%E5%A3%B0%E9%9F%B3%E7%9A%84ComputerUseAgent.md) · [下一篇：移动端：生态壁垒比技术更难](05-%E7%A7%BB%E5%8A%A8%E7%AB%AF%EF%BC%9A%E7%94%9F%E6%80%81%E5%A3%81%E5%9E%92%E6%AF%94%E6%8A%80%E6%9C%AF%E6%9B%B4%E9%9A%BE.md)
+
+> 所属章节：[第6章：交互：观察与动作空间的扩展](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter6.md#L556-L574) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter6/)
+
+<!-- 原文开始 -->
+
+<a id="computer-use-的世界模型"></a>
+
 ### Computer Use 的世界模型
 
 上一节的观察接口解决的是 “屏幕中间发生了什么”：通过关键帧、语音转写和持久文字，让 Agent 不再只看到两张相隔很久的截图。但观察接口并不会消除规划延迟，Agent 仍然是串行的“截图—思考—点击”循环，每执行一个动作都重新观察、思考下一步。**OSWorld-Human** 的效率研究显示，即使任务最终成功，Agent 的操作步骤仍明显多于人类，等待时间也更长；准确率达到人类水平，并不等于已经足够实用。
@@ -16,3 +28,10 @@
 
 [^ch6-20]: David Li and Jonathan Li, Induction Labs, “Scaling Video Pretraining with Imagination Models,” 2026-07-23. https://www.inductionlabs.com/news/scaling-video-pretraining 。文中 Photon-1 的参数、数据规模、内部 benchmark 和成本比较均为公司披露的结果。
 [^ch6-21]: Jack Parker-Holder and Shlomi Fruchter, Google DeepMind, “Genie 3: A new frontier for world models,” 2025-08-05. https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/；Zachary Lin et al. *Cosmos World Foundation Model Platform for Physical AI.* arXiv:2501.03575, 2025. https://arxiv.org/abs/2501.03575 。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：能看动画、能听声音的 Computer Use Agent](03-%E8%83%BD%E7%9C%8B%E5%8A%A8%E7%94%BB%E3%80%81%E8%83%BD%E5%90%AC%E5%A3%B0%E9%9F%B3%E7%9A%84ComputerUseAgent.md) · [下一篇：移动端：生态壁垒比技术更难](05-%E7%A7%BB%E5%8A%A8%E7%AB%AF%EF%BC%9A%E7%94%9F%E6%80%81%E5%A3%81%E5%9E%92%E6%AF%94%E6%8A%80%E6%9C%AF%E6%9B%B4%E9%9A%BE.md)

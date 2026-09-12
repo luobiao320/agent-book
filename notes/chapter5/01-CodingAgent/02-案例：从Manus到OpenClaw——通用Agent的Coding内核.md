@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding 是 Agent 的基础能力](01-Coding%E6%98%AFAgent%E7%9A%84%E5%9F%BA%E7%A1%80%E8%83%BD%E5%8A%9B.md) · [下一篇：Coding Agent 的整体流程](03-CodingAgent%E7%9A%84%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B.md)
+
+> 所属章节：[第5章：Coding Agent 与通用 Agent](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter5.md#L58-L83) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter5/)
+
+<!-- 原文开始 -->
+
+<a id="案例从-manus-到-openclaw通用-agent-的-coding-内核"></a>
+
 ### 案例：从 Manus 到 OpenClaw——通用 Agent 的 Coding 内核
 
 以 Manus、OpenClaw 为代表的通用 Agent 产品，把 Deep Research（深度调研）、Computer Use（电脑操控）和 Coding（代码生成）三大能力融合在一个系统中。那么，为什么本章开头说 Coding Agent 是其中的核心，而不是另外两者？
@@ -5,7 +17,7 @@
 因为几乎所有高效的内容生成最终都要落到代码上。PPT、Word 文档本质上是 OOXML（Office Open XML，微软推出的办公文档开放标准）格式的代码。PDF 报告可以通过 Markdown、HTML 或 LaTeX 生成，数据分析和可视化可以由 Python 脚本完成，甚至 GUI 操作中成功的浏览器操作序列也可以被固化为可复用的代码（详见第九章）。Deep Research 的搜索和信息综合可通过代码驱动的 Web 请求和解析实现。Computer Use 虽然通用性更强，但成本、延迟和稳定性远不如直接通过代码或 API 来完成相同操作。代码生成是效率最高、成本最低、可复用性最强的能力基座。
 
 
-![图5-1 OpenClaw 架构中的 Coding Agent 核心](images/fig5-1.svg)
+![图5-1 OpenClaw 架构中的 Coding Agent 核心](../../../source/book/images/fig5-1.svg)
 
 
 用一个具体的执行流来理解这个架构。假设用户要求 “Help me analyze last quarter's sales data and create a summary report”：
@@ -23,3 +35,10 @@
 更关键的是，Agent 拥有写文件的能力，这意味着它具备了修改自身外部产物的技术条件。当 Agent 首次执行某个任务并发现了之前不知道的关键信息（例如给某银行打电话时，发现对方要求提供开户行地址才能验证身份），它可以先把发现写入记录。记录何时足以成为可靠知识、指令或程序，仍需结合更多轨迹与结果验证；这是第九章将讨论的持续进化问题。
 
 **适用边界：哪些 Agent 以 Coding 为核心架构**。“Coding Agent 是通用 Agent 的核心” 这一判断主要适用于**以开放任务为目标**的通用 Agent——深度调研、内容生成、数据处理这类任务边界不确定、产物形态多样的场景。在这些场景中，无法预先枚举所有需要的工具，代码生成作为元能力提供了动态扩展能力边界的最经济路径，因此它是架构的核心。而另一类 Agent——例如垂直领域的客服 Agent——任务空间相对封闭，核心架构围绕固定的业务流程、领域工具和对话策略构建，代码在其中更多是工具箱里的一件工具而非架构中枢。但即便在后者，coding 也是重要的基础能力：精确计算、数据处理、规则校验都离不开它。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding 是 Agent 的基础能力](01-Coding%E6%98%AFAgent%E7%9A%84%E5%9F%BA%E7%A1%80%E8%83%BD%E5%8A%9B.md) · [下一篇：Coding Agent 的整体流程](03-CodingAgent%E7%9A%84%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B.md)

@@ -1,6 +1,18 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：自动化评估方法](README.md) · [下一篇：失败归因：从整条轨迹定位首个错误](02-%E5%A4%B1%E8%B4%A5%E5%BD%92%E5%9B%A0%EF%BC%9A%E4%BB%8E%E6%95%B4%E6%9D%A1%E8%BD%A8%E8%BF%B9%E5%AE%9A%E4%BD%8D%E9%A6%96%E4%B8%AA%E9%94%99%E8%AF%AF.md)
+
+> 所属章节：[第7章：Agent 的评估](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter7.md#L304-L433) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter7/)
+
+<!-- 原文开始 -->
+
+<a id="llm-as-a-judge自动化评估的核心"></a>
+
 ### LLM-as-a-Judge：自动化评估的核心
 
-![图7-5 LLM-as-a-Judge 流水线](images/fig7-5.svg)
+![图7-5 LLM-as-a-Judge 流水线](../../../source/book/images/fig7-5.svg)
 
 为什么需要 LLM-as-a-Judge？对于开放式任务（如生成报告、处理客户投诉、创意内容），没有标准答案可以自动对比，人工评估成本高且难以规模化。LLM-as-a-Judge 通过让语言模型根据专家定义的评分标准（Rubric）进行评判，在自动化规模和人类专业判断之间取得了平衡。
 
@@ -127,3 +139,10 @@ rubric:
 人工编写 Rubric 适合快速建立这样的诊断维度。评估规模再扩大时，还可以训练专门的**生成式奖励模型**来自动打分——相关训练方法将在第八章讨论。
 
 评判模型给出的分数只说明结果好坏；要把结果变成可以修复的问题，还需要定位失败究竟从哪一步开始。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：自动化评估方法](README.md) · [下一篇：失败归因：从整条轨迹定位首个错误](02-%E5%A4%B1%E8%B4%A5%E5%BD%92%E5%9B%A0%EF%BC%9A%E4%BB%8E%E6%95%B4%E6%9D%A1%E8%BD%A8%E8%BF%B9%E5%AE%9A%E4%BD%8D%E9%A6%96%E4%B8%AA%E9%94%99%E8%AF%AF.md)
