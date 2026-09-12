@@ -1,8 +1,20 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：SFT 数据合成：从示范到可训练轨迹](../06-SFT%E6%95%B0%E6%8D%AE%E5%90%88%E6%88%90%EF%BC%9A%E4%BB%8E%E7%A4%BA%E8%8C%83%E5%88%B0%E5%8F%AF%E8%AE%AD%E7%BB%83%E8%BD%A8%E8%BF%B9/README.md) · [下一篇：单轮强化学习：记忆与泛化的对照](../08-%E5%8D%95%E8%BD%AE%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%EF%BC%9A%E8%AE%B0%E5%BF%86%E4%B8%8E%E6%B3%9B%E5%8C%96%E7%9A%84%E5%AF%B9%E7%85%A7/README.md)
+
+> 所属章节：[第8章：模型后训练](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter8.md#L386-L409) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter8/)
+
+<!-- 原文开始 -->
+
+<a id="何时选择-mid-trainingsft-与-rl"></a>
+
 ## 何时选择 Mid-training、SFT 与 RL
 
-[“四阶段全景”一节](#从预训练到-rl四阶段全景)讲清了三种训练的机制，这一节给出实操诊断：**先判断缺的是底座、协议，还是策略，不要把“模型做不好”统一归因成需要 RL。**
+[“四阶段全景”一节](../01-%E4%BB%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E5%88%B0RL%EF%BC%9A%E5%9B%9B%E9%98%B6%E6%AE%B5%E5%85%A8%E6%99%AF/README.md#%E4%BB%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E5%88%B0-rl%E5%9B%9B%E9%98%B6%E6%AE%B5%E5%85%A8%E6%99%AF)讲清了三种训练的机制，这一节给出实操诊断：**先判断缺的是底座、协议，还是策略，不要把“模型做不好”统一归因成需要 RL。**
 
-![图8-11 SFT→RL 两阶段训练流程；Mid-training 位于这两个行为对齐阶段之前](images/fig8-11.svg)
+![图8-11 SFT→RL 两阶段训练流程；Mid-training 位于这两个行为对齐阶段之前](../../../source/book/images/fig8-11.svg)
 
 表8-4 Mid-training、SFT 与 RL 的选择准则
 
@@ -21,3 +33,10 @@
 4. **只在有探索空间时上 RL。** 当前策略已经能产生可评分、偶尔成功的 rollout，奖励又能忠实反映部署目标时，RL 才适合把低概率成功策略推高、探索示范外路径。`pass@k` 近零时先补 Mid-training/SFT 或设计可达的课程与部分奖励；全零 rollout 上直接加 PPO/GRPO 通常只会消耗采样预算。
 
 这个流程不是要求每个项目都依次跑完三种训练。强基模可能直接进入 RL，格式型任务可能只需 SFT，稳定领域知识可能只做 Mid-training 后再复用原有对齐能力。关键是每一步都有可测的进入条件，而不是把 “Mid-training → SFT → RL” 当作仪式化流水线。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](../README.md) · [上一篇：SFT 数据合成：从示范到可训练轨迹](../06-SFT%E6%95%B0%E6%8D%AE%E5%90%88%E6%88%90%EF%BC%9A%E4%BB%8E%E7%A4%BA%E8%8C%83%E5%88%B0%E5%8F%AF%E8%AE%AD%E7%BB%83%E8%BD%A8%E8%BF%B9/README.md) · [下一篇：单轮强化学习：记忆与泛化的对照](../08-%E5%8D%95%E8%BD%AE%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%EF%BC%9A%E8%AE%B0%E5%BF%86%E4%B8%8E%E6%B3%9B%E5%8C%96%E7%9A%84%E5%AF%B9%E7%85%A7/README.md)

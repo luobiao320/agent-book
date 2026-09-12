@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Agent 眼中的文件系统](01-Agent%E7%9C%BC%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.md) · [下一篇：对等协作模式：相互制衡与迭代改进](03-%E5%AF%B9%E7%AD%89%E5%8D%8F%E4%BD%9C%E6%A8%A1%E5%BC%8F%EF%BC%9A%E7%9B%B8%E4%BA%92%E5%88%B6%E8%A1%A1%E4%B8%8E%E8%BF%AD%E4%BB%A3%E6%94%B9%E8%BF%9B.md)
+
+> 所属章节：[第10章：多 Agent 协作](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter10.md#L166-L193) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter10/)
+
+<!-- 原文开始 -->
+
+<a id="agent-间的通信与控制"></a>
+
 ### Agent 间的通信与控制
 
 文件系统解决了 Agent 间**产物交换**的问题，协作还需要一条**控制平面**。这正是表10-2 中生命周期各行的用武之地：第四章给出的这组工具原语——创建（`spawn_subagent`）、发消息（`send_message_to_subagent`）、取消（`cancel_subagent`）、发现（`list_agents`）——对应进程世界的 fork、消息、kill 和 ps。
@@ -25,3 +37,10 @@
 资源和调度领域的实践还远不如操作系统调度成熟，但它决定了多 Agent 系统的成本上限，应当在架构设计阶段就予以考虑。
 
 产物交换（数据平面）与消息传递、状态查询、执行终止、资源调度（控制平面）共同支撑起不共享上下文的多 Agent 系统。根据 Agent 之间的协作关系和控制流特征，不共享上下文的协作可以分为三种主要架构：对等协作模式、管理者模式、去中心化模式，分别适用于不同类型的任务。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Agent 眼中的文件系统](01-Agent%E7%9C%BC%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.md) · [下一篇：对等协作模式：相互制衡与迭代改进](03-%E5%AF%B9%E7%AD%89%E5%8D%8F%E4%BD%9C%E6%A8%A1%E5%BC%8F%EF%BC%9A%E7%9B%B8%E4%BA%92%E5%88%B6%E8%A1%A1%E4%B8%8E%E8%BF%AD%E4%BB%A3%E6%94%B9%E8%BF%9B.md)

@@ -1,9 +1,21 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：交互时序：从级联到全双工](01-%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%EF%BC%9A%E4%BB%8E%E7%BA%A7%E8%81%94%E5%88%B0%E5%85%A8%E5%8F%8C%E5%B7%A5.md) · [下一篇：范式二 · 端到端全模态模型（Omni）](03-%E8%8C%83%E5%BC%8F%E4%BA%8C%C2%B7%E7%AB%AF%E5%88%B0%E7%AB%AF%E5%85%A8%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%EF%BC%88Omni%EF%BC%89.md)
+
+> 所属章节：[第6章：交互：观察与动作空间的扩展](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter6.md#L327-L388) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter6/)
+
+<!-- 原文开始 -->
+
+<a id="范式一--级联流水线cascading"></a>
+
 ### 范式一 · 级联流水线（Cascading）
 
 绝大多数商业语音助手都基于串行流水线（图6-6）：VAD 判断用户何时说完，ASR 把音频转成文字，LLM 理解并生成回复，TTS 再把文字念出来。模块化让每个组件可以独立优化，但每一级都可能增加等待时间。
 
 
-![图6-6 语音 Agent 串行流水线](images/fig6-6.svg)
+![图6-6 语音 Agent 串行流水线](../../../source/book/images/fig6-6.svg)
 
 
 | 模块 | 作用 | 典型瓶颈 |
@@ -16,18 +28,21 @@
 在一个简短、不开启 reasoning 的回复中，VAD、ASR、LLM 和 TTS 的等待会串行累积（图6-7）。真实数值取决于输入长度、模型、硬件、网络和负载。
 
 
-![图6-7 延迟瀑布：串行累积总响应时间](images/fig6-7.svg)
+![图6-7 延迟瀑布：串行累积总响应时间](../../../source/book/images/fig6-7.svg)
 
 
 生产环境的排队还会进一步放大空载延迟（图6-8），但这属于服务容量规划，本章不展开排队模型。
 
 
-![图6-8 排队延迟曲线](images/fig6-8.svg)
+![图6-8 排队延迟曲线](../../../source/book/images/fig6-8.svg)
 
 
 > **实验 6-4 ★：构建传统语音 Agent**
 >
 > 本实验用 WebSocket 串起麦克风、Silero VAD、本地 Whisper、流式 LLM 和 Fish S1 TTS，建立后续方案的级联基线（baseline）。
+
+
+<a id="从串行到流式感知"></a>
 
 #### 从串行到流式感知
 
@@ -59,3 +74,10 @@
 > **实验 6-5 ★：使用 Qwen2-Audio 模拟流式语音感知**
 >
 > Qwen2-Audio 本身不是流式模型。本实验用递增音频前缀模拟连续感知，并与 600ms VAD + Whisper 对照。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：交互时序：从级联到全双工](01-%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%EF%BC%9A%E4%BB%8E%E7%BA%A7%E8%81%94%E5%88%B0%E5%85%A8%E5%8F%8C%E5%B7%A5.md) · [下一篇：范式二 · 端到端全模态模型（Omni）](03-%E8%8C%83%E5%BC%8F%E4%BA%8C%C2%B7%E7%AB%AF%E5%88%B0%E7%AB%AF%E5%85%A8%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%EF%BC%88Omni%EF%BC%89.md)

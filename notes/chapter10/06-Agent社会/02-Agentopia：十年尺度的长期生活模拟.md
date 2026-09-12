@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：斯坦福 AI 小镇：生成式 Agent 的社会模拟](01-%E6%96%AF%E5%9D%A6%E7%A6%8FAI%E5%B0%8F%E9%95%87%EF%BC%9A%E7%94%9F%E6%88%90%E5%BC%8FAgent%E7%9A%84%E7%A4%BE%E4%BC%9A%E6%A8%A1%E6%8B%9F.md) · [下一篇：Moltbook：当 Agent 拥有自己的社交网络](03-Moltbook%EF%BC%9A%E5%BD%93Agent%E6%8B%A5%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C.md)
+
+> 所属章节：[第10章：多 Agent 协作](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter10.md#L635-L649) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter10/)
+
+<!-- 原文开始 -->
+
+<a id="agentopia十年尺度的长期生活模拟"></a>
+
 ### Agentopia：十年尺度的长期生活模拟
 
 斯坦福 AI 小镇回答了“Agent 社会能否涌现出社交行为”，但它只模拟了两天。一个自然的追问是：**把时间尺度拉长到“年”，Agent 社会会涌现出什么？这些长期社会经验能否反过来训练模型？** Agentopia（2026，复旦大学等）[^agentopia-2026] 把 100 个 Agent 放进同一虚拟社会连续模拟 10 年，覆盖公寓、魔法学院、高中三个不同设定的世界，让 Agent 自主追求个人成长、发展社会关系、经营职业与财务。
@@ -12,3 +24,10 @@ Agentopia 有几个值得借鉴的设计：
 更重要的是，这套模拟产生了可迁移的训练信号。研究者在模拟轨迹上计算每个 Agent “相对自身过去”的优势（即生活奖励的改善幅度），筛选出进步最大的 25% Agent 的轨迹，用拒绝采样微调底层模型。微调后的模型不仅在模拟中全面提升了福祉指标（被更多同行尊重 +24.2%、喜欢 +15.9%），还泛化到了下游角色扮演基准 CoSER Test（+15.6%），说明 Agent 在模拟社会中积累的“社会智慧”可以迁移到其他任务。这把 Agent 社会从单纯的**观察对象**变成了模型自我进化的**经验来源**：与人类数据日益枯竭相对，模拟社会经验是一种可以不断再生的训练数据（呼应第九章的经验学习思路）。
 
 [^agentopia-2026]: Wang, X., Zheng, S., Wu, H., et al. *Agentopia: Long-Term Life Simulation and Learning in Agent Societies.* arXiv:2606.07513, 2026. 代码：https://github.com/Neph0s/Agentopia
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：斯坦福 AI 小镇：生成式 Agent 的社会模拟](01-%E6%96%AF%E5%9D%A6%E7%A6%8FAI%E5%B0%8F%E9%95%87%EF%BC%9A%E7%94%9F%E6%88%90%E5%BC%8FAgent%E7%9A%84%E7%A4%BE%E4%BC%9A%E6%A8%A1%E6%8B%9F.md) · [下一篇：Moltbook：当 Agent 拥有自己的社交网络](03-Moltbook%EF%BC%9A%E5%BD%93Agent%E6%8B%A5%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C.md)

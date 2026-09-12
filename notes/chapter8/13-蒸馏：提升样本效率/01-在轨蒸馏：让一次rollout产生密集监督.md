@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：蒸馏：提升样本效率](README.md) · [下一篇：没有更强的教师怎么办：On-Policy 自蒸馏](02-%E6%B2%A1%E6%9C%89%E6%9B%B4%E5%BC%BA%E7%9A%84%E6%95%99%E5%B8%88%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9AOn-Policy%E8%87%AA%E8%92%B8%E9%A6%8F.md)
+
+> 所属章节：[第8章：模型后训练](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter8.md#L678-L710) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter8/)
+
+<!-- 原文开始 -->
+
+<a id="在轨蒸馏让一次-rollout-产生密集监督"></a>
+
 ### 在轨蒸馏：让一次 rollout 产生密集监督
 
 **在轨蒸馏**（On-Policy Distillation）由 Thinking Machines Lab 于 2025 年系统整理并推广[^ch8-10]。这里的 “policy” 指**谁生成学生将要学习的状态前缀**，不是指谁提供监督：
@@ -30,3 +42,16 @@ update_student(loss)
 在数学等任务上，达到同等性能所需的训练步数约为纯 RL 的 **1/10**。在多轮 Agent 中，成败信号更晚、更稀疏，逐 token 的教师分布能直接指导中间决策；但前提是仿真环境足够真实，让学生探索到的状态接近部署分布，否则教师对陌生偏差状态的评分也不可靠。
 
 “稠密信号胜过稀疏信号”在一个纯 Agent 场景中也得到过验证。笔者和合作者曾在“时间感”任务上比较 DPO、四种 RL 与 On-Policy Distillation：前者分别受到稀疏奖励、目标错位、rollout 形状不匹配和策略崩溃的限制；换成冻结的 Qwen3-32B 教师，在学生自己的多轮轨迹上逐 token 对齐后，训练平滑收敛，四种条件下通过率比同源 SFT 基线高出 23 到 47 个百分点[^ch8-11]。这说明瓶颈往往不是奖励函数不够复杂，而是每次交互提供的信号不够密。
+
+
+<!-- 原文结束 -->
+
+<!-- 补齐本页引用的原文定义 -->
+
+[^ch8-10]: Thinking Machines Lab, “On-Policy Distillation”, 2025. https://thinkingmachines.ai/blog/on-policy-distillation/
+
+[^ch8-11]: Li, Bojie, and Noah Shi, “Agents That Sense Physical Time: Urgency, Persistence, and Vigilance as Missing Controls for LLM Agents”, 2026. https://01.me/research/physical-time-agent
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：蒸馏：提升样本效率](README.md) · [下一篇：没有更强的教师怎么办：On-Policy 自蒸馏](02-%E6%B2%A1%E6%9C%89%E6%9B%B4%E5%BC%BA%E7%9A%84%E6%95%99%E5%B8%88%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9AOn-Policy%E8%87%AA%E8%92%B8%E9%A6%8F.md)

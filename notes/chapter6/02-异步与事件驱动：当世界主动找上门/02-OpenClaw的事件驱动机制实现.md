@@ -1,3 +1,15 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：为什么需要异步](01-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%BC%82%E6%AD%A5.md) · [下一篇：事件触发工具](03-%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91%E5%B7%A5%E5%85%B7.md)
+
+> 所属章节：[第6章：交互：观察与动作空间的扩展](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter6.md#L49-L72) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter6/)
+
+<!-- 原文开始 -->
+
+<a id="openclaw-的事件驱动机制实现"></a>
+
 ### OpenClaw 的事件驱动机制实现
 
 开源框架 OpenClaw 通过 Gateway 控制平面接收多渠道消息并路由到 Agent 运行时。它提供了三种内置的事件驱动机制：
@@ -21,3 +33,10 @@
 PineClaw 的解决方案是引入 **Channel 机制**——在 OpenClaw 的 Gateway 和 Pine API 之间建立实时的事件通道。当电话接通、需要用户输入、通话结束等关键事件发生时，消息被即时推送到 OpenClaw Agent，Agent 立即处理并通知用户。
 
 这个案例揭示了事件驱动架构对 Agent 框架的核心价值：**真正的 “主动服务” 不仅需要 Agent 能定时检查事件，更需要事件能主动通知 Agent**。将所有输入——用户消息、工具返回、外部回调、定时触发——统一建模为事件流，通过事件循环驱动 Agent 的思考和行动，是实现这一目标的架构基础。在这一架构之下，下面先介绍两类与事件直接相关的工具，以及支撑 Agent 独立行动的虚拟身份与隔离执行环境，再讨论事件处理机制的具体设计。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：为什么需要异步](01-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%BC%82%E6%AD%A5.md) · [下一篇：事件触发工具](03-%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91%E5%B7%A5%E5%85%B7.md)

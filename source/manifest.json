@@ -1,0 +1,2585 @@
+{
+  "version": 1,
+  "upstream_commit": "d1502f59c1a8c40b4d1c51c250238cd9dd836f1b",
+  "files": {
+    "README.md": "99e727f6fee995cfc0c625fb0776778ee3e76eadc5d13edfe959dcf063a24d7f",
+    "learning/README.md": "7a75f938f8d0880c2430c8de96a683f594c217254a864832e48e51cf3369acaf",
+    "notes/afterword/01-两朵乌云/README.md": "45ac8a06d2a62fd51fe4f64392c427c6e8c5fe889ae6230f9a86fc1cf716afd5",
+    "notes/afterword/02-模型与Agent的共同演进/README.md": "32815c575a881e325c2eef2006602e15ef86bc17d0f8ce71c77fc0cc9ab0da55",
+    "notes/afterword/README.md": "f1a0a360a057776f2859102ca2eb47be4c1221c7eaa87c4d50acca7d2510d040",
+    "notes/chapter1/01-现代Agent=LLM+上下文+工具/01-观察空间与动作空间：模型与世界的接口.md": "401aa7799f6a3efdb46a835530a6d20c02a188145892d76b927cefb33542bf50",
+    "notes/chapter1/01-现代Agent=LLM+上下文+工具/02-工具：Agent的手脚.md": "fd1fed39e2e2526c818e26ac2f1497cc382bd4285b305cacf84e1719be0bfb58",
+    "notes/chapter1/01-现代Agent=LLM+上下文+工具/03-LLM：Agent的大脑.md": "1e2ebcc5116fe15f38d1e3fc2a114f75493f03534f9891092164760f3745ab42",
+    "notes/chapter1/01-现代Agent=LLM+上下文+工具/04-上下文：Agent的眼睛.md": "2eed5366fcef397b4f13f48ee4ee6b89a8715e93619484af4f69b1f67b2f2f14",
+    "notes/chapter1/01-现代Agent=LLM+上下文+工具/05-ReAct循环.md": "c9948c6f10bd82aa5c146ed9b858b0df29d93352b760274d0f7842e42313474e",
+    "notes/chapter1/01-现代Agent=LLM+上下文+工具/README.md": "a34f7dda5fa3e3e46a74bd3bd26f10301be1b36bf14eaaf2121852bc3f39613d",
+    "notes/chapter1/02-Harness工程：模型之外的竞争力/01-从提示工程到Loop工程：工程范式的演进.md": "f47f13adcf9c1bee1805ff523f39ac3b83649d9efb11e3a2229b879a396744f7",
+    "notes/chapter1/02-Harness工程：模型之外的竞争力/02-构建有效Agent的核心原则.md": "bcc9543967ba7f8fa23c04a1ecb1a25c779fbc05aaea3126a58d659cebe6a39f",
+    "notes/chapter1/02-Harness工程：模型之外的竞争力/03-如何选择模型.md": "ecf9dbacbc0eca06dcc34ca9d8f32e2a0d4f605803e8621ecc0bd1689b8b1e1f",
+    "notes/chapter1/02-Harness工程：模型之外的竞争力/04-编排模式：工作流与自主.md": "42fa249708ac75a22dc8d8f566442b0cae42d1ac390179ee69938056f6e9fb50",
+    "notes/chapter1/02-Harness工程：模型之外的竞争力/05-护栏与安全性.md": "7599207dd121ca5437162726f8436cd5cb346ace72431a0b70dd29c2e442ad9e",
+    "notes/chapter1/02-Harness工程：模型之外的竞争力/06-Harness五要素与「构建」部分的对应.md": "b1db842eac6621da96ea9b4fa2bd218aec64c5e6530abc78e6addb92b10ee940",
+    "notes/chapter1/02-Harness工程：模型之外的竞争力/README.md": "5c4a277866c060c82b93a3eaa2226d9b111079f5201c59f95e3bee8319a9c641",
+    "notes/chapter1/03-贯穿全书的设计模式/README.md": "f9ded6b08f54c2286e19d028d5fc7b1e2267795e970fda9c15415ed5b7a926cc",
+    "notes/chapter1/04-本章小结/README.md": "b22b8a0aeb44926683d37feb3ef029668b74bbb28706994f87bfb47020a87030",
+    "notes/chapter1/05-思考题/README.md": "45ce623eb640e73d598e2114d38b6bb988ff18473473ed8eebfee8c51aa16595",
+    "notes/chapter1/README.md": "ece81b9654386db40a24e51e70aacaeba40fb2b7f970f5fcc9a8fd441ceff6b1",
+    "notes/chapter10/01-多Agent协作的分类框架/01-维度一：上下文是否共享.md": "b299bbcc3cad3c0267c213b93fda81920c127a58f4839f028a6bfeb8d22ffb33",
+    "notes/chapter10/01-多Agent协作的分类框架/02-维度二：协作拓扑.md": "218a7ee9b2160f2f086e1a088275274e6b104d485a357b52901f40a43ef12653",
+    "notes/chapter10/01-多Agent协作的分类框架/README.md": "fa306ba8e8d71984e16b99dc914628534070d083cfee0234754a04cc2861a864",
+    "notes/chapter10/02-多Agent何时真正优于单Agent/README.md": "fa2c42336aaf0c19c4a603233893ed6d3b54f8346569df1a41fd80abdc5a1da7",
+    "notes/chapter10/03-共享上下文的多Agent协作/README.md": "5c7e818889388ea4303108527532bb513ecab4d0e9f2ac39225a2e5d19827369",
+    "notes/chapter10/04-不共享上下文的多Agent协作/01-Agent眼中的文件系统.md": "aa2f7702e5a09bdfd7e976eab84b5e27e5539cb768550b14cfad119ab729305a",
+    "notes/chapter10/04-不共享上下文的多Agent协作/02-Agent间的通信与控制.md": "7c846d6db7035a1b29948f407b94de95404f975dca99275e8b01fa5a4a31d9b3",
+    "notes/chapter10/04-不共享上下文的多Agent协作/03-对等协作模式：相互制衡与迭代改进.md": "935849757f384344b27ed9ad1381586638c3bb09b1c5c49ebf9027313d31f197",
+    "notes/chapter10/04-不共享上下文的多Agent协作/04-管理者模式：中心化协调.md": "e1d8ed3ee3e0aa1f48fedf5eb2380c4889b194fdd10939f3243e0f826f42aec8",
+    "notes/chapter10/04-不共享上下文的多Agent协作/05-去中心化模式.md": "fb5f893077a73831ceb1c055e3b3bb1d6ba30e880326a16c81f0487f751d368f",
+    "notes/chapter10/04-不共享上下文的多Agent协作/06-跨组织协作：A2A协议.md": "5bbf3e5d765fc382183b48d87a659996e835cfeb9dc48506a1ed17214e57fa97",
+    "notes/chapter10/04-不共享上下文的多Agent协作/README.md": "5bd06a9d39c2f916c97bd235b57bc4503630133a186149b7bb45906260590f8d",
+    "notes/chapter10/05-多Agent协作的失败模式/01-失败模式一：共享文件系统的并发冲突.md": "23866e552fae800fef62d0f7253c5dbb79ea3720d7a107d42fd7792fcbcfe7ba",
+    "notes/chapter10/05-多Agent协作的失败模式/02-失败模式二：错误的级联放大.md": "4ba60feb2bf65d6873acd29e9ebdedc20bda6e7c81cda3492b98956437166b0b",
+    "notes/chapter10/05-多Agent协作的失败模式/03-失败模式三：同质趋同.md": "2691849c8fd8ee8cf947300c058ba25f916e7361e960a024ac0829ed7e513a04",
+    "notes/chapter10/05-多Agent协作的失败模式/04-失败模式四：互相扯皮.md": "80d54100632e0d1a86280a710d831b307910a18d0def46d82ca3952dc57de803",
+    "notes/chapter10/05-多Agent协作的失败模式/05-失败模式五：循环失控.md": "149d54e107464bf05cca24094c73b7509d99031a0de8f2e1fb1d5b9155307f11",
+    "notes/chapter10/05-多Agent协作的失败模式/06-失败模式六：理解债与认知投降.md": "29b8a1fc5cf9c915bba688b6e42e4044c4086e5ce09e4666fbec59cbfd8ecd6d",
+    "notes/chapter10/05-多Agent协作的失败模式/README.md": "eddabd9f93e435d72dea86d9b3890a7d62fa3fd83bdfcce3ba458b4917dbc382",
+    "notes/chapter10/06-Agent社会/01-斯坦福AI小镇：生成式Agent的社会模拟.md": "ad74dfb7bfb6cf84e394eb6dcb09eb33b8a5be5db779d55846d0736ee14ffd60",
+    "notes/chapter10/06-Agent社会/02-Agentopia：十年尺度的长期生活模拟.md": "214208bd6222a99ad6d9e1059249a249efe42cb1b7574b76a69ccac5c34d70ae",
+    "notes/chapter10/06-Agent社会/03-Moltbook：当Agent拥有自己的社交网络.md": "3cf5d9a1d0edf5157d50fb6dbdc710cf335a9a4f5a75049601af9bb3b36f6b2b",
+    "notes/chapter10/06-Agent社会/04-从虚拟社会到经济竞争：Vending-BenchArena.md": "22ef9cef6a901faa5f521846316ecd58297164898818429ff126c38a6a5e5986",
+    "notes/chapter10/06-Agent社会/05-Agent经济：Pinchwork与RentAHuman.md": "2f346350ac848b2f2b70199e8b17b266b4c9007dd370a859810a369b326b5bcd",
+    "notes/chapter10/06-Agent社会/06-信息不对称下的策略博弈：狼人杀.md": "a18833239042389e9d24f663fd52cbc17e993302d77c1f8d4bc816da88123287",
+    "notes/chapter10/06-Agent社会/README.md": "de9ecf36d8cb6191338870e667706035ad650f0be7235317706d8525ce3c22fe",
+    "notes/chapter10/07-本章小结/README.md": "07573b005781c6f67533d2cd7ada6e58df8bd7838974a6c710798fcc760ca7df",
+    "notes/chapter10/08-思考题/README.md": "0c9b3a8cda836fd33156b143b0c41d720382d93069d7d5574a4f7968adb66d25",
+    "notes/chapter10/README.md": "2c0cc4122c68ca4eb4391466a281d37c948a5b5a3bf3a6ac92f20a9320149ba1",
+    "notes/chapter2/01-上下文：决定Agent能力上限的关键/README.md": "e32f55d875db01a407801b007fa2aa54bbecd09079ba659c7376c7c13e048d71",
+    "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/01-消息的四种角色.md": "d7aebd99e236bdfdfc242a961adcd75d97c417dbc5342298cc076be1b8c748d7",
+    "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/02-单轮对话：最简单的API调用.md": "17d25bd6cdc950daf8899284b2b72e66491f9f4fd85dc3c53eebf874b8ab5507",
+    "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/03-带工具调用的多轮交互：Agent的核心循环.md": "7cf78b87328548c710373c1c8005697f4693b1ebcfbb2cfdad2ea90db6c247bd",
+    "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/04-用代码实现Agent的核心循环.md": "a674c01a8a962bd00e9085c0db590f1888b1730f3589db9c8b6d58064a3dab5f",
+    "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/05-从API视角看上下文的构成.md": "5f272c5023a38cf5d223db5373927414889d20397ae4959bf4aa98edff281c12",
+    "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/README.md": "af8633240a5a52bcc06ce8eb358041348d1c3d27476fbfc0bfcad78f84c3a599",
+    "notes/chapter2/03-KVCache友好的上下文设计/01-从API消息到模型Token：ChatTemplate.md": "b25bb55fbb7895223bf9619b4ae25d360c0bcc5788c11e60857bbf844a3a1308",
+    "notes/chapter2/03-KVCache友好的上下文设计/02-KVCache的原理与约束.md": "c2567e94c9e9ab5a6eb14131ffd9b590ba20eb9541a84c6a79d4bbf6f42df6d8",
+    "notes/chapter2/03-KVCache友好的上下文设计/03-KVCache与PromptCache：两个层级的缓存.md": "0858fc2a317b2eeed86daa8fa4fded17dff0811cec493a0eef2a212e82591086",
+    "notes/chapter2/03-KVCache友好的上下文设计/04-缓存作为架构约束.md": "5a5ecfa78801ace962da9ca681d3975c5c41d9106b4f5dc3e69eb9ab207c147d",
+    "notes/chapter2/03-KVCache友好的上下文设计/05-KVCache未必是一次性的：可编辑、可组合的“笔记”.md": "b7c9f82c0c39480995c4a0dd443e8d673381c40ca28051f332410be4adb966f8",
+    "notes/chapter2/03-KVCache友好的上下文设计/README.md": "df4a3526e218da7540c938256f611874723d7e17ca93601b02631c5de28a3475",
+    "notes/chapter2/04-提示工程：优化系统提示词/01-语气与风格：系统提示词的“人格”.md": "37dab091ddbc555be229c1165caffd92578519ca0a25eb6a49856e09249ccf36",
+    "notes/chapter2/04-提示工程：优化系统提示词/02-结构化提示：系统提示词的“格式”.md": "5d887f67da4ab5b466031406931d1b3ef4513caa8b3845552a894c4dc02bdd77",
+    "notes/chapter2/04-提示工程：优化系统提示词/03-流程驱动vs规则堆砌：系统提示词的“组织方式”.md": "071bb0bf411a9310dfd92726b4650445d55d242391cf2c6371c18e26b177d7e9",
+    "notes/chapter2/04-提示工程：优化系统提示词/04-业务规则细化：系统提示词的“内容”.md": "4dd8542278f282596457db854b2dee7b1ed9d47fdfc603340db6121472b0274a",
+    "notes/chapter2/04-提示工程：优化系统提示词/05-Few-shot示例：何时给模型看例子.md": "7ffa5a9166732bb6936ffc135212f5d93c2ff5739c9f124b05b6c7dbab1262a4",
+    "notes/chapter2/04-提示工程：优化系统提示词/06-工具定义的设计.md": "eb9a52da287766a21c55e71b9a7df6ed19bbdbe36b00a27abcdbab7da5edefe6",
+    "notes/chapter2/04-提示工程：优化系统提示词/07-提示注入：上下文安全的核心威胁.md": "20ce0406935c273a7c88d89bc7c6b84c91e3154e3a1d77e1cdef52b8f58d3aa0",
+    "notes/chapter2/04-提示工程：优化系统提示词/README.md": "60a94d47131269d8df18781a4eeeb29e5eed54c9e67cee21075c890ca3879bc6",
+    "notes/chapter2/05-动态提示词与AgentSkills/01-Skills：领域能力的可组合单元.md": "4af6c19b08a499d99b73e972ecf475f4e83e2892411c3487d40cf4c8ffadd259",
+    "notes/chapter2/05-动态提示词与AgentSkills/02-如何编写一份可用的Skill.md": "e31a8ecfecf13a4b9056389a9f3897763d6200d7f7dcea14e3b56a3c81d5ed84",
+    "notes/chapter2/05-动态提示词与AgentSkills/03-Skills在上下文中的位置.md": "76b9c755babdd6c993ac9c822cb60dc7b40b1c5ec11548f69d60c01e8cdd7d86",
+    "notes/chapter2/05-动态提示词与AgentSkills/04-Skills与工具的关系.md": "97d608e23894c50db677d6755b6e3a8b6cfd06d8d4731f78d41787f2c0dcb645",
+    "notes/chapter2/05-动态提示词与AgentSkills/README.md": "c223a7bd0b3a093194873f63fa3ff9b5209251ddee28eb23ff1915b7c5b8fbc0",
+    "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/01-Agent状态栏的理论基础.md": "b66addf5e533757c6f0720cd6d7c727caaf9abbd562f38e46dc5d73ebd6d2b81",
+    "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/02-Agent状态栏的构成.md": "136673f27af9d5765f04d55d27f40a2fcfb95ea3c1772507f2850bec653a3807",
+    "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/03-Agent状态栏在上下文中的具体位置.md": "e715e42c6e924a9c76c07fd7cb970fb33d2a244d41401b99ad0b4ce291704f07",
+    "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/04-状态更新的两种实现与缓存代价.md": "d95c5c62dcedfbe509e4f42e392b0e517442ccd8786bd9c76e882e1c00a457bc",
+    "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/README.md": "ab8067d60a15e5603a9cee057818122863646fbb2f253ca953dae7a01a591110",
+    "notes/chapter2/07-上下文压缩策略/01-为什么需要压缩：不只是长度问题.md": "679ce6360d53953e6f3e4a10addb3bb3e3cf8a9c9e1be387a53a9da32f994b77",
+    "notes/chapter2/07-上下文压缩策略/02-上下文学习的内部机制：检索而非推理.md": "776b33f8b664e7677279deaa7122847c029d3818b203a4afa279f4572208af90",
+    "notes/chapter2/07-上下文压缩策略/03-压缩与KVCache：看似矛盾，实则互补.md": "df4a6104930780945c15e4d8b4e34c4b06b4e975127d6acc224869285aa4cbd7",
+    "notes/chapter2/07-上下文压缩策略/04-生产级的分层压缩机制.md": "3b4ca2c047828ed0ad12d3c848d101f9c606140f8169085352c397cf688acc43",
+    "notes/chapter2/07-上下文压缩策略/05-压缩策略的设计原则.md": "1aab803f7d726407d319c47181965578547d72cf968fb92e6919e62cdd1d838a",
+    "notes/chapter2/07-上下文压缩策略/06-隔离优于压缩：子Agent上下文隔离.md": "cdc8c836c9ece8f145b99378b1296d9f7d1ea718fd1219303ec5dd42b5286e7b",
+    "notes/chapter2/07-上下文压缩策略/README.md": "99d58770c86595719f559e486f8d5a2ba9897ed984b1574a0db5f078ac6dfa3a",
+    "notes/chapter2/08-本章小结/README.md": "fded2f7bb60f778b40e1b8ae17657e6079cef0556c84f965d26db7ab9047b4de",
+    "notes/chapter2/09-思考题/README.md": "a0ff7446cafea9499e8beba9bb54826ea82a588f5382b1dd66f966de19c5c79b",
+    "notes/chapter2/README.md": "3b0e28d061e0bc3a60959feba1e143a52b5a29f0f1ec9ee1bade3e8e8d65a33f",
+    "notes/chapter3/01-用户记忆系统/01-记忆能力的评估：三层次框架.md": "a74c4ae31838e91f20cfcc9a0cd311d2fa301d6bb8ea3d752f3f95d69b2d458c",
+    "notes/chapter3/01-用户记忆系统/02-记忆的层次结构.md": "9889362b60d88c14f241532d41debf8be36cf9010c73c096504db12185574b71",
+    "notes/chapter3/01-用户记忆系统/03-用户记忆的四种存储格式.md": "48a483f6d7cd71979bf17e049fe5caebc0e20c0bebddfcaa52b3eaf8ddf42bf1",
+    "notes/chapter3/01-用户记忆系统/04-进阶知识表示形态：可执行代码.md": "9f00a70d1ebe6bb6b9000138f4810df356f21a1e7116e20f50828e3399b61a6c",
+    "notes/chapter3/01-用户记忆系统/05-用户记忆的认知科学基础.md": "c5a6573521f46eb1573f2380a552fd1c3fdeccfa0ed121e76219ff1d27b8c39d",
+    "notes/chapter3/01-用户记忆系统/06-记忆框架案例.md": "9a498f50fc868d284219f114db75d337ad299c02af1786c4610d6c53aed15ad4",
+    "notes/chapter3/01-用户记忆系统/07-记忆压缩与整理机制.md": "007e605f336db5e05ab27ab22c4b85c7b78259ad149d82aa1bb1e6b0596a0b4b",
+    "notes/chapter3/01-用户记忆系统/08-隐私保护：日志脱敏.md": "674cb896e53eaf5a2f144616ef70307d5c6ec07af941be862c4cdbb71480700a",
+    "notes/chapter3/01-用户记忆系统/README.md": "de092e4802181c40b222fd674d7e9a2e6e28a45a7f3fc525883b9ff570909276",
+    "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/01-文档分块（Chunking）.md": "4c6e78bad59c07a571f0dd2232fea96c4439bffa32bf8be14a2dd63c6f3f9baa",
+    "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/02-稠密嵌入：从词汇关联到语义理解.md": "e4e6f82017d1253bce9c715ff59a07a9078607e6b5a4668b714c13ebfeb742f0",
+    "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/03-稀疏嵌入：精确匹配的关键词检索.md": "96c85123dc553341223f245417219feb8be805f56a43dc93cfbff81d0cfdf5a4",
+    "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/04-混合检索：两全其美的艺术.md": "8cf0cdd740ed6c7d90789217ed2a6adf9cff750de4928d276320303207d9178a",
+    "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/README.md": "69ba2ad4715cd05cabba0265a90e17d81c981297c891844168af70dca9c5eb50",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/01-结构化索引：从信息检索到知识建模.md": "7c50840468556de60aa1d5389d27d4e9c0872bc1f5904b861330acb91b081563",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/02-文件系统范式：用目录结构组织知识.md": "e55b08604fd1b16e0fc35fdf619301c646f25c721bd08f3d925d192bc2a1b130",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/03-知识应该如何更新.md": "26206f199b0825fb2348c1d57d77b3d378c6ef221bd8e696a676252d8e571b5c",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/04-智能体化RAG：将知识检索工具化的范式转变.md": "4e9e9556b04418678f656db3206c5b661acf3efcafd008bceefa6f06a307ad36",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/05-RAG技巧：上下文感知检索.md": "1324421feb2e88fcc2103369c898ed07927562a0a9e91c34da26c2da667240aa",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/06-从数据集中提取深度知识：从信息检索到知识发现.md": "4fe98e7ea765fb957f2f7ec5b661e4a430f1d57b5feb02564a881236ac0aee7e",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/07-前沿探索：多模态记忆.md": "7e164b3450d185ecad912704842f729206617963a38db72424b11f097793ff38",
+    "notes/chapter3/03-超越扁平文本：知识的组织与检索/README.md": "c3af2855ff79a5dcd885f9aa8623c56af4b96a0235ced78d42f2cd384606adf5",
+    "notes/chapter3/04-本章小结/README.md": "f236f6a6b92f3571681bde433f719b3b9fcb9b5997fe68f225f41cb91fccd0cb",
+    "notes/chapter3/05-思考题/README.md": "0a23252d0a77572aa63969358515d386caa2a438e6c55be8438998e6b9115b94",
+    "notes/chapter3/README.md": "ca6decc72ed2349ea8e93a203c63c943d32fdc3b2d65d296fd89f2aea33404ea",
+    "notes/chapter4/01-工具的分类/README.md": "93954144385e201c13fd66abfe0c463db818ff2bba6bb7af87b50d1ac8175bf6",
+    "notes/chapter4/02-工具设计的通用原则/01-能力的表达形式：专用工具、通用执行器与Skill.md": "f8137fe381e55cdeb5304246bffa892efaf320171768629cda8e17fbe9fd64e4",
+    "notes/chapter4/02-工具设计的通用原则/02-工具描述的艺术.md": "a6f4deb1b7fa40bdb8a83afec0eec6a0f27a0f4069147b04689156ba7daf81aa",
+    "notes/chapter4/02-工具设计的通用原则/03-参数传递的保真性.md": "730b749b9c993ca43e939b3b6d176555e7a673375c2ba60b47351f3316ef1c7c",
+    "notes/chapter4/02-工具设计的通用原则/README.md": "de7300007e3537ac3100a7669c14fd426048f985c5983dd588101290e1baee69",
+    "notes/chapter4/03-工具生态：MCP与SkillHub/README.md": "c283ab637db5c95378b8af08045b377cc0f578495ebe3a5013b7df498c5370a3",
+    "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/01-层次化组织与按需加载.md": "2baee956bfbfa408cbb5671b7eceff16821bd93fbc0909b2891e700635b05a50",
+    "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/02-模型原生的主动工具发现.md": "ba37da841686e6eecc9d79a4b23a4406d2c684318a2c82a4cad763422ba54922",
+    "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/03-Skills：把工具发现变成“按需查阅”.md": "15397d3ce33ffdeb0e3cba8ae9cfe3c3235b5403ecdb415b348f53bc28c15792",
+    "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/README.md": "5ae4a28ed479bdb6c50b669795f37a922b716845508e13193e4b6d8cb15055b8",
+    "notes/chapter4/05-感知工具/01-多模态感知.md": "4214e699bbf1afccb255ff95b23e0b092ff95a61ed547a6d3e6b70d6fb7fb920",
+    "notes/chapter4/05-感知工具/README.md": "e9fa6529c30d40817c8312cdf750c1df81f147d4266f42d67b1ebb98228fcb6a",
+    "notes/chapter4/06-执行工具/README.md": "619fb53823f149c1d3d5bcc34815f40c77744e30f09bfa9770dab10ee6826daf",
+    "notes/chapter4/07-协作工具/README.md": "75cb778485c1584124aecfc21424486a107ea30e360e5ab20baf80e7e156198b",
+    "notes/chapter4/08-本章小结/README.md": "feb4e470cd99587324b1205c0233cc5bc264ea7582a3d9da84987b62541870bf",
+    "notes/chapter4/09-思考题/README.md": "17f5b2c77c57ddc3c0462bc3f5310faf371524f040b50a5d3795f77078896919",
+    "notes/chapter4/README.md": "4ee48307798260e72e7140395d70a33c7fcbab0619b88050bee41a7180a8560c",
+    "notes/chapter5/01-CodingAgent/01-Coding是Agent的基础能力.md": "b447e6ebb11cddf59597990db635d6a43f43184fdc302ef8466522c1d43ac1d7",
+    "notes/chapter5/01-CodingAgent/02-案例：从Manus到OpenClaw——通用Agent的Coding内核.md": "0b923419848ab067092cadb016cf032e85812a8c31d6a1bc6f1979ae2566b22f",
+    "notes/chapter5/01-CodingAgent/03-CodingAgent的整体流程.md": "8fcb460fb1c9a0691cf21d922ffa12095be6d4b1ed380fe33bc38c3d3fd32a57",
+    "notes/chapter5/01-CodingAgent/04-Harness工程在CodingAgent中的实践.md": "415eac44b74bad31e5af9683e3710682b107cfc9f14256b868b57f8e8722b59b",
+    "notes/chapter5/01-CodingAgent/05-故障与错误恢复.md": "3bcbfff595377b2b6cfd3ccf2f89bd6e57fd4c0efa7d2843200e675c8dcf5eb2",
+    "notes/chapter5/01-CodingAgent/06-CodingAgent的实现技巧.md": "99a3a4e814e9fa2c0ab30044c882f23c0bca25fb87ba15d828f115a591fcabd7",
+    "notes/chapter5/01-CodingAgent/07-CodingAgent中的搜索工具.md": "5e10e0c07d7e8f36908a8bbcf4d595ed3b2e154df3bbea34b1a53389c9fbd54c",
+    "notes/chapter5/01-CodingAgent/08-CodingAgent中的文件编辑工具.md": "561e6e5cd6b9c17a47d34611ebf2c6ff7bde403bf48837714e03a98dc34e5223",
+    "notes/chapter5/01-CodingAgent/09-CodingAgent的安全.md": "3eaec92efdc7d356a529abb910dfb17dd2ae258c10e9da1dc1588ae2d83425f7",
+    "notes/chapter5/01-CodingAgent/README.md": "9f2790f592e199499bea4ff57962342f8d61328a18d9f639cf7672599540d636",
+    "notes/chapter5/02-代码：通用Agent的元能力/01-代码作为思考工具.md": "a90d98874241eee97789228b7a62f4bb0aaf9218f60f9d149f058cb8b95e8bbd",
+    "notes/chapter5/02-代码：通用Agent的元能力/02-代码作为业务规则的约束.md": "a990d06cda2e5e47d35eea7eaf1a566286e96e1048f3a680cb51df16a6501636",
+    "notes/chapter5/02-代码：通用Agent的元能力/03-代码驱动的多媒体生成.md": "c8313f807992f426dd7364b834757497b2cdbe13aee978e739fe59055f87532a",
+    "notes/chapter5/02-代码：通用Agent的元能力/04-代码作为系统适配器.md": "d29cf29aed0f8b1954b50b0b23f18660e2447e81292f1afe76b5aa9461661d1f",
+    "notes/chapter5/02-代码：通用Agent的元能力/05-代码作为生成式UI.md": "c40cd18931901655280462931ff6e41884bc61ec063b2c6a22d9128574d40623",
+    "notes/chapter5/02-代码：通用Agent的元能力/06-代码创造代码：Agent自举.md": "230ecb881418c45420a6bfec8e7d09bab46c64ee0fbc0f94cf5783650be172e1",
+    "notes/chapter5/02-代码：通用Agent的元能力/README.md": "3baaf24eaf2d0f66b1a845765e8befbc43bcdc04e510d2f6232928f35d740010",
+    "notes/chapter5/03-本章小结/README.md": "9d0962d647ff1fce904f5e2797f64adc31b5630489aceecb1c8d4e10eb824987",
+    "notes/chapter5/04-思考题/README.md": "29bcd4eb3e2aa4889958df8cf208331019e20049c8ad0d24d3cb384215e6e806",
+    "notes/chapter5/README.md": "487b2078643c32e0f4787781e737cef8c9aafca8a3cce9122fb45804e543e39c",
+    "notes/chapter6/01-模态与触发时机的扩展/README.md": "03ad4adac32ea8780988c0a06852047ec75ce2ea3221c7e264acdfd1c88daf45",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/01-为什么需要异步.md": "a7f95e16e2f64a7e1c0fb3e2656b040b7d21003a81d37619a12f22f13b63c4e4",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/02-OpenClaw的事件驱动机制实现.md": "7725f61956121084b04250ea3846beeb8f11cc8508bd36d8454a48577ba3a433",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/03-事件触发工具.md": "bd1b5cc021a4bae93c73e8505e0df1d333aa94fd5b9ff23e28efe6dcc88d6426",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/04-用户沟通工具.md": "249463f0207cc764e4c1a9988714f930f1475231a3b3e2bb69153d8a8f442304",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/05-虚拟身份与隔离执行环境.md": "ff16517f9478234f7ae85ca131786d4889cbd293ce5ab2582a667f49b32ae5ed",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/06-事件处理机制.md": "22202216812129f75ac2828579fdf2cade5bd9f768837e3fc07f8ccdb9abe774",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/07-不支持原生异步时的兼容方案.md": "29c248157ffe070b36535c4adc4fa48c41d1e592f84a2040fcc3afc7943f6586",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/08-模型原生异步：GPT-6Astra.md": "098a8c9bf6c0e008ec07d708e8709e4b90ca1286095ee99e99e01d554fbe7226",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/09-从“能接收异步消息”到“可靠处理异步任务”.md": "3dee5bf9d7287dd0eb7abd3de42f46119ed4aed071eedb6e3c51c5c82eff94a6",
+    "notes/chapter6/02-异步与事件驱动：当世界主动找上门/README.md": "f201fedf8af2fbd8e87e85ce74a9efa8f66f891f1e15a8b42660187d7b18bae1",
+    "notes/chapter6/03-语音：最自然的人机接口/01-交互时序：从级联到全双工.md": "d0675ee44b35ea5b283bf9a03d36075ef0ce35049c502251b3bce81f1a60c62f",
+    "notes/chapter6/03-语音：最自然的人机接口/02-范式一·级联流水线（Cascading）.md": "8328ebe8d9e65343e8e656f006a0329dc8c47dd02d42293c14bf260bdce7a585",
+    "notes/chapter6/03-语音：最自然的人机接口/03-范式二·端到端全模态模型（Omni）.md": "0abbe069ef35a1d3c797a82e1456b3095c7f1c187acf7c3d90833df027a96ad8",
+    "notes/chapter6/03-语音：最自然的人机接口/04-范式三·全双工交互模型.md": "db00e7a5466b07469fcb8d9e5336f3b16e79c3f7378c51ce9f4060164584892e",
+    "notes/chapter6/03-语音：最自然的人机接口/05-认知时序：实时交互与深度思考.md": "36b86a2b293a38f1638d1b7bf2d2bcf030afd5aa02fdf513c0a0f5803d4fd1ff",
+    "notes/chapter6/03-语音：最自然的人机接口/06-更像人的语音合成.md": "e578dc4f9aa1a958a817f7e451c9befa6968acce1cca11b724964a37c5d55bc3",
+    "notes/chapter6/03-语音：最自然的人机接口/README.md": "054cae11f3a252368128b557d0aaf75ca5e1124ef1d05621d14801ed43432dee",
+    "notes/chapter6/04-ComputerUse：GUI自动化Agent/01-动作空间设计.md": "4c36e945345d3d515a145187077aa86be1a9356d8d3bd56d952ba1a000d32e6a",
+    "notes/chapter6/04-ComputerUse：GUI自动化Agent/02-视觉定位（Grounding）.md": "ab4362f1dbefee3f0b1930f9cda987c288125137431025f884c2bec63a065eea",
+    "notes/chapter6/04-ComputerUse：GUI自动化Agent/03-能看动画、能听声音的ComputerUseAgent.md": "4e2da6788d35ba684b5895d9c5097eea0b231d71841946b5c7f42544b2325d94",
+    "notes/chapter6/04-ComputerUse：GUI自动化Agent/04-ComputerUse的世界模型.md": "cd8d5594ec1520ee44848b8b0264cd51099dd05cd4c12f7a4a6e4c99fd0cc3de",
+    "notes/chapter6/04-ComputerUse：GUI自动化Agent/05-移动端：生态壁垒比技术更难.md": "95fba4f51b1ba40828e050d0a1edd48335a939209d0353ee7b25ade4b213b489",
+    "notes/chapter6/04-ComputerUse：GUI自动化Agent/README.md": "2147b351a107f9feaacfd91f6343f11697550aa0fd4a54c925105ecf9104a215",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/01-硬件与算法的分工.md": "aad898bb4344bffafade15af38d843c4dae68eff0f7d889a9f896d4a71fa5a6a",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/02-机器人控制的基本结构.md": "e198634fd65963db473e1795cd26dbfc8ba1b8a5b87640262e539ec36a57a574",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/03-长程规划与任务分解.md": "6db12e045b349e719c3654bbaa2100f19f633e1e775cd0c141d8df65cdabedf4",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/04-VLA控制.md": "f97606f86df0d0312e0aa549ca8e4f47552c4cf611084a06408746248c785657",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/05-VLA的局限.md": "2101a84f70c4102ea17fab571d20d6ac236daa9e13d9abc87db6df1898a4e2bd",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/06-世界模型.md": "f621fdf76effa9f21ed74b96fed4222cd9414f480f86e9235f11e352e555da27",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/07-从仿真环境到真实机器人.md": "4643c215f8f4d9c22dc8ccaf8a9eabc5bb3d12dc85dabde52bb0557a580069c0",
+    "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/README.md": "1a0a09c4919a2ed36d602664e7c5a9dfa5c9402df2c0fca8a667a009d3b04c47",
+    "notes/chapter6/06-本章小结/README.md": "c58a1e9ff8ffbd65cd522cc6390d56a329d8713f0fca57a1aced6a3ae82dc5da",
+    "notes/chapter6/07-思考题/README.md": "6f2c4f6a9c87e57f2d3e1dac6597359a5979e57d9a6ed313a2324dfa58725d67",
+    "notes/chapter6/README.md": "0f47621e0be0f4acbe9558715636bc911f11c7aff38e3250c6efe4291a58e983",
+    "notes/chapter7/01-一条评估任务的解剖：τ²-bench的telecom领域/01-任务定义的四个组成部分.md": "c9ebcfcad1b085cec654fa5e09d8d7b2126ec1d99548e6de589fe119918721d7",
+    "notes/chapter7/01-一条评估任务的解剖：τ²-bench的telecom领域/02-一次真实运行的轨迹.md": "27ddf20234b84c85e19bb97c8b904d8ce8a9e7c87d582c2f363cff1c8d70afc0",
+    "notes/chapter7/01-一条评估任务的解剖：τ²-bench的telecom领域/README.md": "049e8124c52b9f9f47c4ca8b7dc4588438bf04f97ff9f729376b8d3673e586f3",
+    "notes/chapter7/02-评估指标：成功的定义/01-技术奇观：用Pass@k看能力上限.md": "6c6c8288e0ab81dd14f90ea2069818d0456fef41e16bb7ff530024b5ab807f9c",
+    "notes/chapter7/02-评估指标：成功的定义/02-业务可靠性：关注Pass^k.md": "701ebbea4042a9633c05f98e9130fd5872c215d141bbcb0afcd480bbdea86674",
+    "notes/chapter7/02-评估指标：成功的定义/README.md": "03a452b15d4796af2071247b74062126459a694a22de845f591cea24319b1915",
+    "notes/chapter7/03-评估环境/01-五个组成要素.md": "1df3c2cb898a8e9950ffe2a305c2e503363f3d53cd5a0464410f113f8a2184ec",
+    "notes/chapter7/03-评估环境/02-人机交互型与工具调用型评估环境.md": "c6f5962212ad969253714ecf141c4a1240907c21fbb005b237eb07dc5be25257",
+    "notes/chapter7/03-评估环境/README.md": "042aa5dc76166eb944de3663d6ad8192877912cc5064950acb270475ebc568ce",
+    "notes/chapter7/04-评估数据集的设计/01-基准设计的横向对照.md": "78c4eddb5890775e9ddb1223e0c499f05aa5a517f885bd1c1510a382af5ab5c1",
+    "notes/chapter7/04-评估数据集的设计/02-验证器.md": "9650b27d9716846940e9ca9b1c0af545f7428f3edd9031bee93a312629c4bbc5",
+    "notes/chapter7/04-评估数据集的设计/03-任务的难度划分.md": "6455646bdf481d603d80e2f65b399c5ade0971e45c41a80919cd901576668ebf",
+    "notes/chapter7/04-评估数据集的设计/04-数据泄漏防范.md": "4e553cf0c209ca1de9c44c8f91b9977aa5d358cb7b959e9af3b4dd5440453b5a",
+    "notes/chapter7/04-评估数据集的设计/05-质量控制与长期维护.md": "d66fd973b5af82460fe9ab6f3a6bbc2dccd9d765f034e8775365c2953cb40aad",
+    "notes/chapter7/04-评估数据集的设计/06-评估集的三个来源.md": "ba75026202eeb3fd6a5a881c0059de09b33a18ef2cbab4c8c2ab1d81b1f79c11",
+    "notes/chapter7/04-评估数据集的设计/README.md": "6e248ebacedf2a35b45819edf88741b7ad265240e93ee9ca2d4fd72d90ecd13a",
+    "notes/chapter7/05-自动化评估方法/01-LLM-as-a-Judge：自动化评估的核心.md": "e2ad20d3011596b924d49d22229e5a15f55f3a927fd153da4ed264c428b49702",
+    "notes/chapter7/05-自动化评估方法/02-失败归因：从整条轨迹定位首个错误.md": "1c66658c9297135697b27918d2a73151e17752706ad81849ec72b723f34a7246",
+    "notes/chapter7/05-自动化评估方法/03-端到端回归任务与轨迹前缀回归任务.md": "f13f1148d20e52e2a104329a434bc4ebb37183cfb9aa5c7db925aca49ee85720",
+    "notes/chapter7/05-自动化评估方法/04-配对比较与模型排名.md": "76df61edd610ec850e85f6bfac29283f1e4e216d920ccc1910a61125ba0c819e",
+    "notes/chapter7/05-自动化评估方法/README.md": "1f0f2295ac10c3d23617aad1abeec919351fe4431e1de797eeb0679a69c47e8a",
+    "notes/chapter7/06-评估驱动的模型选型/01-选型的关键维度.md": "677dc1ffc705eb34260c09865b9c6b93dabeea86d6f886a13d4feea331dddc90",
+    "notes/chapter7/06-评估驱动的模型选型/02-模型的行为策略.md": "b310190ef0c15981c133fd5f5339a06234c1414be686d1238865f3d06c652d8d",
+    "notes/chapter7/06-评估驱动的模型选型/03-Agent系统的成本分析.md": "d9e4e6d5f755ca03323b9ff609f255978e67ce20776db163ebf2188d641f2d91",
+    "notes/chapter7/06-评估驱动的模型选型/04-评估驱动的持续迭代.md": "b17e5e99b6ebdd474a0b0586f45c10fc4ee3194d9a6a6f2b8fcd59b5b9a910c8",
+    "notes/chapter7/06-评估驱动的模型选型/README.md": "028277cef10b39a93c0a6accabf5ad2a5792f6ff0d0ce4bff9a23baa569c6e2f",
+    "notes/chapter7/07-评估结果的统计显著性/README.md": "a34d5cd83785bd6904109570f6015f380c36412292e0a68bc9f556152c3c1472",
+    "notes/chapter7/08-Agent的可观测性/README.md": "bfd655a6c7a43f18594a5346afe85b48d895890003d2f389d987c50776c1a485",
+    "notes/chapter7/09-从Benchmark报告到系统改进/01-读懂Benchmark报告：发现问题的艺术.md": "83183696ba29d9148412f21ed9293193a0b32fc1c61f41686c92298b628f610d",
+    "notes/chapter7/09-从Benchmark报告到系统改进/02-从数据到假设：构建改进路线图.md": "2f6c10b90cf43f831332f8fadf096de64eb76ac979c18f9fb5baa47b189496bc",
+    "notes/chapter7/09-从Benchmark报告到系统改进/03-从结果到决策：数据驱动的权衡.md": "b3c2952a50b4f55a6b4631efdf01edf5fb9e56377704087273a7b862e7aada92",
+    "notes/chapter7/09-从Benchmark报告到系统改进/04-持续迭代：从第一次改进到系统演化.md": "97fc8c680c4708aa5dc96768cdcdaccd7d5d54e5de5ab96111644aadce586ac3",
+    "notes/chapter7/09-从Benchmark报告到系统改进/README.md": "de278abf41d88e8d2ccc9d1e19b383f63b17737cb62cc441367248946a8496ac",
+    "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/01-消融基础设施：理解每个特性的真实贡献.md": "190c8e94c6d5349e9670b63f030acbba41dc547081140e874b64b549f115e3d6",
+    "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/02-AB测试方法论：区分机制与目标.md": "ec03669d0e353e8fbfd0dea59eeefde85253e5e8964602161320df1fc2f897e7",
+    "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/03-双层特性开关系统.md": "e985fa2a5bede5e0c5f824bd978b5c9b385b1503c32c555aa6a49476fb40193a",
+    "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/04-提示词敏感性评估.md": "f6b1d2bbec6357d9d5227b80bd42d703e2eaab9c189eaa05248b192b698572dc",
+    "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/05-以隐私感知分析为评估基础.md": "b6e70f80a70c55b2b63a1716fc06d755ec4aa14567ead646c66afbce2a13d18c",
+    "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/06-从外部到内部：评估思维的转变.md": "6e5e5e7243fbdc2080835df3359c1f457fbda6d88bd95476169ef0cd8b300c4e",
+    "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/README.md": "3f4cd9ea549ea05e8a3c282faf6f48e73b6cd9d059befa992cec3fd113cb9c0d",
+    "notes/chapter7/11-仿真环境：从评估到后训练的桥梁/01-保真度权衡与领域随机化.md": "9bf825f869fbc191a98f907e5e23b66c453245a100c17383e6a6757a9b31d8e6",
+    "notes/chapter7/11-仿真环境：从评估到后训练的桥梁/README.md": "c99578d3ad9127ac8f415a0c3587f327d1ffee24ca9eff56b8ef20b9fd49f3df",
+    "notes/chapter7/12-本章小结/README.md": "573a3bbdcd74e68f2681ab444ce96a4da51a07c016244ecefc9b0318db65d4b7",
+    "notes/chapter7/13-思考题/README.md": "f56847f5a3be80b242dd3b50ecc7e68ad22931e4df7aaeab3782b2738ae46587",
+    "notes/chapter7/README.md": "9064e371763224993b86e482ce2c14a657ddea3edf5a7d7b244dc3a061e32673",
+    "notes/chapter8/01-从预训练到RL：四阶段全景/01-预训练在做什么：预测下一个词.md": "ad97b64bc8e8f5f43a21417ed2307ab3d8066fefcc2d98a388243fb8415b5d94",
+    "notes/chapter8/01-从预训练到RL：四阶段全景/02-Mid-training的本质：在目标分布上继续学习.md": "fe32775f9157871486d62222337d55a5137376c3ebca3b6a4ac3afc83bd19ac4",
+    "notes/chapter8/01-从预训练到RL：四阶段全景/03-SFT的本质：换了数据的“预测下一个词”.md": "8fdffbd51ae63b5fab09433da420a76a10a8c9ba7975bf524ebedc015f297ac3",
+    "notes/chapter8/01-从预训练到RL：四阶段全景/04-什么时候需要先补底座，再做SFT-RL.md": "55508fbd62c60226e9e3cad9d677c0c3d6ddea33592692ee7cea59c5334a4f33",
+    "notes/chapter8/01-从预训练到RL：四阶段全景/05-SFT与RL的本质区别.md": "95e300c6c9a25dd5a2345e653868186e41029c9ccec66fc3493e044ad24f8371",
+    "notes/chapter8/01-从预训练到RL：四阶段全景/README.md": "b7acc483d64911dbc2cf356c56fef7839882097418ed81efd6dd68f73d229832",
+    "notes/chapter8/02-从经典RLAgent到现代Agent[可选阅读]/01-Agent与环境的交互.md": "8748056a7af0165e1ee3ba1a93eccefcc84251a41f5e45e1af059aecbaee3043",
+    "notes/chapter8/02-从经典RLAgent到现代Agent[可选阅读]/02-两种动作表示：经典RL设置与LLM的变长策略.md": "677aa0b3f80ccaa1f04698dcffe476ef4e6a97e94a78c8400996683219cfcc04",
+    "notes/chapter8/02-从经典RLAgent到现代Agent[可选阅读]/README.md": "b39c4d1ad19b88255ce8ece9c9f4329be402021dc13505fab3169d6a5f5b1820",
+    "notes/chapter8/03-模型预训练基础[可选阅读]/README.md": "0af6b91eb2eb6100397cd25e3e9d343aa9b0beb2f0daaf244b1260ca6a67ec77",
+    "notes/chapter8/04-Mid-training：补知识与基础能力/01-Mid-training数据如何构造.md": "314d5a164718495d832fefef191860ab646740eff495d04089a9a72646f49fc0",
+    "notes/chapter8/04-Mid-training：补知识与基础能力/README.md": "b8ae245fcb02cbb0b678cb70455fa430690c82a1fdb67a78968314b1076c234b",
+    "notes/chapter8/05-SFT（监督微调）/README.md": "1a7da8c0886640409b54670a5ccda7e89eb78f2d20d722501592cd673a94d285",
+    "notes/chapter8/06-SFT数据合成：从示范到可训练轨迹/README.md": "c547f07383b9e72984ada36a294f5ccfc1d1f3aad2a33adca4081d511d674eac",
+    "notes/chapter8/07-何时选择Mid-training、SFT与RL/README.md": "af578b5a29940d6a4c1c89ddffc33ed85e71ca18255ef516b66ff4f097220a4a",
+    "notes/chapter8/08-单轮强化学习：记忆与泛化的对照/README.md": "065f9a6ab8be079662cc3a272bef3239735178d3c9339334ef2c8089e126425a",
+    "notes/chapter8/09-RL算法：从16次rollout到一次参数更新/01-为什么LLMRL通常优先On-Policy.md": "c0a7266f84bd95f528cc267204db85549d1e19da2a8ada1873e578f7548664bb",
+    "notes/chapter8/09-RL算法：从16次rollout到一次参数更新/README.md": "5244ffc5697dd01c84613388134d7f86819ec97079de403c0c15be5d73044741",
+    "notes/chapter8/10-RL环境：从评估到仿真/01-环境：模型练习的场地.md": "42bb62b40d78066c99fcd1580358cc5bb4f9c48f06b00797f559629fe0d38555",
+    "notes/chapter8/10-RL环境：从评估到仿真/02-造不出环境怎么办：让模型扮演环境.md": "2cc3d7f5fa5dd39518109b5caee080467e993d4d6e817e822ffadf7a3c4f1b0d",
+    "notes/chapter8/10-RL环境：从评估到仿真/03-环境、任务分布与评估隔离.md": "45dd0af63c8da039e93c86bdb89d025d4ec4fabd6fca53a83bba41d8de67bd83",
+    "notes/chapter8/10-RL环境：从评估到仿真/README.md": "7b338686ca113c454ecbe4955d928c5d12db8810bd43a005ba8fe5a7cdd1126c",
+    "notes/chapter8/11-从单轮到多轮：任务场景与信用分配/01-多轮任务的核心挑战.md": "6fbc9c651a611b7595593345470dcea79e36dda73f7aac86f7a211fe3265fcd7",
+    "notes/chapter8/11-从单轮到多轮：任务场景与信用分配/02-工具调用：把环境带进Agent.md": "867bc5e338a34522cf90a91fceb48ad4b5f0bb7c6bdbb63fc1ab1449b2727e26",
+    "notes/chapter8/11-从单轮到多轮：任务场景与信用分配/README.md": "f36f08829fa9675b05b77a0d195a30734cb300ffb8b98e0680ce964250745c90",
+    "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/01-奖励来自哪里：规则、人类偏好与模型评判.md": "3e0f36116ffcd7e64c77d0831cd21518756378b2f5137ef21f5c68b5a3f2ff6b",
+    "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/02-奖励在什么时候给：结果还是过程.md": "3aabb32434de51a88076ec864a9e87ed16618b04d45bdb5f19574baf7b541de2",
+    "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/03-奖励需要表达多少信息：标量、向量与生成式诊断.md": "51e7e6ca10063fe32047d0c70c5c7daea7daa5dd45b933c8bfd240974ee16eae",
+    "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/04-结果正确还不够：路径约束与RLVP.md": "035202bdbf67a921f8bdbd9b2859fc4819a1d493c9f9cd638c898c6cffa38b3e",
+    "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/README.md": "f9a756dcd1f9b33aaaf33333e3c86be4f15ea300898eb2544211820c523a7657",
+    "notes/chapter8/13-蒸馏：提升样本效率/01-在轨蒸馏：让一次rollout产生密集监督.md": "7526726698de0046c826d006ed846704b9920102ebb4f47c36702da138c3dfcd",
+    "notes/chapter8/13-蒸馏：提升样本效率/02-没有更强的教师怎么办：On-Policy自蒸馏.md": "6fb7bfcf4d85ca32ec6bc70f82c9724fbca5ffec97bbffda5d02d1f404f68157",
+    "notes/chapter8/13-蒸馏：提升样本效率/README.md": "13d47ca36fed95b1a643ddf88dc068d84a0b9d28d170bbf6996e7284905e2977",
+    "notes/chapter8/14-从问题案例到后训练/01-案例1：CodingAgent过早结束.md": "fe80de1f89281cd6b7e1cec375ca7d132c67a016586a41fecc6df80d72002dcd",
+    "notes/chapter8/14-从问题案例到后训练/02-案例2：中文引号.md": "7a4eb19514422c23e5510a7915b78e93551c17f2700de298e6a5e9ffe03197df",
+    "notes/chapter8/14-从问题案例到后训练/03-案例3：编辑文件经常失败.md": "2eda6bda007c906b9f8ac853ed80e3855c2516c9a120773737202838f7e6fb4c",
+    "notes/chapter8/14-从问题案例到后训练/README.md": "df27b1304fd71cb326dcfba5815bdf1c9f8e994efe93bd145c69518e1f752a53",
+    "notes/chapter8/15-后训练实践要点/README.md": "922c16aa3484a2981f5053cefe853877cd2cca417d5054e5870287103c29019f",
+    "notes/chapter8/16-本章小结/README.md": "a943641c55ddd6ddc11a5faa23d062d94990caf233b76d91685d09194f7c0737",
+    "notes/chapter8/17-思考题/README.md": "83de4b465956d74e2d4a20b11b2bc1afcdd75f2e7cb25dc0b83955e01caeb3c8",
+    "notes/chapter8/README.md": "9ddf6bf12cb2d7d88cb096c9cb434d4edc41b98776ebfc562f9623f2a8c639c4",
+    "notes/chapter9/01-从运行轨迹中获得学习信号/README.md": "e3fb950411c35d4853901f7724c4076002e65acf12a878cf54ee20e73e8cdb99",
+    "notes/chapter9/02-Agent持续进化的四种方法/01-将经验沉淀为知识.md": "62b4240efc9d40706f7af5d6d332b063ace121715fd19f47014b9cbbd366e4d7",
+    "notes/chapter9/02-Agent持续进化的四种方法/02-将经验写成指令.md": "8209d553898f347138f618c8d0f4390340f81399ee32436ce193b66a42760b6a",
+    "notes/chapter9/02-Agent持续进化的四种方法/03-将经验写成程序.md": "a68533bf2c472fab8bdd07058150c5190f02806d31b849c0aa8707eaff97cd45",
+    "notes/chapter9/02-Agent持续进化的四种方法/04-将经验写入参数.md": "a81bee430ab259a2967c7734e040f79003be7c740e25192de00f0fabc1779ba0",
+    "notes/chapter9/02-Agent持续进化的四种方法/05-从更新产物到更新“更新方法”.md": "5f660821a190c19ad72f089897e32c9855064eea98802b2388643e0f90e5efcd",
+    "notes/chapter9/02-Agent持续进化的四种方法/README.md": "c973a8e0eb74b0e301703cc31e67b1f9c26563bb0c565ee947452ff48340db19",
+    "notes/chapter9/03-构建可长期运行的持续进化闭环/01-可验证闭环的边界：当“完成”不等于“进步”.md": "321646cd26cf00b8e860d755eb6bcfc6866a5a52c1ddd4298b907a2d8f107a7a",
+    "notes/chapter9/03-构建可长期运行的持续进化闭环/02-持续进化的安全边界.md": "8db511d580a2b2b2bb5c45399ddc9499a64b68e88925e8a6d3a019ce14d83247",
+    "notes/chapter9/03-构建可长期运行的持续进化闭环/03-睡眠学习：整合、遗忘与能力保鲜.md": "ec8b027d61f6496fd6c03bfc7826f013485cfd051bc051ec07774272ed670168",
+    "notes/chapter9/03-构建可长期运行的持续进化闭环/README.md": "1425d086701dfc1de27f925bdbabfa0810ef69ea8ab2d02afd55e40f273aeac6",
+    "notes/chapter9/04-本章小结/README.md": "26c654470a82ed5b026e47c98eb9a0e0e3368a5d802a1dc29b9e3df3f704b149",
+    "notes/chapter9/05-思考题/README.md": "f8eafe7d36364302ddc63a058d864424b5faca6987b6a6ae3a33abdc782e5ea9",
+    "notes/chapter9/README.md": "e078fa0af5169c9ea84971f94a21b152929443807d605729bd36c095b91737e5",
+    "notes/introduction/01-全书结构/README.md": "6a1fcce47f3ac3ffa83bc8677c3a22aa49f443c92eec2d211166cc65ad0917f6",
+    "notes/introduction/02-如何阅读本书/README.md": "0a4b96e3ef68d5b21bd6e29315b376e76b927dcfc36f5d0d361b7e0a7cd878a6",
+    "notes/introduction/03-前置知识/README.md": "3fcaaf965057ab09a322085f2e2ff25c3697898335b8303e3991f068d3650e39",
+    "notes/introduction/04-致谢/README.md": "28d4a919e0f9a3dcc7988bc7b3707f7b1ab2c4fbf8dfdb9831ffe39b4cc236b8",
+    "notes/introduction/README.md": "19dffe98437d7926b5e31e3fe787ce02262f24bacb32489c1d3c74b6679c2ef9",
+    "notes/reference-answers/01-第一章AIAgent入门/README.md": "c0436530654fc9d28a4a9c6c60005972e68d6957401efadd6eda6cfa785d3d73",
+    "notes/reference-answers/02-第二章上下文工程/README.md": "270533a8965b2eacde91c0cbf8c356b522becb049b6c623d0be1cc299eadc1e6",
+    "notes/reference-answers/03-第三章用户记忆和知识库/README.md": "12499afef8d27de485dd6b8e9b9dd62d7d9df9d7d0d9c3109d3313779f1c2859",
+    "notes/reference-answers/04-第四章工具/README.md": "b6d24e2dfcffde220882b7b1df632470245610fa1099e25066e551dda52c63b2",
+    "notes/reference-answers/05-第五章CodingAgent与通用Agent/README.md": "42cd9bd270d4fcd2fe2bf6b3d1709a76a023d57117e4884102a7368501ec4209",
+    "notes/reference-answers/06-第六章交互：观察与动作空间的扩展/README.md": "36a7e30b2a507122ef96249f3eb45ba3ee4ede2b10019b723702a1059f2a4d66",
+    "notes/reference-answers/07-第七章Agent的评估/README.md": "3ac4e16e219dfdb9b89d6fae9c00aa1fbf333c248326af0404abbaed43774be9",
+    "notes/reference-answers/08-第八章模型后训练/README.md": "54dbb5201e93db0e984b16a219676d808ac26809a7c1c536ba9a2fa6b9135907",
+    "notes/reference-answers/09-第九章Agent的持续进化/README.md": "d4d3f9d469c94a5071da34eda3a43ca94d8b2a5eff0756bf28ea105fc1188186",
+    "notes/reference-answers/10-第十章多Agent协作/README.md": "f2d75894bc6e91c1dc371ea08cf654f881f9c5ac997bb6478508ade42b1b651f",
+    "notes/reference-answers/README.md": "765df3fd19220ea9de9783e317878dce69f5a75644c69714869bb749e822ead6",
+    "source/LICENSE": "2a9d82c7f37caadf72436764de67e4042942b8dea2ec9456ed5c43daf7eba074",
+    "source/README.md": "5d5f7797a1734f4d6706a2eb4d6256802129fa50e8f52449dfa582f61207d8be",
+    "source/book/afterword.md": "2f7a7ed1792c7d05675b21c58e2998cf70971bde65f1d06c088b16feee41bb63",
+    "source/book/chapter1.md": "5dad71d23094db512bd701ff75a774bb9caaea5e5335d42ee2e56911cf9fb48d",
+    "source/book/chapter10.md": "7b55fb975ff4b5fe25dc1860a6bc93759ff8a88d542b3d1d1f37f7cc7b42e498",
+    "source/book/chapter2.md": "e21669dc39693429ecf6e7af04d2c039b494cac637045c735f1bd7a68a052638",
+    "source/book/chapter3.md": "aef4bd529d906b7cd1fa32ab25e55ef88254a9220d769bebead423b1c754d6bc",
+    "source/book/chapter4.md": "fbb0eee9792c2a0632ba5df5ecb0b43d70ede739be679ac10b657d13f1f6287a",
+    "source/book/chapter5.md": "aaab74ce28791b6a2efbf8cc9f0cf42648f1c27c7dd3b04ff59c4f41e48234cb",
+    "source/book/chapter6.md": "952cd29bcd63e6bcf599a240b34487f852e55154f7ec21af65af06042558f1e6",
+    "source/book/chapter7.md": "30bbc29c9826d0223bd9d10393378f3f01970d9af88b9f9d2115dfaca54218e8",
+    "source/book/chapter8.md": "b0f9b76245e373f9dbd21244cdb9649b280b7bb4a5783af1961599c27689c2da",
+    "source/book/chapter9.md": "0ffc63ac0d0ec3d64c38e7874f1a5f0dac3187bb942f40feaa80f3ef95b03356",
+    "source/book/images/attention-visualization.png": "86c7e9e904f1ab1e7d2572d62f92c7c82c42f14f37f77e39ebeb6ee813882210",
+    "source/book/images/fig0-1.svg": "e3e6a8e4b85a0316c6a19b84bb5184054cd8ce78e4a821d18c7e87e1056c638d",
+    "source/book/images/fig0-2.svg": "6bee0a12cd06ddece6c4c65d6b83adc477431c108f4148ac2523e7deeeb43f55",
+    "source/book/images/fig1-1.svg": "99957e4fb783632498462bae303e1a44a5460caef94ef45f5d0ac3ff6b3ed8fc",
+    "source/book/images/fig1-10.svg": "66f5b75ef87aa1dc511326cac450a14cb4bb3f48f1d9536ad7ad091d3d77f633",
+    "source/book/images/fig1-11.svg": "cf6e940bcff7304d12df28e86e7b50c01d08b8024e3fe03a209468e699cbc032",
+    "source/book/images/fig1-2.svg": "2a31e58e9ffde858ed88866d843ffef6c4ef4051651f85c3e3dc33a2b5d60116",
+    "source/book/images/fig1-3.svg": "65a3738026b729ced0293eb966c2d3748e543f91ce340a58a74e9fbfaa8d4348",
+    "source/book/images/fig1-4.svg": "c4134dde7b1dc097c6425ef96238e2c30bbf2f87ab4e03bfb87a3c96e00a683b",
+    "source/book/images/fig1-5.svg": "0f36dd200e66a01cfd80e16da5ee0f0ce8f9da8a9aa01192438c3ce42afc8e7d",
+    "source/book/images/fig1-6.svg": "2647fdb27e0a4d538503ae07b2c82aca7241bac29921ee6568af367c51d49daa",
+    "source/book/images/fig1-7.svg": "519a86e9319bf605d2c4ff324118187cfc82471237068d4447c0fabcfddb5891",
+    "source/book/images/fig1-8.svg": "bdeed148bb85f4298e7a039a1301c0a807039923d81beb6be7b5f560c1674db8",
+    "source/book/images/fig1-9.svg": "ee9291daf2ccd62dcf37f72af00ca6d2b150a9c1561caf3af914805ebb51f1c6",
+    "source/book/images/fig1-wf-chaining.svg": "cf6e940bcff7304d12df28e86e7b50c01d08b8024e3fe03a209468e699cbc032",
+    "source/book/images/fig1-wf-evaluator.svg": "66f5b75ef87aa1dc511326cac450a14cb4bb3f48f1d9536ad7ad091d3d77f633",
+    "source/book/images/fig1-wf-orchestrator.svg": "a6053539d83b14d746d291f8e47ccd01d06e0999a9e17ebc4c9fc56d43d721b2",
+    "source/book/images/fig1-wf-parallel.svg": "bdeed148bb85f4298e7a039a1301c0a807039923d81beb6be7b5f560c1674db8",
+    "source/book/images/fig1-wf-routing.svg": "519a86e9319bf605d2c4ff324118187cfc82471237068d4447c0fabcfddb5891",
+    "source/book/images/fig10-1.svg": "6613da00cf4faf46cf2a38c799b9ed64fa05fb300680c005bd3c5943a808b57c",
+    "source/book/images/fig10-10.svg": "ce3f25fc7a5604678d691258b5d72f6d0b47ccee1a0ef5aec680d7c1102d2ccd",
+    "source/book/images/fig10-11.svg": "8cb2dd83f93e3dcf8d5be87321e37b0d71822bc384ec748422fb488f1e200b8e",
+    "source/book/images/fig10-2.svg": "552725dbd73d41e91fa92d1d78d115d8a8ded3bc75b56526750e976659efb8f8",
+    "source/book/images/fig10-3.svg": "0653f6e91b27ed9184f918eb90a2ace438f8791e867f528eb398dcd6e0c6f67c",
+    "source/book/images/fig10-4.svg": "8bbd758c19c1cc4c08dad6991d8ef4dc74e550177128ff938c289a233b5d25ea",
+    "source/book/images/fig10-5.svg": "2256e163ab39e818aebf01e983eb42bc6778b0e537471d5ddc72e50fc9945d19",
+    "source/book/images/fig10-6.svg": "3f5fa40d72ded8ba56ce3ec8fd03c7cbf2e4148c66a81d8d184a32e3b3728eb0",
+    "source/book/images/fig10-7.svg": "8fcdd54e1b9c4a0e4aa282c74d239592fa575b31317cce73a549ff345e14d143",
+    "source/book/images/fig10-8.svg": "29ab975995d1df0bfe74b891913be171479fa54872ff1e37c6ee0ac3c12d49d1",
+    "source/book/images/fig10-9.svg": "392582f2aa7e9fde5b968454f89fde7ba9cf0153adad68d713c47436bf3b10a2",
+    "source/book/images/fig10-sequential-handoff.svg": "9e66745bf839dc8eff1eebab88df62824f1f4a4b49390c4c942193359ae5307f",
+    "source/book/images/fig10-stage-switching.svg": "d98bc30d25d1ff7372ae7c8beb29361211cf5755a539cf80194ae73329eb6b76",
+    "source/book/images/fig2-1.svg": "c8d41dca9f1f9444225da1c99b3a3426482772d4f1f7e1bb99808270bcb7f9c2",
+    "source/book/images/fig2-10.svg": "98659544e1e72a212401c7d2b7ee1f365e5cda6d637ccdf0110268909e907a48",
+    "source/book/images/fig2-11.svg": "99e068253102c3267319771149f8603f0c15fe67b8be55608c40cecb96b8d48b",
+    "source/book/images/fig2-12.svg": "e65dc1b39b7153f69699fb5d8ab1e83d24f0d23e2a8837c09e7dc2cadc5a7227",
+    "source/book/images/fig2-13.svg": "552e802c8f557c4152d0c2338793a94eaa63be01fd85bd2f8494ef0ace42015f",
+    "source/book/images/fig2-14.svg": "203ffa755243d41bce70f27660bdbce87bd3f774d98801e6ff0ae9bb17c5f49e",
+    "source/book/images/fig2-15.svg": "9c20867b71f4f758e7a62f701d68137e552df77075a14f339f8bd897b0ad13c0",
+    "source/book/images/fig2-16.svg": "3205d34f8d3ebd31e2b9756e11fc2f81d351fcab0661c9ec6c49e8fe0396f665",
+    "source/book/images/fig2-17.svg": "5cdf606df0fa56a779900a26696b3aea5243397aea43b45e48cd2e55664f2e5f",
+    "source/book/images/fig2-2.svg": "b96ab46bd981f285705407eaa8d1b8e708df417c519ef9b166b7f9ce3e1e34ea",
+    "source/book/images/fig2-3.svg": "f249ddb79f605a9577251f42c4d464a9abd18f74505454ef7b1f268fba88f844",
+    "source/book/images/fig2-4.svg": "804d7f9c0de15d917386f106c0615d356591ce88f5555d1021add1f54dbbdbf2",
+    "source/book/images/fig2-5.svg": "f31f825bf178c82bbfbb30cdd4df9f129bd24d346e582ee2023737e4255eda61",
+    "source/book/images/fig2-6.svg": "2931e651d751fa9cac0dec160114662fb5d4edc8c413b4769d4ae1ed3bea15c6",
+    "source/book/images/fig2-7.png": "86c7e9e904f1ab1e7d2572d62f92c7c82c42f14f37f77e39ebeb6ee813882210",
+    "source/book/images/fig2-8.svg": "8d9a17bc4a0eb446e5a46b8c838d8504a4d5bcff101daa347dc1bd23c2e691ec",
+    "source/book/images/fig2-9.svg": "d330fe1c4842ab2e088202b8adf54531533a195e8c1b915d470d4977d5d99149",
+    "source/book/images/fig3-1.svg": "60fef30b83708dad85bcedd9ddce08991b413ccfc05ba8f8a9d8241fbcaac9fe",
+    "source/book/images/fig3-10.svg": "63dd6b763f01b89e73fc71a84b502ec94837fe239947d9f53768d22789bfe606",
+    "source/book/images/fig3-11.svg": "2ef20242011ad704d69a99b3c65b61117a421e3324d67797cebb5f4a16af038b",
+    "source/book/images/fig3-12.svg": "667686b3db3666eb81e99eeb47e8a0a022bfcd506c5e36e69a8c79c074947e10",
+    "source/book/images/fig3-13.svg": "3f4e41deb2cdc6188ebbf92c6811638a372d2e788e70e6bad645cc8f5120cb9e",
+    "source/book/images/fig3-14.svg": "cdfd4f8b410225347e538a4b0946861c7fa7312d41b1feff6fe45668d55a0f6e",
+    "source/book/images/fig3-15.svg": "d69c0c835d514270c837dadb0fd21c567dcd64f22280c6916cb86c1e0c89b7e5",
+    "source/book/images/fig3-2.svg": "48de534a410d1fb45da56f53369e287e8ce9e7620917c28cad018d1161c0c7c7",
+    "source/book/images/fig3-3.svg": "f6c67d0ce899e9a63ee9bfd63d3501c75586b50fdc020f6bf5bf73fc9f4d415f",
+    "source/book/images/fig3-4.svg": "dc321592bd5d2f6aaea735597a69c294b03c351fce139d54436a970ad33d8394",
+    "source/book/images/fig3-5.svg": "02bfac562b062530f829100dc591c5d44ced2c2abb0b764e29458aafe0440a59",
+    "source/book/images/fig3-6.svg": "46ae6278d2c152fdacb29543b8e18ace25b750a66accb460906f666f4eab87c8",
+    "source/book/images/fig3-7.svg": "f0a9a3bc3ad333e5d78c9dddf26ada29bf5f1c3274579114a75dbb0a200a3314",
+    "source/book/images/fig3-8.svg": "5e19d187582ea07be88f533e65e0706d234b74ecebe63e3ac2892cdff9e90aa8",
+    "source/book/images/fig3-9.svg": "cc5113e19f22fc79741ae8dd7c05749dc39e26bb85b91c85c337ff269f0ab6bf",
+    "source/book/images/fig4-1.svg": "3a43cfe617507a5b953d1819b1175e49e9a64f8bc31cdc46328f15f2c5be0621",
+    "source/book/images/fig4-2.svg": "efdcfdb9a083c0eff27da45f377a95f8ec79cb13f11583460029b55ce9267e78",
+    "source/book/images/fig4-3.svg": "efc9a0cf1fb1fec6fa4048f68fe6d8286684c49d9b0d38f96823f098ba0ab50b",
+    "source/book/images/fig4-4.svg": "4629d38bc75bdae4451c56be3ffaf7b3cb3ecdc4497f005273cb5d9a4d2708bd",
+    "source/book/images/fig5-1.svg": "67768d07947c83be39c7792fec3eaa44735e66e1e188055af851a77101b0225f",
+    "source/book/images/fig5-10.svg": "cf55e769bbb4926f4069513a5ce695ba2de7fc8ceb45936f5aa2f0556fca9f60",
+    "source/book/images/fig5-11.svg": "0ca94c8bfb0b884fdd7fb24f18a0759e3f81014819e56e8ad0c4373adf06237a",
+    "source/book/images/fig5-2.svg": "844646a0e6652c2959d2733d4e821e17d45fc14e98c9c00436c75ca4ce3b0244",
+    "source/book/images/fig5-3.svg": "312f98ead1fc0580c58522a8ecff20fa486d70a5f95a48b238b6088c013b1730",
+    "source/book/images/fig5-4.svg": "a65091a467ecd98bb89077a790c585d41db555f627634fa44e8f4c97150b92f8",
+    "source/book/images/fig5-5.svg": "f7bc4d18c796b2602b588fc8dcd9cadec87093787c93221930cad166401485f9",
+    "source/book/images/fig5-6.svg": "0c6ebe32e6decb2911f3b5ace9a269499b1f5bc003dab7d118ad25f0b1514f8c",
+    "source/book/images/fig5-7.svg": "f5d85c4eb3d9e3bb1bada98c69ff63de00521637d962102e29b617cd6c2fa8d5",
+    "source/book/images/fig5-8.svg": "77bb717f5a07931fd2fcd1757f3fd8e9ef0055d8c1f614bae72ced77b0fa8050",
+    "source/book/images/fig5-9.svg": "3696f39983c753fd5223fdfc5e206d1c4d4c1ff1cf8f2e19f13ddd2304378b13",
+    "source/book/images/fig6-1.svg": "530d910ab8f75a3530e8036c8ed9df2e83eb6458232d3922cd05fe98c33c9d07",
+    "source/book/images/fig6-10.svg": "b4ff0ac6508de488397540322bfe55bc2e411347630ca87c959fec26d03d8a7c",
+    "source/book/images/fig6-11.svg": "af8dff50cc66ad8a9a53723ac62657dc392c7c5445ab4e777614c113193bcedd",
+    "source/book/images/fig6-12.svg": "90c89a11a6c02207dcdcacd842192336c18ee55e3efb27ef189384e3aa58c5d8",
+    "source/book/images/fig6-13.svg": "6ee43010fe32d929b8af560373cc8dc8bab6de392bad765cda526ba7a499793b",
+    "source/book/images/fig6-14.svg": "6b9d168302e5ce010a761a8cd12f2152af0bd732668a4db967e5e304bf00a21d",
+    "source/book/images/fig6-16.svg": "b51341a89254b1fbf8c03613473ec0c1764634dbb8a7da24dac1d47c60b1fa90",
+    "source/book/images/fig6-17.svg": "1ad67f62208c734bc1821ce5e02e63a59ee891fb2285c14170b0156bd20768a9",
+    "source/book/images/fig6-18.svg": "634abdd2640cad12670979d12a3b7d4c8a6b37161dfaa975a5b26011da549ff4",
+    "source/book/images/fig6-2.svg": "0a1c708aa86bc15597dd44c7a51893cbb73113cd6e9a55c77abba567705c491a",
+    "source/book/images/fig6-3.svg": "77ea45233981a1489694f7084010cf422516d3b64f42341adc1ed87cf06f7892",
+    "source/book/images/fig6-4.svg": "abe570085a712cbe34c64aa49671d8f9491109bbf80ca5f61090d258f9554137",
+    "source/book/images/fig6-5.svg": "22d3fa1e1b2094a9f08ddaba594c2a25dca7d3602f093331975720033451a47c",
+    "source/book/images/fig6-6.svg": "4985dc3d8fd809ef1a5efd2ef53142c170f8950de2f6e2731b16637faf2bde6a",
+    "source/book/images/fig6-7.svg": "0c85f2039b23e54815e65950172a269373c51420940ded39128c60e2e4c5bbc7",
+    "source/book/images/fig6-8.svg": "904404c75bd9e1147cf561631cfa8f3446c66c81b6fc0e051e7cd14231cc1bd4",
+    "source/book/images/fig6-9.svg": "12ffe24b532abd33b4757978ef333b91f0ae329f9feb81d43c2b785f5799e6ab",
+    "source/book/images/fig7-1.svg": "e33a22516082a297727fd3e84b131df704ed4b43e86192fc235049af1d92c65f",
+    "source/book/images/fig7-10.svg": "04c76c9f0bb2b4733861b2151267e5e8d4e2e94dc3119f76c5762a23d396e992",
+    "source/book/images/fig7-2.svg": "84ffb03871055f6a35d4efa065c4e1766a85e1c0895acd21f53212a05e028476",
+    "source/book/images/fig7-3.svg": "7d8a2634ee8f17a9b1796ebb06f5a7b4ea992e71011041620982c30f6a94f4e3",
+    "source/book/images/fig7-4.svg": "cfc3f54430f3c3de5f243396a9458de937f952bbb99e61ce0de870ae1bd46f00",
+    "source/book/images/fig7-5.svg": "3fc3ce739e615cf6cd30f3a45e6da54c5ca49c84f4142a311423858ff6bc26b2",
+    "source/book/images/fig7-6.svg": "7690bde0822c50bd1cd344e53bc6551e7afe00df43398186622681e938c7b9b2",
+    "source/book/images/fig7-7.svg": "2d1b1b486ad6449151550f3710c22d3e51c61516ea18e5d9aea300e386403f95",
+    "source/book/images/fig7-8.svg": "391afd6f3da088b5d2db9544380743615d74c51515a3bdf4d5fad043631d0bbb",
+    "source/book/images/fig7-9.svg": "03a31cef7bee6641dd4a901923efdc9036126f7ec2dad8afc5bf96dd197df547",
+    "source/book/images/fig7-reward-density.svg": "6ee5f438748facc8e02fe41ba254fd7b62540ee16639a4cd17794f6842a48819",
+    "source/book/images/fig7-reward-paradigms.svg": "02e044c9dfd6a76808404740632937368c18b5d65f2ba7cd5d3b82689e855a4f",
+    "source/book/images/fig8-1.svg": "dbed47a3f29d76d1d3a4fb6c0d392ba479359623d9cd2eaecaef985ae2058b26",
+    "source/book/images/fig8-10.svg": "fde5a8eaae635fe0df7cb744af61b674a959250da87176325734f5973e702b7d",
+    "source/book/images/fig8-11.svg": "83e7481e4653b66e0c56c53a698959da8f9527ebb1f9a7a1dcb8a4441bd5097c",
+    "source/book/images/fig8-12.svg": "a968186918e01d1258838bcc622133b2aece874a920413666a0c6858a8b2f656",
+    "source/book/images/fig8-13.svg": "401140dd2bff2abe69e5941f7cb0d135ab9d5ee044fde421586500390d291f83",
+    "source/book/images/fig8-14.svg": "b1109e5935abb343b45c21ad3278663cdcc9d05a76f8d5bf780936259e49f327",
+    "source/book/images/fig8-15.svg": "878dc803c33f51a4f9f97482e05f3be1aba50cc04a0cbc0a36acf647a037f36e",
+    "source/book/images/fig8-16.svg": "0eb7817c9f5791dd2a820602b12d75b7893a5ae1da0c041d07ed8884f2519c8e",
+    "source/book/images/fig8-17.svg": "e06465849c9d509172ff16d729ee7b7ac13212b207353523cf568becfc22dc31",
+    "source/book/images/fig8-18.svg": "35b02e9247583f69671d5bcbe1b1ea73b804b37fcf22563c0d6362f575a24086",
+    "source/book/images/fig8-2.svg": "45e2cd6d89e87df5f789cc7113bde71689b0206fdaaea365224cd5da6b32fc84",
+    "source/book/images/fig8-21.svg": "5d368157326a723d7922041f3c56971656c5a8dab55e26b69aeca632c0559217",
+    "source/book/images/fig8-3.svg": "594dd113bd4fa0400d83921bc75061d10044f8ebb290021fe99f4f7322fc0443",
+    "source/book/images/fig8-4.svg": "d3901202b81242790d2f5fd2b25a49af66f9592de9c219fa90163e1c00788ab8",
+    "source/book/images/fig8-5.svg": "30ccaa8d2b4c3a00e942f3b23f184b8b81d3258d7f09689699fe71f662ed6441",
+    "source/book/images/fig8-6.svg": "6bdf2c0167cb4dfd03c43d9aea0097ce892f82190cc98059ede71007b6d352a8",
+    "source/book/images/fig8-7.svg": "b1cc1c15c135065e04471f8c8719224249ab74cb7d4d17002a0ecc0345aa1cb5",
+    "source/book/images/fig8-8.svg": "1ca156b2aee933bee84e7f5a6c813078aecacb896cd48392169591a36d0f6969",
+    "source/book/images/fig8-9.svg": "5528b2ec4108946914747f99c33043601790f656ac2005e2200c27d76438089c",
+    "source/book/images/fig8-reward-density.svg": "0eb7817c9f5791dd2a820602b12d75b7893a5ae1da0c041d07ed8884f2519c8e",
+    "source/book/images/fig8-reward-paradigms.svg": "e06465849c9d509172ff16d729ee7b7ac13212b207353523cf568becfc22dc31",
+    "source/book/images/fig9-1.svg": "ee8ece38d0fd79443f3157557e8b7edee924babbdd1db1873c3ae756604f520c",
+    "source/book/images/fig9-2.svg": "525c77327913799b1a88ac2c40f1c5dd0558a82f70ac4337361ba828c33c2bef",
+    "source/book/images/fig9-3.svg": "9d9025357728e7dce9679333017545a477340a84ac155f07210872310e8012c1",
+    "source/book/images/fig9-4.svg": "ec7c98facab3fdd3fbf28fd2f98d2ed260dcc005f0e76f8b39c6b081664c2ee0",
+    "source/book/images/fig9-5.svg": "783dd4a2b795b5387d44bd59c852c3d502506ce72dd5f75484ea6b11a1327f07",
+    "source/book/images/n8n-workflow.png": "f20dc7c8153e791433413c82208101242d04b675d4cf71365b22398e0293d07e",
+    "source/book/introduction.md": "bb43afb1de9454cfa9f97be9eed126944f2b51436edddf41ede8e78b1cc632c8",
+    "source/book/reference-answers.md": "8f0d05a101bda0db7f67b6b113310cd396fb2c7fea4f40797a8318169e6c2056",
+    "source/upstream.json": "dfe35f9ac84365dd78ec334480657e5012747608ea170435d19bfa296ee42d23"
+  },
+  "coverage": [
+    {
+      "source": "book/introduction.md",
+      "output": "notes/introduction/README.md",
+      "start_line": 1,
+      "end_line": 36,
+      "source_sha256": "1a2f6040730b8c96f0e08668ee48cebdabe43c7d27154ec09f93fb93015807ed"
+    },
+    {
+      "source": "book/introduction.md",
+      "output": "notes/introduction/01-全书结构/README.md",
+      "start_line": 37,
+      "end_line": 53,
+      "source_sha256": "972d114d298b7626fce41868684f995a9eb885e67fcad4d5f8640ff851f8103b"
+    },
+    {
+      "source": "book/introduction.md",
+      "output": "notes/introduction/02-如何阅读本书/README.md",
+      "start_line": 54,
+      "end_line": 76,
+      "source_sha256": "7dfecb9dc3e8557e1cc07e02413412274393fbe9757eff7e2951eb0037f297a0"
+    },
+    {
+      "source": "book/introduction.md",
+      "output": "notes/introduction/03-前置知识/README.md",
+      "start_line": 77,
+      "end_line": 98,
+      "source_sha256": "faa8daa04c3f30607878bd246c706d9a8153bde61be4c11428a77d72081fa162"
+    },
+    {
+      "source": "book/introduction.md",
+      "output": "notes/introduction/04-致谢/README.md",
+      "start_line": 99,
+      "end_line": 107,
+      "source_sha256": "6ac88a7305c6c0212769ae6f1f2f62a631b4a7203e5dcddba3d52da85e7a91a2"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/README.md",
+      "start_line": 1,
+      "end_line": 10,
+      "source_sha256": "507395951049f07e5574d7bffc45d3fad9c0ead655ecc85991f8730a78418c93"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/01-现代Agent=LLM+上下文+工具/README.md",
+      "start_line": 11,
+      "end_line": 36,
+      "source_sha256": "318fb4fecc2846ad95ac0918dca996e1a704cb21a668119a2b83ea499dabdac2"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/01-现代Agent=LLM+上下文+工具/01-观察空间与动作空间：模型与世界的接口.md",
+      "start_line": 37,
+      "end_line": 60,
+      "source_sha256": "b01f9526c9a83b4f5c211537b12e3ccfa5a7a15647112c6badfd4ef1636af561"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/01-现代Agent=LLM+上下文+工具/02-工具：Agent的手脚.md",
+      "start_line": 61,
+      "end_line": 108,
+      "source_sha256": "cc4faaf901e7eeef58b69ce7b609e793ef1d00a0a79e6ce5a02dc18e67cc7302"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/01-现代Agent=LLM+上下文+工具/03-LLM：Agent的大脑.md",
+      "start_line": 109,
+      "end_line": 136,
+      "source_sha256": "ca48baf71a5b6eeb900f0b597eb4d3737f7b435c1cb1874138188528ba562962"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/01-现代Agent=LLM+上下文+工具/04-上下文：Agent的眼睛.md",
+      "start_line": 137,
+      "end_line": 160,
+      "source_sha256": "8e5463d529bc8e73ed78694780a5f2d17df228f0554196b90365609a7fc5945a"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/01-现代Agent=LLM+上下文+工具/05-ReAct循环.md",
+      "start_line": 161,
+      "end_line": 262,
+      "source_sha256": "6d8fd5b9f4fc1fda7fd6b2137b333530219deadc88647a4f042dcda56a80aadc"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/02-Harness工程：模型之外的竞争力/README.md",
+      "start_line": 263,
+      "end_line": 320,
+      "source_sha256": "a73d90dc264e862dede8a589e458cea3d34552cdf597094d0b80e0caba31107a"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/02-Harness工程：模型之外的竞争力/01-从提示工程到Loop工程：工程范式的演进.md",
+      "start_line": 321,
+      "end_line": 340,
+      "source_sha256": "4db3ede99f0e6efcdd1a4495607fac6cc1c8c3f1ee063eb28704d9c79896f305"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/02-Harness工程：模型之外的竞争力/02-构建有效Agent的核心原则.md",
+      "start_line": 341,
+      "end_line": 352,
+      "source_sha256": "a83f0b88ccc05730a6d4c0277bcfbd83b5202d6882a31a4d23a5813ea01c88a9"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/02-Harness工程：模型之外的竞争力/03-如何选择模型.md",
+      "start_line": 353,
+      "end_line": 369,
+      "source_sha256": "2d512c1ec81a6925157d8609244a10afe4f8f7834a277f298c0c81fa15975a53"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/02-Harness工程：模型之外的竞争力/04-编排模式：工作流与自主.md",
+      "start_line": 370,
+      "end_line": 463,
+      "source_sha256": "c883369d5f3cb3351787f788cb504563bf4e72fb787e55c322a2846d14b5241d"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/02-Harness工程：模型之外的竞争力/05-护栏与安全性.md",
+      "start_line": 464,
+      "end_line": 503,
+      "source_sha256": "84ed44ecdc4261c00c81f8ecbb545586c5e70c9f5e8b61ceeadd27f218e768df"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/02-Harness工程：模型之外的竞争力/06-Harness五要素与「构建」部分的对应.md",
+      "start_line": 504,
+      "end_line": 522,
+      "source_sha256": "a84cc2968e4b579c13bb78e3b3685807e1ac4ddcbf0bfae6fa6b242e5cec5d04"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/03-贯穿全书的设计模式/README.md",
+      "start_line": 523,
+      "end_line": 536,
+      "source_sha256": "73b1f1b2c440a3911eea52046a664ffaa7df5edb93280975a0f5fd8666209100"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/04-本章小结/README.md",
+      "start_line": 537,
+      "end_line": 558,
+      "source_sha256": "1ff7355328f9b934900cd64cc86467374d3449d154856edc291ec3a95ea6e4c8"
+    },
+    {
+      "source": "book/chapter1.md",
+      "output": "notes/chapter1/05-思考题/README.md",
+      "start_line": 559,
+      "end_line": 570,
+      "source_sha256": "3e8b7e8ea2eb17ba396414093c1e0640a9974cf0be135fc3e219d86a328cccad"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/README.md",
+      "start_line": 1,
+      "end_line": 6,
+      "source_sha256": "788053a523cef8e242dc0b14dd8b347e88e88c823ab6f50c3f76e6fdc4db0357"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/01-上下文：决定Agent能力上限的关键/README.md",
+      "start_line": 7,
+      "end_line": 40,
+      "source_sha256": "81189ae538fc0b7ae2de1a3ae488b7f1798d34c262d11ba591267f01c9af92c6"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/README.md",
+      "start_line": 41,
+      "end_line": 44,
+      "source_sha256": "6a15b1853c4a746a3b3c0c304bf74a1f0a2827ee32f2770767f165b3892dc70e"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/01-消息的四种角色.md",
+      "start_line": 45,
+      "end_line": 57,
+      "source_sha256": "a750f0c9a736b2a5caea814d53d1ddb9f4eb46fcf98f88ed81289c13624e09e3"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/02-单轮对话：最简单的API调用.md",
+      "start_line": 58,
+      "end_line": 94,
+      "source_sha256": "71603000b103b04cedf9c09fe4308d0daaf6b84994342941d862cbe7f114aafe"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/03-带工具调用的多轮交互：Agent的核心循环.md",
+      "start_line": 95,
+      "end_line": 250,
+      "source_sha256": "650549cec34d6071c8550be6a96fd4a838c8b47b00cb6ecc418d734a69e859b0"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/04-用代码实现Agent的核心循环.md",
+      "start_line": 251,
+      "end_line": 369,
+      "source_sha256": "55c998b9da993f1f064a9da55be7d9410c5dbadc49f2fd0faf754722a7a8551b"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/02-Agent如何调用大模型：理解API的上下文结构/05-从API视角看上下文的构成.md",
+      "start_line": 370,
+      "end_line": 434,
+      "source_sha256": "221ca1431f9a0d251787172c3299062e40088cfc410e357b38999e43d3e6895b"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/03-KVCache友好的上下文设计/README.md",
+      "start_line": 435,
+      "end_line": 501,
+      "source_sha256": "d4b26af9f2a00d3a2f3c2eb68ed6b900dbd612c4ad5d5b3c68eba352fdf3dab9"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/03-KVCache友好的上下文设计/01-从API消息到模型Token：ChatTemplate.md",
+      "start_line": 502,
+      "end_line": 525,
+      "source_sha256": "50066c9d052e658c0079e64e752fe367384bf3c4f572d222337680f4cd4adae5"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/03-KVCache友好的上下文设计/02-KVCache的原理与约束.md",
+      "start_line": 526,
+      "end_line": 555,
+      "source_sha256": "1b7501a608ab0f44593c5f16b04d9fbd88c5a1a7845d0aa8bc25a64551641c4e"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/03-KVCache友好的上下文设计/03-KVCache与PromptCache：两个层级的缓存.md",
+      "start_line": 556,
+      "end_line": 559,
+      "source_sha256": "d01550033c380384a23767c69dc53a0470d4926e35a31fc792667d68a103b8b9"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/03-KVCache友好的上下文设计/04-缓存作为架构约束.md",
+      "start_line": 560,
+      "end_line": 573,
+      "source_sha256": "765754ca0588817a198eea425050f166abfe4673438a1b0f870b2dfcbf8b890d"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/03-KVCache友好的上下文设计/05-KVCache未必是一次性的：可编辑、可组合的“笔记”.md",
+      "start_line": 574,
+      "end_line": 593,
+      "source_sha256": "9162cda30a4f436531ec8145e3645c60c75314c22c2368aa1ee12e0c56504b31"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/README.md",
+      "start_line": 594,
+      "end_line": 601,
+      "source_sha256": "7efa51e5baccfd4a7163534c6ea02174ead454088962cb6a718cbde1b995b115"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/01-语气与风格：系统提示词的“人格”.md",
+      "start_line": 602,
+      "end_line": 605,
+      "source_sha256": "7aada0972424efeaecce209a19f04d91ff0ff35b4cbdafb827673324892ffdd0"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/02-结构化提示：系统提示词的“格式”.md",
+      "start_line": 606,
+      "end_line": 634,
+      "source_sha256": "d96bd0bace7c529f23e55a434eac0f63111bc4f19d24bbf5c0b655f3367bdd33"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/03-流程驱动vs规则堆砌：系统提示词的“组织方式”.md",
+      "start_line": 635,
+      "end_line": 663,
+      "source_sha256": "06a225e734f90fa8c01ea292912eab49a0a4264bf46cf560c8e0de344b9ee07f"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/04-业务规则细化：系统提示词的“内容”.md",
+      "start_line": 664,
+      "end_line": 683,
+      "source_sha256": "ef0906607f29b1959a517d54c7301586fc6bbff2182308b23fa0cd29f6e3d5d1"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/05-Few-shot示例：何时给模型看例子.md",
+      "start_line": 684,
+      "end_line": 691,
+      "source_sha256": "692e0882ae9f8c97f513c4d1a2d73953f10e01dc1ddd0928cba8b587baac91f2"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/06-工具定义的设计.md",
+      "start_line": 692,
+      "end_line": 721,
+      "source_sha256": "731eab472f0b3d10244ab6ce77551c1221b0eae74d425e23ef8bcd50b1452be0"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/04-提示工程：优化系统提示词/07-提示注入：上下文安全的核心威胁.md",
+      "start_line": 722,
+      "end_line": 756,
+      "source_sha256": "65fb1f228993b00bb09ac8645b83f792d3998dc5c577f142ffc2caeb394bc1b8"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/05-动态提示词与AgentSkills/README.md",
+      "start_line": 757,
+      "end_line": 767,
+      "source_sha256": "44de320d96ca4b6568d17d496552c7e82d16ea62f1569b5d4ec6ee7d08553bae"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/05-动态提示词与AgentSkills/01-Skills：领域能力的可组合单元.md",
+      "start_line": 768,
+      "end_line": 785,
+      "source_sha256": "2800dca9dc443c1da8fc93ff78e822a4adca5770c4907eb4b2682948532c35c2"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/05-动态提示词与AgentSkills/02-如何编写一份可用的Skill.md",
+      "start_line": 786,
+      "end_line": 805,
+      "source_sha256": "8567cc9fb54278f939a5e1c37dc80c50fec8a5b9e923895b8b32b52d41e14409"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/05-动态提示词与AgentSkills/03-Skills在上下文中的位置.md",
+      "start_line": 806,
+      "end_line": 821,
+      "source_sha256": "c3e84d8bdd1cc246f52bc2a7fed6c78e1afda1657a5282fd974239d943b0f490"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/05-动态提示词与AgentSkills/04-Skills与工具的关系.md",
+      "start_line": 822,
+      "end_line": 848,
+      "source_sha256": "040d9b6511afa187722df891dc3b1487e47b72422fa1c5423e60b2d40b385b25"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/README.md",
+      "start_line": 849,
+      "end_line": 858,
+      "source_sha256": "c9a53dc54a6c95466d4bb4aa1de19635c0ab7fad703992d07db842f1593751b8"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/01-Agent状态栏的理论基础.md",
+      "start_line": 859,
+      "end_line": 899,
+      "source_sha256": "91d6100e85a52217feedc0dc6b32d9e24da02937838a672d417d841fa59c158f"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/02-Agent状态栏的构成.md",
+      "start_line": 900,
+      "end_line": 911,
+      "source_sha256": "1a54dffa623d10242179553d2f27142a1c5d03a7aeff94e4c10fa49cc5f5bd53"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/03-Agent状态栏在上下文中的具体位置.md",
+      "start_line": 912,
+      "end_line": 942,
+      "source_sha256": "d2bc8afded4a48565ba1168190ed252f30c70b37d5d6a6188799bfb6533e4a4d"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/06-Agent状态栏：通过元信息增强Agent轨迹管理/04-状态更新的两种实现与缓存代价.md",
+      "start_line": 943,
+      "end_line": 982,
+      "source_sha256": "45f49a13d1f4a59ef9b707218910227689667476209ff9722a64a95b03f30ad6"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/07-上下文压缩策略/README.md",
+      "start_line": 983,
+      "end_line": 986,
+      "source_sha256": "56e761a92135f04b4935486e107f24284bca410ae2d33a17f89e2f881400146a"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/07-上下文压缩策略/01-为什么需要压缩：不只是长度问题.md",
+      "start_line": 987,
+      "end_line": 998,
+      "source_sha256": "ffdf98892faf131b72155b7a5d711edfd58647223623fe77d35b5dea80b3b111"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/07-上下文压缩策略/02-上下文学习的内部机制：检索而非推理.md",
+      "start_line": 999,
+      "end_line": 1019,
+      "source_sha256": "99313821e34da1650490b978bb6bed1f1a3b692d6c060b721084fe117d0e5c01"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/07-上下文压缩策略/03-压缩与KVCache：看似矛盾，实则互补.md",
+      "start_line": 1020,
+      "end_line": 1055,
+      "source_sha256": "673b84b2fe5989ceef0b2c1a496bf4cc99b13a5064f22e9c99757595b018e2ca"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/07-上下文压缩策略/04-生产级的分层压缩机制.md",
+      "start_line": 1056,
+      "end_line": 1065,
+      "source_sha256": "174457c5bb4f9f42b35710a1e66441815e02033cfdcc45a745b38e74895c93f6"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/07-上下文压缩策略/05-压缩策略的设计原则.md",
+      "start_line": 1066,
+      "end_line": 1078,
+      "source_sha256": "bea784953523a6c9ad29c980fc9e8dfd7f049c79c5b7f90fdd98c3c5e27fbc27"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/07-上下文压缩策略/06-隔离优于压缩：子Agent上下文隔离.md",
+      "start_line": 1079,
+      "end_line": 1086,
+      "source_sha256": "561aacd0733a114fe95af077e97d6a6b66afc41345b19bb860cc1020f7f0902a"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/08-本章小结/README.md",
+      "start_line": 1087,
+      "end_line": 1092,
+      "source_sha256": "ffd1be64c7ef22d4daff0885764bd5ab4978ff560889f5dc3ec36c6451e1d6b3"
+    },
+    {
+      "source": "book/chapter2.md",
+      "output": "notes/chapter2/09-思考题/README.md",
+      "start_line": 1093,
+      "end_line": 1103,
+      "source_sha256": "aafc43f979eecd9e29450903a2d3d5b33e68d51e85efeb2480be75d29cfda647"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/README.md",
+      "start_line": 1,
+      "end_line": 14,
+      "source_sha256": "bf64e3e7b2a5d146c8612fc664e52c7a49c03662ddbbf35961325f0bacc8ca0a"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/README.md",
+      "start_line": 15,
+      "end_line": 42,
+      "source_sha256": "a2acab698c7506247133142c5eb11d075e7ade6705ee77e6eb9c7bc690ae0be5"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/01-记忆能力的评估：三层次框架.md",
+      "start_line": 43,
+      "end_line": 71,
+      "source_sha256": "db29a96c6d1999f2aa767bae23c7edfe283d2a4ac61743630ddc5c2e61a65da3"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/02-记忆的层次结构.md",
+      "start_line": 72,
+      "end_line": 87,
+      "source_sha256": "2cf07a87ea7cf85e9006e7e6331fb9291d496808a707df217ef88130b3910ea5"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/03-用户记忆的四种存储格式.md",
+      "start_line": 88,
+      "end_line": 112,
+      "source_sha256": "ebc993553fb9e5bcc36e19e54556f67bcbee52495ac827ac957cc3cf81207fbe"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/04-进阶知识表示形态：可执行代码.md",
+      "start_line": 113,
+      "end_line": 169,
+      "source_sha256": "70c61a7f153e9333215bb5acc645c42a927d2cc17f363b05c5cf3a63ad81ee65"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/05-用户记忆的认知科学基础.md",
+      "start_line": 170,
+      "end_line": 191,
+      "source_sha256": "0b9817b1bee6ccc4f625379c3d1bced37843db6fb5af9e1becd66ec356ece3c0"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/06-记忆框架案例.md",
+      "start_line": 192,
+      "end_line": 220,
+      "source_sha256": "39ba059cf4ba4d8a465252d708ac71420f1d4f295e61cd158e6b44da923ffef7"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/07-记忆压缩与整理机制.md",
+      "start_line": 221,
+      "end_line": 230,
+      "source_sha256": "a16a2ab0f6534111f31421bed75af82885a526aa5d2f9d8b6d56691d2f46d76e"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/01-用户记忆系统/08-隐私保护：日志脱敏.md",
+      "start_line": 231,
+      "end_line": 242,
+      "source_sha256": "ed9941d25949604cdedcd48f58bf4de35c37aaadbbab501cbb8304bbf208c411"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/README.md",
+      "start_line": 243,
+      "end_line": 269,
+      "source_sha256": "ac77cd9ee47768102e6a19720d3a617ae9e5ecabf10295a7346c156b59d9c7ff"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/01-文档分块（Chunking）.md",
+      "start_line": 270,
+      "end_line": 285,
+      "source_sha256": "642db7ae6dbb6e1000a6ab81dcc31be073d497f64a164ef9d2c18a9b699ddf67"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/02-稠密嵌入：从词汇关联到语义理解.md",
+      "start_line": 286,
+      "end_line": 331,
+      "source_sha256": "3b6f77fb995ca7452f6e320a6f555f52f951633e625b027248c179f2c7823020"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/03-稀疏嵌入：精确匹配的关键词检索.md",
+      "start_line": 332,
+      "end_line": 384,
+      "source_sha256": "503f23b2bedf8a92f5fc0fd2d027c72f767c329442682e2c362725cf469f4546"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/02-RAG基础：构建Agent的知识获取管道/04-混合检索：两全其美的艺术.md",
+      "start_line": 385,
+      "end_line": 423,
+      "source_sha256": "f3dcb072a516deb810d228fb93990c7658b5f85bcc46300a57a8637bb40c8dce"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/README.md",
+      "start_line": 424,
+      "end_line": 444,
+      "source_sha256": "c84d46812017982f78e39cc6522b579a86c35635aaa86b758f4e10be000990d8"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/01-结构化索引：从信息检索到知识建模.md",
+      "start_line": 445,
+      "end_line": 481,
+      "source_sha256": "cabdad4ab7c5e0d623f8494f7d7cdcb799049c3e51d9a1e6e78a01314ec6f75c"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/02-文件系统范式：用目录结构组织知识.md",
+      "start_line": 482,
+      "end_line": 504,
+      "source_sha256": "e9445c82539e6f253cf7c0c159cc32502979446bc80c4e0e87dc53b5d1cc76fb"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/03-知识应该如何更新.md",
+      "start_line": 505,
+      "end_line": 541,
+      "source_sha256": "cfeaae22f283093947b3dc982540a4c7e7cd610d45990a8c6093b60a9a891db9"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/04-智能体化RAG：将知识检索工具化的范式转变.md",
+      "start_line": 542,
+      "end_line": 593,
+      "source_sha256": "4874e82718693cc90bc15d6d9e93859527876026bc64596621b5de35f20cf993"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/05-RAG技巧：上下文感知检索.md",
+      "start_line": 594,
+      "end_line": 636,
+      "source_sha256": "6d795c4ec7dc9833c6312d3a64ccb749829c04e1fd2a0ef601622cfe3f489340"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/06-从数据集中提取深度知识：从信息检索到知识发现.md",
+      "start_line": 637,
+      "end_line": 664,
+      "source_sha256": "697e73847887777a725abe12a5b6f15b395f80e9b09909c9b7614abaa87f4138"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/03-超越扁平文本：知识的组织与检索/07-前沿探索：多模态记忆.md",
+      "start_line": 665,
+      "end_line": 676,
+      "source_sha256": "bd64cfd5b388392320320ddf1217c03e3a794aa5d5d1a32df32f7d96aaa6cb6f"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/04-本章小结/README.md",
+      "start_line": 677,
+      "end_line": 686,
+      "source_sha256": "606e9775cdf2667e2b1edaceeaf6b6e5c48706dd2f22c7af88230e4d8a782eb0"
+    },
+    {
+      "source": "book/chapter3.md",
+      "output": "notes/chapter3/05-思考题/README.md",
+      "start_line": 687,
+      "end_line": 698,
+      "source_sha256": "8f2e808f7e91106577092f215942f30be67b69e1912f816ae0955faef453cbeb"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/README.md",
+      "start_line": 1,
+      "end_line": 6,
+      "source_sha256": "fdb4f8f7853e418cfee62db0db584173b74a150c294df9bede0755e8ad9597ce"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/01-工具的分类/README.md",
+      "start_line": 7,
+      "end_line": 33,
+      "source_sha256": "59866e2fc96be806cb31bfbea140190e26f8b8d9c6b16981b44ac16290375484"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/02-工具设计的通用原则/README.md",
+      "start_line": 34,
+      "end_line": 37,
+      "source_sha256": "b25f853f550844466b798cc69f1fba34aa3e1e626306f35f83a16e2b6bdf747d"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/02-工具设计的通用原则/01-能力的表达形式：专用工具、通用执行器与Skill.md",
+      "start_line": 38,
+      "end_line": 69,
+      "source_sha256": "e7bbd99cbc5ab805ef83e00dc1d8084a52251750830c7547521e9d8890c34872"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/02-工具设计的通用原则/02-工具描述的艺术.md",
+      "start_line": 70,
+      "end_line": 87,
+      "source_sha256": "d1f84511da8a597cb35ee745623aa4a32c2274fe71b8524547031342a1136535"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/02-工具设计的通用原则/03-参数传递的保真性.md",
+      "start_line": 88,
+      "end_line": 99,
+      "source_sha256": "d46ef328849b93fadf53adf35e9a50782690145c7f89f0db9fcc381a0db3e7d4"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/03-工具生态：MCP与SkillHub/README.md",
+      "start_line": 100,
+      "end_line": 132,
+      "source_sha256": "c5f680934b7927f71026cca171357515dbf00387efea7f68a93da3acffbe4df0"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/README.md",
+      "start_line": 133,
+      "end_line": 138,
+      "source_sha256": "5d622fcd30aabf340026cf030cebe604c9851d4735a0cbefb0a30d36e881d02f"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/01-层次化组织与按需加载.md",
+      "start_line": 139,
+      "end_line": 158,
+      "source_sha256": "e1c7dc066c77af0c67a68a363a68056472972b4a46839b4aa6f971c0f2964dc8"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/02-模型原生的主动工具发现.md",
+      "start_line": 159,
+      "end_line": 201,
+      "source_sha256": "86bcf60659e84da3adcd9e561d1dd23594ebbb8af68987b9e5c92eba27bef57d"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/04-工具太多怎么办：层次化组织与主动工具发现/03-Skills：把工具发现变成“按需查阅”.md",
+      "start_line": 202,
+      "end_line": 217,
+      "source_sha256": "bcac8956f5d67943024caf45233db9d60040a125fbc57c7d980f1d33f578c987"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/05-感知工具/README.md",
+      "start_line": 218,
+      "end_line": 243,
+      "source_sha256": "d5c5c8c0e70eb36ec0e4d8ecfb4c8a07f6269f5599cb46ef12ee24e2d1f6c28e"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/05-感知工具/01-多模态感知.md",
+      "start_line": 244,
+      "end_line": 269,
+      "source_sha256": "2ac433a6c0e226391b86ff5b7366347958aa2a15b9cd8fa381ef043f59993ada"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/06-执行工具/README.md",
+      "start_line": 270,
+      "end_line": 381,
+      "source_sha256": "a89068d7014b5deb2a5e158f115df6f68e5008b035972f7064416987bceeb300"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/07-协作工具/README.md",
+      "start_line": 382,
+      "end_line": 428,
+      "source_sha256": "b03b81af541e9b4747fcaa9cc9903305280eb7f72b252916aa6421894ef27fbe"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/08-本章小结/README.md",
+      "start_line": 429,
+      "end_line": 442,
+      "source_sha256": "db1104adc87aa0fb4a64fc7d34c844f5ea2ad072f0b2fe75ee4e080834424799"
+    },
+    {
+      "source": "book/chapter4.md",
+      "output": "notes/chapter4/09-思考题/README.md",
+      "start_line": 443,
+      "end_line": 448,
+      "source_sha256": "d9adda49140623829d835b97433c79a752cb2105cf0f88881953988e5ae10a06"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/README.md",
+      "start_line": 1,
+      "end_line": 12,
+      "source_sha256": "8e46afd0dab39d7e7f8b71ffc6e06c533b5d5b6a2f06862e0c3706a77260621b"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/README.md",
+      "start_line": 13,
+      "end_line": 14,
+      "source_sha256": "92c12a36b4146a049ef32302c31bc69adc6ed300af501f949c3a38052abcff1f"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/01-Coding是Agent的基础能力.md",
+      "start_line": 15,
+      "end_line": 57,
+      "source_sha256": "d0699dd0922e00f72fce3e3da05f83e3f10f56bcbe584bf386e4e02416c4fa66"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/02-案例：从Manus到OpenClaw——通用Agent的Coding内核.md",
+      "start_line": 58,
+      "end_line": 83,
+      "source_sha256": "b69600c852dbe6b14dbbb23eefcd5aa73217cafecbf630ef41b1f269c5dc2003"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/03-CodingAgent的整体流程.md",
+      "start_line": 84,
+      "end_line": 126,
+      "source_sha256": "f36e449b0b75c51f0b9f40d4c8c75bb70ccd4941dab93dc958e6f354eafdf10d"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/04-Harness工程在CodingAgent中的实践.md",
+      "start_line": 127,
+      "end_line": 171,
+      "source_sha256": "d0775281b31dcdde9a8621c037a927b64a9372efb8c782d8096cf74ba7ab24cc"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/05-故障与错误恢复.md",
+      "start_line": 172,
+      "end_line": 226,
+      "source_sha256": "d8075656276f1130c0da4a243aa407f7f86cca25f7883ae42c26fcbf1d3bcdb9"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/06-CodingAgent的实现技巧.md",
+      "start_line": 227,
+      "end_line": 269,
+      "source_sha256": "a2dcad7a80358c1c751ad39ba93b9991ebc402faf70fcf05adb0bc1dea2bc3bb"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/07-CodingAgent中的搜索工具.md",
+      "start_line": 270,
+      "end_line": 292,
+      "source_sha256": "b7e70f6a6cef27da4779ffe70024dfc7f2090d9053cdc6f1fac80ff7c600973b"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/08-CodingAgent中的文件编辑工具.md",
+      "start_line": 293,
+      "end_line": 308,
+      "source_sha256": "f47c0ffccbf203d0bd51a98881d9c8ca947d1eaa692d4a89fc9c4e7148184d80"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/01-CodingAgent/09-CodingAgent的安全.md",
+      "start_line": 309,
+      "end_line": 350,
+      "source_sha256": "a259628be7a36e67fc62adb79e767a2384943265b0fbf21a78bc3b43948c93a6"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/02-代码：通用Agent的元能力/README.md",
+      "start_line": 351,
+      "end_line": 365,
+      "source_sha256": "4bbafbe371d265b733e091447609025e2cae5663c8187a85b613a22f860d397d"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/02-代码：通用Agent的元能力/01-代码作为思考工具.md",
+      "start_line": 366,
+      "end_line": 405,
+      "source_sha256": "b83d6d7c852c04f029192b3680fa546a4c9657fe5be9abd9dd33b4a285c7fd2d"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/02-代码：通用Agent的元能力/02-代码作为业务规则的约束.md",
+      "start_line": 406,
+      "end_line": 501,
+      "source_sha256": "058034deaa2a7a5490eb3ac91a3ebeb977dc6d61c6548811efc05e1c162617ec"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/02-代码：通用Agent的元能力/03-代码驱动的多媒体生成.md",
+      "start_line": 502,
+      "end_line": 588,
+      "source_sha256": "326dcd818375cf382e71380af38f9b5ed814e3a9794e06d1d4a1487c927ba139"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/02-代码：通用Agent的元能力/04-代码作为系统适配器.md",
+      "start_line": 589,
+      "end_line": 630,
+      "source_sha256": "8709f3bf8438a28ac2b53c006995fee48aef1493080abea9cee2f70db37999fe"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/02-代码：通用Agent的元能力/05-代码作为生成式UI.md",
+      "start_line": 631,
+      "end_line": 727,
+      "source_sha256": "9b5f330f7bfda6d7fc76c59e9eef9fa7c16b9b989d6f2d78bf3950c4f413228b"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/02-代码：通用Agent的元能力/06-代码创造代码：Agent自举.md",
+      "start_line": 728,
+      "end_line": 774,
+      "source_sha256": "da160cba937779b670c07bfdeb505d38823f4f78cc5f3d0a5089589bc54a7992"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/03-本章小结/README.md",
+      "start_line": 775,
+      "end_line": 793,
+      "source_sha256": "eb3590f8db1b66df276815f38aac2b4feb1c649aef7eafb5895932f8d29d4046"
+    },
+    {
+      "source": "book/chapter5.md",
+      "output": "notes/chapter5/04-思考题/README.md",
+      "start_line": 794,
+      "end_line": 804,
+      "source_sha256": "bc70a71a2a211d528bcb38c1e99abaa5bc249873bb23031b6e73a58874bf0297"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/README.md",
+      "start_line": 1,
+      "end_line": 4,
+      "source_sha256": "e5ccdfa67122b7ce49df1bf198e94a162aedec4b60eb323149c1517f506c6281"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/01-模态与触发时机的扩展/README.md",
+      "start_line": 5,
+      "end_line": 28,
+      "source_sha256": "6dde2e0ad8d482f70f6d39312537ef715ae8f3fd927e79458a6a10f719682d47"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/README.md",
+      "start_line": 29,
+      "end_line": 34,
+      "source_sha256": "4dd8062fd930e63d5537ecda3396229d9aff4d39119f2a8580d63a4e87e03c61"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/01-为什么需要异步.md",
+      "start_line": 35,
+      "end_line": 48,
+      "source_sha256": "0bfaa8642427f029fef5e98d08bb098cc4033906dde4431b274d2f9b487870ea"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/02-OpenClaw的事件驱动机制实现.md",
+      "start_line": 49,
+      "end_line": 72,
+      "source_sha256": "c38421b44c039f631637db808c4685f2f632d496c410081bda878e623b481d8f"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/03-事件触发工具.md",
+      "start_line": 73,
+      "end_line": 84,
+      "source_sha256": "b517d84becdc79df6f20de397374944989de2369ddeeaa6a1b62055dea5d97a3"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/04-用户沟通工具.md",
+      "start_line": 85,
+      "end_line": 100,
+      "source_sha256": "c58ebf19736a770774629b17e853d11df26a2e186627d9b9689c06671448a34a"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/05-虚拟身份与隔离执行环境.md",
+      "start_line": 101,
+      "end_line": 112,
+      "source_sha256": "806b6e838d94f5b67c3cf099d430a5c958a6eb37aaaa30987e901a8f57942210"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/06-事件处理机制.md",
+      "start_line": 113,
+      "end_line": 197,
+      "source_sha256": "03843a98fe3a676f056f92e1d985c069d49debda01967b499b29021af383a658"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/07-不支持原生异步时的兼容方案.md",
+      "start_line": 198,
+      "end_line": 274,
+      "source_sha256": "1bbc3b8d815b16ffd7fed3d84a2e5bffbfad1a495e3f38b11c137bfa90cca702"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/08-模型原生异步：GPT-6Astra.md",
+      "start_line": 275,
+      "end_line": 288,
+      "source_sha256": "aa894906c23120df0e24ce1a3a42591e6a684cba4bcfd487f82f5652a9eb6ae3"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/02-异步与事件驱动：当世界主动找上门/09-从“能接收异步消息”到“可靠处理异步任务”.md",
+      "start_line": 289,
+      "end_line": 306,
+      "source_sha256": "cdbe86be936ad0a24f9ffe1a773fc898c2397d3899b68b3000c1829cbcdcdd1a"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/03-语音：最自然的人机接口/README.md",
+      "start_line": 307,
+      "end_line": 312,
+      "source_sha256": "433913cfc2e708f53b98d608732b72971da9c151b6b887be1b9db4ac6827ab24"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/03-语音：最自然的人机接口/01-交互时序：从级联到全双工.md",
+      "start_line": 313,
+      "end_line": 326,
+      "source_sha256": "8147685aa0b19fc6e5d41c20f6762b19a3ca586e8373a8ced3f315ed62ef5552"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/03-语音：最自然的人机接口/02-范式一·级联流水线（Cascading）.md",
+      "start_line": 327,
+      "end_line": 388,
+      "source_sha256": "75305c635d3580bb79a20f1c8adc8c12509a937930a8bfa2b070f7bfe532f44c"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/03-语音：最自然的人机接口/03-范式二·端到端全模态模型（Omni）.md",
+      "start_line": 389,
+      "end_line": 403,
+      "source_sha256": "f79ed79533cfefcfd6107163ca4c8a61dc041dd4bf45fecc38d71d50902b9a3f"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/03-语音：最自然的人机接口/04-范式三·全双工交互模型.md",
+      "start_line": 404,
+      "end_line": 415,
+      "source_sha256": "86b70423b333c44d49f63930447ec356e5b350ba2010820d6d33ab45983a6938"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/03-语音：最自然的人机接口/05-认知时序：实时交互与深度思考.md",
+      "start_line": 416,
+      "end_line": 449,
+      "source_sha256": "2ec8b940a921189d969b95cf3e94d113260db3cd95afd1effc3b30745aa51214"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/03-语音：最自然的人机接口/06-更像人的语音合成.md",
+      "start_line": 450,
+      "end_line": 459,
+      "source_sha256": "b0db0b37fd5294eee5bb22f898a1e11d1c64fe14ed0426395159add8b4e5b8f7"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/04-ComputerUse：GUI自动化Agent/README.md",
+      "start_line": 460,
+      "end_line": 478,
+      "source_sha256": "2d974201607b004f4a534450a8b41d206876f4bc4605c86b20912b87a33af1d2"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/04-ComputerUse：GUI自动化Agent/01-动作空间设计.md",
+      "start_line": 479,
+      "end_line": 497,
+      "source_sha256": "4e52d22eda27813f9333a70a4ecadf998fd3f23fa48792e2cad6ead87dece918"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/04-ComputerUse：GUI自动化Agent/02-视觉定位（Grounding）.md",
+      "start_line": 498,
+      "end_line": 547,
+      "source_sha256": "ac81d9462228a1d4d5ec6beb0b442937539e12aa19ed6f69486ecfb19d4f9909"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/04-ComputerUse：GUI自动化Agent/03-能看动画、能听声音的ComputerUseAgent.md",
+      "start_line": 548,
+      "end_line": 555,
+      "source_sha256": "99a1fe59443fe3428595a1956de5b7afdb64b72b72936a3293f1c91e277551e1"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/04-ComputerUse：GUI自动化Agent/04-ComputerUse的世界模型.md",
+      "start_line": 556,
+      "end_line": 574,
+      "source_sha256": "aae289fbe045137cf1f0d79844bd82233db83efaf5a2f2003eb07651bdcaaf8c"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/04-ComputerUse：GUI自动化Agent/05-移动端：生态壁垒比技术更难.md",
+      "start_line": 575,
+      "end_line": 584,
+      "source_sha256": "517c9525d89cb446a7f0a93c4b6c925130463b36ec229d680260b08ac4a07bd5"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/README.md",
+      "start_line": 585,
+      "end_line": 601,
+      "source_sha256": "9a1a149a4546648ceaad1c69d184454e76e1e8e0f944d2c474c49d6b7f81fa76"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/01-硬件与算法的分工.md",
+      "start_line": 602,
+      "end_line": 623,
+      "source_sha256": "439d566413642084cbd017d41fd465d091b9e7512b55330899efc3a4f532383e"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/02-机器人控制的基本结构.md",
+      "start_line": 624,
+      "end_line": 637,
+      "source_sha256": "77f4b15b6b61f39550a48282f0d3941a24e1b5ee1f8812806f0ee68a409a60d5"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/03-长程规划与任务分解.md",
+      "start_line": 638,
+      "end_line": 663,
+      "source_sha256": "0a9de37c341bb05b221bf017b47155276f927a6670ad7499c7499da06114bc57"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/04-VLA控制.md",
+      "start_line": 664,
+      "end_line": 677,
+      "source_sha256": "a1ec5cbdb2ce0501b7c5830cb5716ff8da8922fd57d0f1aee574af4d6647c386"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/05-VLA的局限.md",
+      "start_line": 678,
+      "end_line": 688,
+      "source_sha256": "c00e90ed82cb7fb26287de407fdfed896f5f5f79a0d854a7cbe432dbaee0bb49"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/06-世界模型.md",
+      "start_line": 689,
+      "end_line": 725,
+      "source_sha256": "e01d2b13866dac8c3d394b7831b95e829812dc778a80988f82f488fdac9f72bc"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/05-机器人操作：以XLeRobot整理桌面为例/07-从仿真环境到真实机器人.md",
+      "start_line": 726,
+      "end_line": 735,
+      "source_sha256": "d449181c8320e60aba5b6545adece984720b52a0406e00a41b376899a8beb4cb"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/06-本章小结/README.md",
+      "start_line": 736,
+      "end_line": 762,
+      "source_sha256": "dddb017ac62183e52e564e85a0a70c0cee444085d498d8d0ccae2ec8cdcb8231"
+    },
+    {
+      "source": "book/chapter6.md",
+      "output": "notes/chapter6/07-思考题/README.md",
+      "start_line": 763,
+      "end_line": 776,
+      "source_sha256": "1a3a6ac8da8603b84ba6cd9818f369c7d2a093958c89750b7cbf714f39ca81d2"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/README.md",
+      "start_line": 1,
+      "end_line": 26,
+      "source_sha256": "5c168de6683ada683881856d3cbbb17f9fd8b67f0bebdc99d9b88b8855c7952c"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/01-一条评估任务的解剖：τ²-bench的telecom领域/README.md",
+      "start_line": 27,
+      "end_line": 30,
+      "source_sha256": "4434f235adc97d1019636fb4092ed57a352834e3df2817a2c9c4632bb2a14329"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/01-一条评估任务的解剖：τ²-bench的telecom领域/01-任务定义的四个组成部分.md",
+      "start_line": 31,
+      "end_line": 94,
+      "source_sha256": "d337f6664edc32885dd97058124216f7d2f5d9527e884ad4d0a7473e2d758530"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/01-一条评估任务的解剖：τ²-bench的telecom领域/02-一次真实运行的轨迹.md",
+      "start_line": 95,
+      "end_line": 128,
+      "source_sha256": "1fa8cceb53367a7f404bfeba51bc420946d8effd9a4e5c8d1f3cf9f58103b1d1"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/02-评估指标：成功的定义/README.md",
+      "start_line": 129,
+      "end_line": 132,
+      "source_sha256": "9b780f8134089f24399268642b73342a4f613b126d50e7520498f6edee8a18df"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/02-评估指标：成功的定义/01-技术奇观：用Pass@k看能力上限.md",
+      "start_line": 133,
+      "end_line": 146,
+      "source_sha256": "70b01b442972811ed25ad4076ff5ef39acc795df5d45758d63a9551bb58f66ff"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/02-评估指标：成功的定义/02-业务可靠性：关注Pass^k.md",
+      "start_line": 147,
+      "end_line": 161,
+      "source_sha256": "90a1e466b5c38ced0c29e296c39c150212ea0d1ae776c8971490799c5b113494"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/03-评估环境/README.md",
+      "start_line": 162,
+      "end_line": 165,
+      "source_sha256": "fbc61b1712a758ea551a575d3dee90678ce0080057cad41f9925755b292eb4a4"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/03-评估环境/01-五个组成要素.md",
+      "start_line": 166,
+      "end_line": 181,
+      "source_sha256": "0ad632e1a0350df05ed81118d3adb17c423ece9971f1109a36c4d28125050c5f"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/03-评估环境/02-人机交互型与工具调用型评估环境.md",
+      "start_line": 182,
+      "end_line": 202,
+      "source_sha256": "100979cdb7f20edb186c0c3cee62292c15606cf7921199b422b16cc0920df942"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/04-评估数据集的设计/README.md",
+      "start_line": 203,
+      "end_line": 206,
+      "source_sha256": "620410b27f046eae494f010b88a10f59ddea0fc5d988201a1735e87b624f7489"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/04-评估数据集的设计/01-基准设计的横向对照.md",
+      "start_line": 207,
+      "end_line": 221,
+      "source_sha256": "508583203e0d4ea6cdb598680f68626343b1d0ec5aaded856f27666a4d2ac238"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/04-评估数据集的设计/02-验证器.md",
+      "start_line": 222,
+      "end_line": 231,
+      "source_sha256": "08b24055947047779feba3a39f9e9ada526844e19069bd6346b902ab039de8e7"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/04-评估数据集的设计/03-任务的难度划分.md",
+      "start_line": 232,
+      "end_line": 241,
+      "source_sha256": "6cead778544af0f55f32fad2fda2c2922ee126fd060228be56335f2e4c444f60"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/04-评估数据集的设计/04-数据泄漏防范.md",
+      "start_line": 242,
+      "end_line": 249,
+      "source_sha256": "b16c0b5899dd011b036149afb6e2bb8aa8adac85e15e19e00a1f745898bf1cce"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/04-评估数据集的设计/05-质量控制与长期维护.md",
+      "start_line": 250,
+      "end_line": 273,
+      "source_sha256": "292bbca5148bc7a3ed4d0b05b01406275589e9d6822ef0c624e2f4c06ea7b73c"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/04-评估数据集的设计/06-评估集的三个来源.md",
+      "start_line": 274,
+      "end_line": 287,
+      "source_sha256": "d64b2e2f8610a0771f30810ca4ec396aa416c59292aee9b343cd4564da50ef57"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/05-自动化评估方法/README.md",
+      "start_line": 288,
+      "end_line": 303,
+      "source_sha256": "2d24dedc0d0df1986bb90293fe2f3f8750e3ab3be4c93631b576aad9ab28421d"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/05-自动化评估方法/01-LLM-as-a-Judge：自动化评估的核心.md",
+      "start_line": 304,
+      "end_line": 433,
+      "source_sha256": "f6cb9107f581e139aa25ac6cfc21cbd85878e36638f15f0cf6a41d3da05c88d6"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/05-自动化评估方法/02-失败归因：从整条轨迹定位首个错误.md",
+      "start_line": 434,
+      "end_line": 512,
+      "source_sha256": "d56f2e9345f9dffabc97326d62fc669b1c63b192068f1ae084ec455030b139e2"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/05-自动化评估方法/03-端到端回归任务与轨迹前缀回归任务.md",
+      "start_line": 513,
+      "end_line": 538,
+      "source_sha256": "66d19a46de3747a6046fe8884c03799c7c4dc8628da6db0003e39c00975f5654"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/05-自动化评估方法/04-配对比较与模型排名.md",
+      "start_line": 539,
+      "end_line": 557,
+      "source_sha256": "aacc5705828ed6f0b32f52744b3f8303134f0d57cc67937fe62bd64bda2d618f"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/06-评估驱动的模型选型/README.md",
+      "start_line": 558,
+      "end_line": 561,
+      "source_sha256": "819042ba4af08c5fb6075472316cae0c11dfa90f037f487a72fd3180c418829b"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/06-评估驱动的模型选型/01-选型的关键维度.md",
+      "start_line": 562,
+      "end_line": 582,
+      "source_sha256": "c4fb440a964babb63cb438a6855ab025a02cb15669b5c7d79cf6e9b1fdf45109"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/06-评估驱动的模型选型/02-模型的行为策略.md",
+      "start_line": 583,
+      "end_line": 598,
+      "source_sha256": "15ea8cddf7362b482c36bbea863a89230962fc5cf645582978c1bf928bc9c38f"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/06-评估驱动的模型选型/03-Agent系统的成本分析.md",
+      "start_line": 599,
+      "end_line": 645,
+      "source_sha256": "da0ba3bdc84abc728e24b9b9cd84a93b07c044788b08a7ab815a999227a20094"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/06-评估驱动的模型选型/04-评估驱动的持续迭代.md",
+      "start_line": 646,
+      "end_line": 671,
+      "source_sha256": "8924ea8c89516856921c8567f45eeb009d7f8d13e898f2f220a051a8d214f194"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/07-评估结果的统计显著性/README.md",
+      "start_line": 672,
+      "end_line": 697,
+      "source_sha256": "3ede3832b0bd522b643cffbbde887381464485a62f697469df1251a7f2cb102d"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/08-Agent的可观测性/README.md",
+      "start_line": 698,
+      "end_line": 717,
+      "source_sha256": "6905a8f424c299faabf7bea28ff4e1a3a843cafdeebf607b18f9a68d980713d6"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/09-从Benchmark报告到系统改进/README.md",
+      "start_line": 718,
+      "end_line": 727,
+      "source_sha256": "8af674f7b1c468b5797f8d77a96e3c7d31505aa1320bc282580d819f2d170732"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/09-从Benchmark报告到系统改进/01-读懂Benchmark报告：发现问题的艺术.md",
+      "start_line": 728,
+      "end_line": 733,
+      "source_sha256": "98bfd7d9d37bc39274d3e448759c7f5853d99d72fa8919a1a24180cb18827747"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/09-从Benchmark报告到系统改进/02-从数据到假设：构建改进路线图.md",
+      "start_line": 734,
+      "end_line": 741,
+      "source_sha256": "436cf8ca162b043d4c0026edad8b18a56e6f7d2c99ccae28d9c448a0d2162c4e"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/09-从Benchmark报告到系统改进/03-从结果到决策：数据驱动的权衡.md",
+      "start_line": 742,
+      "end_line": 755,
+      "source_sha256": "61bc753c201c1ec3a6cc99aa7d9cff009bcc913013b6a599e76f615546e54a0c"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/09-从Benchmark报告到系统改进/04-持续迭代：从第一次改进到系统演化.md",
+      "start_line": 756,
+      "end_line": 776,
+      "source_sha256": "b2dce4ee3dd29e6453f4817b091087ab3a628dc7052eab58501d885ef4bc603f"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/README.md",
+      "start_line": 777,
+      "end_line": 780,
+      "source_sha256": "aa7af293842e8a47bd764db2361b0f2a57ed95352774a53dc453c0e80f501047"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/01-消融基础设施：理解每个特性的真实贡献.md",
+      "start_line": 781,
+      "end_line": 786,
+      "source_sha256": "f0cf3ecb3ebfb5fe8cd30e820f6390e2b396b9a433541b8f408b407c9846a6c4"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/02-AB测试方法论：区分机制与目标.md",
+      "start_line": 787,
+      "end_line": 798,
+      "source_sha256": "b9f23520e1eb1d5b650b7f02f6f85ce453bf02fb61b44d6d884e2b9b29fa2b3f"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/03-双层特性开关系统.md",
+      "start_line": 799,
+      "end_line": 808,
+      "source_sha256": "11512d781fe67304763a0adef7218f11a28d1cd3810206165f0547f2f2f5ecc5"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/04-提示词敏感性评估.md",
+      "start_line": 809,
+      "end_line": 814,
+      "source_sha256": "bb5b73fba37ab57230889624d1ee402641f1f76126bfbacbd0dcda2f29de1db0"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/05-以隐私感知分析为评估基础.md",
+      "start_line": 815,
+      "end_line": 820,
+      "source_sha256": "2425b23b21f97a4eceb013223053f44c83f93f1c65b4985e26104ef8298bcef7"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/10-从外部评估到内部评估：生产级Agent的评估基础设施/06-从外部到内部：评估思维的转变.md",
+      "start_line": 821,
+      "end_line": 824,
+      "source_sha256": "f9f538953758bda35c5c1c1d71b22885a9d6ab60829f71b609c13009adcc5f52"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/11-仿真环境：从评估到后训练的桥梁/README.md",
+      "start_line": 825,
+      "end_line": 845,
+      "source_sha256": "4c4c197ca84c593deb1f7330b3330f3cfab1973dd363570985df1c0982847629"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/11-仿真环境：从评估到后训练的桥梁/01-保真度权衡与领域随机化.md",
+      "start_line": 846,
+      "end_line": 851,
+      "source_sha256": "c8995b6d78a19c820284366a8aae88d58724537ff4559d7f1cf2b0750283e6b1"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/12-本章小结/README.md",
+      "start_line": 852,
+      "end_line": 865,
+      "source_sha256": "5740ed1dfb30483ec20cb736dca14d526d4286402d02fa5ef0bee7121111d588"
+    },
+    {
+      "source": "book/chapter7.md",
+      "output": "notes/chapter7/13-思考题/README.md",
+      "start_line": 866,
+      "end_line": 876,
+      "source_sha256": "d0936c43892dc75406b71548cebbca6a3e37a2ff0598384a196204fd9d1e4dc6"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/README.md",
+      "start_line": 1,
+      "end_line": 25,
+      "source_sha256": "55baeebb2c38237d5026df85b3e0b917f4d1461c9ecc52856ebacb89fa382a63"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/01-从预训练到RL：四阶段全景/README.md",
+      "start_line": 26,
+      "end_line": 38,
+      "source_sha256": "047064fb8666bae8641a01eca7dbe846a9dafc46d6fb82307727e3fdf2fd64d4"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/01-从预训练到RL：四阶段全景/01-预训练在做什么：预测下一个词.md",
+      "start_line": 39,
+      "end_line": 48,
+      "source_sha256": "bf1ec7543844272991dae5d55692398dbc1788726ef96a0d6862f4c185f746dc"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/01-从预训练到RL：四阶段全景/02-Mid-training的本质：在目标分布上继续学习.md",
+      "start_line": 49,
+      "end_line": 54,
+      "source_sha256": "403d3775507bada9fd9d58375cc85acaf1130d87d40c548ad23da2c9b73046a1"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/01-从预训练到RL：四阶段全景/03-SFT的本质：换了数据的“预测下一个词”.md",
+      "start_line": 55,
+      "end_line": 67,
+      "source_sha256": "6b9e0429d83acac45848bb3749e5ac31701e7f71cd5fab80ea19271e3f01480f"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/01-从预训练到RL：四阶段全景/04-什么时候需要先补底座，再做SFT-RL.md",
+      "start_line": 68,
+      "end_line": 85,
+      "source_sha256": "c4de064bf184b2ea89ce190a48c39d21893fbc0e4b37df220ab735c3e13c4d36"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/01-从预训练到RL：四阶段全景/05-SFT与RL的本质区别.md",
+      "start_line": 86,
+      "end_line": 121,
+      "source_sha256": "2e2681feeac5ed5ddc1b5500fd2de2e44ee97dd2e1255cb4dd84be2e5a83d5eb"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/02-从经典RLAgent到现代Agent[可选阅读]/README.md",
+      "start_line": 122,
+      "end_line": 123,
+      "source_sha256": "70a91bbb0d74bd7ad391a5f67fb76ce47362cc84f08f33ba3f6f3d8fed47ca83"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/02-从经典RLAgent到现代Agent[可选阅读]/01-Agent与环境的交互.md",
+      "start_line": 124,
+      "end_line": 157,
+      "source_sha256": "3cd0c6e8847bfc1b2138683803ef31864e8cb21f4834f876ed2dc58eca35c1ce"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/02-从经典RLAgent到现代Agent[可选阅读]/02-两种动作表示：经典RL设置与LLM的变长策略.md",
+      "start_line": 158,
+      "end_line": 249,
+      "source_sha256": "bf15d03be243c21f3390fd51bb2949b46b3005e9218dc9e28cdbc21a9c7fa0a6"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/03-模型预训练基础[可选阅读]/README.md",
+      "start_line": 250,
+      "end_line": 275,
+      "source_sha256": "dd788a029099313b1c97ae57c73098a1e3a0f964f19c96f52b9449855fdad5eb"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/04-Mid-training：补知识与基础能力/README.md",
+      "start_line": 276,
+      "end_line": 286,
+      "source_sha256": "159c722b2221085a993cda4432ec6ac617320add23d4e0b52e632f5579999cb0"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/04-Mid-training：补知识与基础能力/01-Mid-training数据如何构造.md",
+      "start_line": 287,
+      "end_line": 313,
+      "source_sha256": "3fdc21145e9c43e8b71f3c201e44689da49d98dd55890918ae5256171d6ff4bf"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/05-SFT（监督微调）/README.md",
+      "start_line": 314,
+      "end_line": 369,
+      "source_sha256": "a45ba1da607534189a3206c5c8b6ded310dc558da665957c25c5f90349e373e0"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/06-SFT数据合成：从示范到可训练轨迹/README.md",
+      "start_line": 370,
+      "end_line": 385,
+      "source_sha256": "75797c41b9e0215d9be4dfff36bc0cc9460185bc85b8ad8d890820556c51ba1c"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/07-何时选择Mid-training、SFT与RL/README.md",
+      "start_line": 386,
+      "end_line": 409,
+      "source_sha256": "822d57315dd3466b062cdf34a96e904995a5e7ab7b365301c6fee80487b0e68c"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/08-单轮强化学习：记忆与泛化的对照/README.md",
+      "start_line": 410,
+      "end_line": 481,
+      "source_sha256": "b467e21be2aa396396302ce471e92095fa3ab3cbc8b01e0c819cbf16e1f026aa"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/09-RL算法：从16次rollout到一次参数更新/README.md",
+      "start_line": 482,
+      "end_line": 503,
+      "source_sha256": "8bf657e393da479126b2a67c2af13e651bff9fc17b2e026cf14759bf6a3e1e12"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/09-RL算法：从16次rollout到一次参数更新/01-为什么LLMRL通常优先On-Policy.md",
+      "start_line": 504,
+      "end_line": 529,
+      "source_sha256": "61f1c61e9713592471afa2ac3916ac25fd7b77150f77e7ad7902db31d6209206"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/10-RL环境：从评估到仿真/README.md",
+      "start_line": 530,
+      "end_line": 533,
+      "source_sha256": "7c0b8e7fa6e9af742f99ca258da3139a17b2e796989aea2a36d65c7623674a61"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/10-RL环境：从评估到仿真/01-环境：模型练习的场地.md",
+      "start_line": 534,
+      "end_line": 543,
+      "source_sha256": "be147608da0e8dcab0a305a2b47468345d30931a871d3d99c044aa2be04f3a9e"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/10-RL环境：从评估到仿真/02-造不出环境怎么办：让模型扮演环境.md",
+      "start_line": 544,
+      "end_line": 553,
+      "source_sha256": "0c24f39950c489362141fb6aeaff06297f91b94389e3ab33641cab6fa7449745"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/10-RL环境：从评估到仿真/03-环境、任务分布与评估隔离.md",
+      "start_line": 554,
+      "end_line": 563,
+      "source_sha256": "c4e0a1675b83db1ecaa17d07739ab8053ebee2d14b8948ee91eba6ff58a59a75"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/11-从单轮到多轮：任务场景与信用分配/README.md",
+      "start_line": 564,
+      "end_line": 565,
+      "source_sha256": "380c853e7a32f4f1e8cdc04003d4e0f4d8f48ca8c5724ff33abbe9792dfc3f6c"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/11-从单轮到多轮：任务场景与信用分配/01-多轮任务的核心挑战.md",
+      "start_line": 566,
+      "end_line": 583,
+      "source_sha256": "9f51a58726c636842b4e32758b2cdb9627f6c1c55b233be68c27aeab0f01a47a"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/11-从单轮到多轮：任务场景与信用分配/02-工具调用：把环境带进Agent.md",
+      "start_line": 584,
+      "end_line": 609,
+      "source_sha256": "a47184b6bfac6a3c6de2a18373f77e823c0d535c7b16332e08ac4e377f00ef94"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/README.md",
+      "start_line": 610,
+      "end_line": 613,
+      "source_sha256": "fe4e0a932ec61d98718a385fa2d2f8ac355b73cb7ab5eb6f4bc4e361953a6114"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/01-奖励来自哪里：规则、人类偏好与模型评判.md",
+      "start_line": 614,
+      "end_line": 623,
+      "source_sha256": "b5118f33adc8b62168a6e6322c54f8ffbe906396cc516178a7f1990f8cd02c0b"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/02-奖励在什么时候给：结果还是过程.md",
+      "start_line": 624,
+      "end_line": 633,
+      "source_sha256": "997942f4af5b216e6bc94d52b69f724be6823afce38138cb2865802bcca24c41"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/03-奖励需要表达多少信息：标量、向量与生成式诊断.md",
+      "start_line": 634,
+      "end_line": 643,
+      "source_sha256": "134a5b7d164b29f3db793032abae527db11793ad1c7a9ca71393fe77b27eb522"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/12-奖励设计：如何把任务目标变成学习信号/04-结果正确还不够：路径约束与RLVP.md",
+      "start_line": 644,
+      "end_line": 669,
+      "source_sha256": "a75418a488c23ccfc2172a9b4c3bf15a3592d475eefd04a4de60da277fd2b489"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/13-蒸馏：提升样本效率/README.md",
+      "start_line": 670,
+      "end_line": 677,
+      "source_sha256": "8edae7e3812e2be8d47c69684c2bd7f329aede929310dbb8ef9ec09603ed564f"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/13-蒸馏：提升样本效率/01-在轨蒸馏：让一次rollout产生密集监督.md",
+      "start_line": 678,
+      "end_line": 710,
+      "source_sha256": "445a48a3995b8b4be4df959026b46bc6c80a575ab3206735bd97c24fb7896354"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/13-蒸馏：提升样本效率/02-没有更强的教师怎么办：On-Policy自蒸馏.md",
+      "start_line": 711,
+      "end_line": 732,
+      "source_sha256": "e941c1ae991c8a992b8c3e24569dbbd4bc9882ed830564f59b5ef0c19490618c"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/14-从问题案例到后训练/README.md",
+      "start_line": 733,
+      "end_line": 745,
+      "source_sha256": "f983e1eea1ee77b9bb3a5ec61a6afe5330cf33f0739c21183a753bdf11f9146f"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/14-从问题案例到后训练/01-案例1：CodingAgent过早结束.md",
+      "start_line": 746,
+      "end_line": 763,
+      "source_sha256": "875c7433d2883e3b55b1fe1f66fe5d77c83bc9d5937d851bcf079a164e326fe7"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/14-从问题案例到后训练/02-案例2：中文引号.md",
+      "start_line": 764,
+      "end_line": 777,
+      "source_sha256": "f0c25d7047446c221b62585e616f5b2dacee4b721c23af0663517cbaab7881b4"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/14-从问题案例到后训练/03-案例3：编辑文件经常失败.md",
+      "start_line": 778,
+      "end_line": 795,
+      "source_sha256": "63236fc7e0408d747a2af50835c976bde482ed4783c959e7c89060b1a82eb642"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/15-后训练实践要点/README.md",
+      "start_line": 796,
+      "end_line": 819,
+      "source_sha256": "e57314d00baff310c8133e2f4e8d085f9782bb2921d6a599b07ea6d084653bee"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/16-本章小结/README.md",
+      "start_line": 820,
+      "end_line": 863,
+      "source_sha256": "24b5e2c5013bca602a4ead30c7f021dca9522c6e18de1bae5e178a1f0d8ae46d"
+    },
+    {
+      "source": "book/chapter8.md",
+      "output": "notes/chapter8/17-思考题/README.md",
+      "start_line": 864,
+      "end_line": 878,
+      "source_sha256": "afd4ef3328a95ef73324e2b9b55128dce8e7e50a0a3f4aa57942a5a99700d664"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/README.md",
+      "start_line": 1,
+      "end_line": 18,
+      "source_sha256": "ec7e7e258ebb3fa9e9b28c436c1b07f5066755ea599828d163298c0107760698"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/01-从运行轨迹中获得学习信号/README.md",
+      "start_line": 19,
+      "end_line": 55,
+      "source_sha256": "1f9855fca9a764d989d7dcda89b5dcd940476b3512ac02544c41a769a6779cab"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/02-Agent持续进化的四种方法/README.md",
+      "start_line": 56,
+      "end_line": 74,
+      "source_sha256": "9c8d20622d0f3a1d0f77fd8af9d3a7cea0f92004f2bd99a60f845f90d80d814d"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/02-Agent持续进化的四种方法/01-将经验沉淀为知识.md",
+      "start_line": 75,
+      "end_line": 96,
+      "source_sha256": "671e6dc2b93f6164f2f1b9b033cc47f53f10f0b0de28c584b7f3cb701c05d7a7"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/02-Agent持续进化的四种方法/02-将经验写成指令.md",
+      "start_line": 97,
+      "end_line": 166,
+      "source_sha256": "12734bce4c5f94ca79cbb7f0dc40b26ea0deb6f7f5a9b64d95a66bbe3449fbc3"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/02-Agent持续进化的四种方法/03-将经验写成程序.md",
+      "start_line": 167,
+      "end_line": 247,
+      "source_sha256": "e60f0967d613dc2f9ea337a583109bf2105af5e78773e2e0e1effe5ec656a543"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/02-Agent持续进化的四种方法/04-将经验写入参数.md",
+      "start_line": 248,
+      "end_line": 255,
+      "source_sha256": "d69922769294232ef8bb93efead8342c46deb141ef452f0f34e5766f8074ac4f"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/02-Agent持续进化的四种方法/05-从更新产物到更新“更新方法”.md",
+      "start_line": 256,
+      "end_line": 273,
+      "source_sha256": "a180e43861f00f8fc9b720dac175e083fedfc6bb68b48cc07b017912108bd319"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/03-构建可长期运行的持续进化闭环/README.md",
+      "start_line": 274,
+      "end_line": 316,
+      "source_sha256": "4e88e5378de5a74e0fe6d7e5bacdffe857af4ef8a520e09652a0894a78de7e1e"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/03-构建可长期运行的持续进化闭环/01-可验证闭环的边界：当“完成”不等于“进步”.md",
+      "start_line": 317,
+      "end_line": 329,
+      "source_sha256": "5b45bcf09d4593e99ce5a95ba4d78097a19f60c13274f963b98c493580e25d0d"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/03-构建可长期运行的持续进化闭环/02-持续进化的安全边界.md",
+      "start_line": 330,
+      "end_line": 339,
+      "source_sha256": "bf7c557e5afd9236c2aa8521a9f1bee19c8dab4c74ebdfa99355f702d7e85eb9"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/03-构建可长期运行的持续进化闭环/03-睡眠学习：整合、遗忘与能力保鲜.md",
+      "start_line": 340,
+      "end_line": 390,
+      "source_sha256": "ac0a2d256bc272c1aff13e0a871eb2c3515637b42b22bde7297202153d69b405"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/04-本章小结/README.md",
+      "start_line": 391,
+      "end_line": 400,
+      "source_sha256": "6be6507543ff4e2e8ea07cd03f3a378612f1525d6b6ba86fea6607edbfb13899"
+    },
+    {
+      "source": "book/chapter9.md",
+      "output": "notes/chapter9/05-思考题/README.md",
+      "start_line": 401,
+      "end_line": 408,
+      "source_sha256": "93618429fa4dbeedf0151c63f622ccee44d4a9247ff07598e4457de03c1f45be"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/README.md",
+      "start_line": 1,
+      "end_line": 10,
+      "source_sha256": "e6c1223670418f2183971a33c5510d263e45d691c9cc4a23e4f4f22762376352"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/01-多Agent协作的分类框架/README.md",
+      "start_line": 11,
+      "end_line": 14,
+      "source_sha256": "370b8341c78deffd639599b23704fa9a348b69367bbe0687fba0de30b8df795d"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/01-多Agent协作的分类框架/01-维度一：上下文是否共享.md",
+      "start_line": 15,
+      "end_line": 33,
+      "source_sha256": "1e57d20b62d97ea0931dfa9b3774a3c205472ef9ae068817f96248411e1debdd"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/01-多Agent协作的分类框架/02-维度二：协作拓扑.md",
+      "start_line": 34,
+      "end_line": 45,
+      "source_sha256": "c9156a9980267b142b01952509f50c6073c52f35193e4fdc7ff73c2f33e57759"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/02-多Agent何时真正优于单Agent/README.md",
+      "start_line": 46,
+      "end_line": 78,
+      "source_sha256": "49979e383414a7018abc81ffc06b33a5a1d82709f49dd7bc8da300a50d06deda"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/03-共享上下文的多Agent协作/README.md",
+      "start_line": 79,
+      "end_line": 101,
+      "source_sha256": "a56d76fc78bd280efeeea6eb42859f467a76997c873b01f9c85676ff3f48cdb4"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/04-不共享上下文的多Agent协作/README.md",
+      "start_line": 102,
+      "end_line": 132,
+      "source_sha256": "8eb39f39c8256f0f3e44929fa0cbe2d74f9c506bd10fe7ce9ff9f97caf483967"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/04-不共享上下文的多Agent协作/01-Agent眼中的文件系统.md",
+      "start_line": 133,
+      "end_line": 165,
+      "source_sha256": "2b7266cd93064e499bfa2395080c2a5260a9e7a342d9dc12a88e1cd5ed2af7c6"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/04-不共享上下文的多Agent协作/02-Agent间的通信与控制.md",
+      "start_line": 166,
+      "end_line": 193,
+      "source_sha256": "71134a13c6bf681ef470ebb0dee456d16b681d56251886b0b439d9da6470072f"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/04-不共享上下文的多Agent协作/03-对等协作模式：相互制衡与迭代改进.md",
+      "start_line": 194,
+      "end_line": 283,
+      "source_sha256": "283969aa609bd0ef1ddbed30f2882ae2482d4f9e0d66c24d6b544484134591ad"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/04-不共享上下文的多Agent协作/04-管理者模式：中心化协调.md",
+      "start_line": 284,
+      "end_line": 442,
+      "source_sha256": "805c53f9626993c00eacb1b58db062ae6c2555df3acf74ec835bf2a32061cd08"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/04-不共享上下文的多Agent协作/05-去中心化模式.md",
+      "start_line": 443,
+      "end_line": 512,
+      "source_sha256": "28b44c90684bc95e8c9fa2f853dd47f2b3bf3025736baac41e33e08d573fef9a"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/04-不共享上下文的多Agent协作/06-跨组织协作：A2A协议.md",
+      "start_line": 513,
+      "end_line": 522,
+      "source_sha256": "dea1c130f399a371486049cafe7ded89e52e22a617dd684413176c40d5e93039"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/05-多Agent协作的失败模式/README.md",
+      "start_line": 523,
+      "end_line": 536,
+      "source_sha256": "d029397951051d57cae589998595e8849d678f4b7224c2a91ee6e42d7b7e5028"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/05-多Agent协作的失败模式/01-失败模式一：共享文件系统的并发冲突.md",
+      "start_line": 537,
+      "end_line": 548,
+      "source_sha256": "544dc5c130804b9d2723b03fe644a2ee8cf4795f17305de78592128320747a82"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/05-多Agent协作的失败模式/02-失败模式二：错误的级联放大.md",
+      "start_line": 549,
+      "end_line": 554,
+      "source_sha256": "2c7f023ba4e51040055656323e07b86cc11073293c0781c30ff1e38d484f0f9c"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/05-多Agent协作的失败模式/03-失败模式三：同质趋同.md",
+      "start_line": 555,
+      "end_line": 560,
+      "source_sha256": "f94660afecdefb025d02d022e2246838e99722f9fa93cb0cc043eb930baed25e"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/05-多Agent协作的失败模式/04-失败模式四：互相扯皮.md",
+      "start_line": 561,
+      "end_line": 566,
+      "source_sha256": "325c9f6abd2180c028c8baba4cf3fad69af99b1d67aceda14faee88414bc004c"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/05-多Agent协作的失败模式/05-失败模式五：循环失控.md",
+      "start_line": 567,
+      "end_line": 570,
+      "source_sha256": "af4402762afb190b8881808b03698935ba96c45fa20a581bb5a4e5cf34aa9e83"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/05-多Agent协作的失败模式/06-失败模式六：理解债与认知投降.md",
+      "start_line": 571,
+      "end_line": 580,
+      "source_sha256": "691669cf28fb0f28dc321e3e2d83012155795a80c2b7bee7b1d9d19ebd4859af"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/06-Agent社会/README.md",
+      "start_line": 581,
+      "end_line": 590,
+      "source_sha256": "ead5d58b59ed15533d1ba027797cee61bdcd91e471494f8b9d9a215e06d83c52"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/06-Agent社会/01-斯坦福AI小镇：生成式Agent的社会模拟.md",
+      "start_line": 591,
+      "end_line": 634,
+      "source_sha256": "0e68cd8b38384992e025aab55df49e3a8ef2c17076add24e214abc0d36f4fa17"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/06-Agent社会/02-Agentopia：十年尺度的长期生活模拟.md",
+      "start_line": 635,
+      "end_line": 649,
+      "source_sha256": "83820c9869f06ebd52b76cb8a327908583c9e3d246d3369bf6a23b52a576ea83"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/06-Agent社会/03-Moltbook：当Agent拥有自己的社交网络.md",
+      "start_line": 650,
+      "end_line": 655,
+      "source_sha256": "764f4367aa47d45ad4a295151096a010ea144b3c51486e9603a9a331c1f1432a"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/06-Agent社会/04-从虚拟社会到经济竞争：Vending-BenchArena.md",
+      "start_line": 656,
+      "end_line": 669,
+      "source_sha256": "04626ead589499fc1a950dedba9bb7626a705fd49ce67ba358053d153437bfe0"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/06-Agent社会/05-Agent经济：Pinchwork与RentAHuman.md",
+      "start_line": 670,
+      "end_line": 677,
+      "source_sha256": "f26d34218cb78ef01653842b7dc42e1aefa3d74c8bf496d8ed76d6fc21e601ef"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/06-Agent社会/06-信息不对称下的策略博弈：狼人杀.md",
+      "start_line": 678,
+      "end_line": 713,
+      "source_sha256": "630520967ecfe93ff7ba8e130a1d734500611dbc458237ec4e17a235216d035d"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/07-本章小结/README.md",
+      "start_line": 714,
+      "end_line": 723,
+      "source_sha256": "852ec0a10299fb0f979c20783fdeb0143128db0bf17c2f4502ab3faff6f66e2d"
+    },
+    {
+      "source": "book/chapter10.md",
+      "output": "notes/chapter10/08-思考题/README.md",
+      "start_line": 724,
+      "end_line": 736,
+      "source_sha256": "918cc75c354d7466fe5415736c67a50dbb8665495beb52a03d822da31049bfb1"
+    },
+    {
+      "source": "book/afterword.md",
+      "output": "notes/afterword/README.md",
+      "start_line": 1,
+      "end_line": 12,
+      "source_sha256": "a7bb1f9b2959ef81eb37940be2df3484989e41bc2ca8c527564691188b497d9a"
+    },
+    {
+      "source": "book/afterword.md",
+      "output": "notes/afterword/01-两朵乌云/README.md",
+      "start_line": 13,
+      "end_line": 26,
+      "source_sha256": "e0b08e8fd9f7807e1bfe1076c1b25278e9c5751ec7fe9faed8f09bc3600dab9f"
+    },
+    {
+      "source": "book/afterword.md",
+      "output": "notes/afterword/02-模型与Agent的共同演进/README.md",
+      "start_line": 27,
+      "end_line": 43,
+      "source_sha256": "b87dc608394a1b15ff56c0cb0100f834a009e239c25143a4c36eeff383b65175"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/README.md",
+      "start_line": 1,
+      "end_line": 4,
+      "source_sha256": "771f769dcd18749dcd588af9ceb31755c53fc4cb21b9279719c1e78079e9df22"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/01-第一章AIAgent入门/README.md",
+      "start_line": 5,
+      "end_line": 52,
+      "source_sha256": "3042ee9174724e1e76cf4f12589bd314b0d9ab0fce8964ba28a219d4e432075b"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/02-第二章上下文工程/README.md",
+      "start_line": 53,
+      "end_line": 90,
+      "source_sha256": "fd70d97164255309d9674dc1c671ab59dd5b62be3b5c701c62647af9cbb8b5ef"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/03-第三章用户记忆和知识库/README.md",
+      "start_line": 91,
+      "end_line": 130,
+      "source_sha256": "c8e26901c0d188242c3dd5729ed6ea6de998a06a2fc342e2ea16be7b8a14ba08"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/04-第四章工具/README.md",
+      "start_line": 131,
+      "end_line": 148,
+      "source_sha256": "84228366a8c025206d50e2684e86a7004700f1a2482cfe946a25a0d37b894de3"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/05-第五章CodingAgent与通用Agent/README.md",
+      "start_line": 149,
+      "end_line": 189,
+      "source_sha256": "877c5a8c4c8f5cf0e68e0a0a43f3e126c35d61a8abf070114f352397ea3a6309"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/06-第六章交互：观察与动作空间的扩展/README.md",
+      "start_line": 190,
+      "end_line": 243,
+      "source_sha256": "2653e29369c4abe95ce9026e50b7c05dd3f9db7470523a99cd6d7974a391273c"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/07-第七章Agent的评估/README.md",
+      "start_line": 244,
+      "end_line": 283,
+      "source_sha256": "2b684b205ac77665b3aaec8bbef3859cbbe56bd9346d9430f8ff859287cf45c8"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/08-第八章模型后训练/README.md",
+      "start_line": 284,
+      "end_line": 337,
+      "source_sha256": "ef7caed372d12d7250ba198714ef54a5604502a9e13a25dffe736ad3aa0d291f"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/09-第九章Agent的持续进化/README.md",
+      "start_line": 338,
+      "end_line": 363,
+      "source_sha256": "b2d7afd212b108609f474f5c8ec3b2dec504b680ee8d2732aa0ed3beff08f6fc"
+    },
+    {
+      "source": "book/reference-answers.md",
+      "output": "notes/reference-answers/10-第十章多Agent协作/README.md",
+      "start_line": 364,
+      "end_line": 410,
+      "source_sha256": "4875b7bd7b84e7f5b156a79b08483099ab7ab4683c7b505b2255061dd498050c"
+    }
+  ]
+}

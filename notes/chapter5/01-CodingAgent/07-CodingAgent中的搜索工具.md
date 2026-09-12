@@ -1,8 +1,20 @@
+<!-- 自动生成；个人补充请写入 personal/。 -->
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding Agent 的实现技巧](06-CodingAgent%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%8A%80%E5%B7%A7.md) · [下一篇：Coding Agent 中的文件编辑工具](08-CodingAgent%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7.md)
+
+> 所属章节：[第5章：Coding Agent 与通用 Agent](../README.md)
+>
+> 来源：[原文及行号](https://github.com/bojieli/ai-agent-book/blob/d1502f59c1a8c40b4d1c51c250238cd9dd836f1b/book/chapter5.md#L270-L292) · [在线原书](https://bojieli.github.io/ai-agent-book/book/chapter5/)
+
+<!-- 原文开始 -->
+
+<a id="coding-agent-中的搜索工具"></a>
+
 ### Coding Agent 中的搜索工具
 
 在庞大的代码库中定位相关代码是 Coding Agent 工作的起点。图5-3 对比了几类互补搜索工具，说明成熟 Coding Agent 应如何根据任务性质选择检索方式。
 
-![图5-3 Coding Agent 搜索工具对比](images/fig5-3.svg)
+![图5-3 Coding Agent 搜索工具对比](../../../source/book/images/fig5-3.svg)
 
 **正则表达式内容匹配**（grep/ripgrep）：最传统的搜索方式，逐行扫描文件内容进行模式匹配。当 Agent 知道要查找的具体文本（函数名、变量名、错误消息）时，能快速准确地定位所有出现位置。正则表达式（用特殊符号描述文本模式的语法，如 `def handle.*` 匹配所有以 `handle` 开头的函数定义）的强大表达能力可以捕捉复杂模式，不仅可以搜索字面文本，还可以搜索符合特定结构的代码片段。在实际使用中还应支持文件类型过滤（只搜索 Python 文件）和路径模式过滤（排除测试目录）以减少噪音。其根本局限在于只能找到字面上匹配的内容，无法理解语义——搜索 “用户认证” 时，无法找到虽然没有 “认证” 二字但确实处理登录逻辑的函数。
 
@@ -20,3 +32,10 @@
 **符号级定义与引用查找**：类似 IDE 的 “跳转到定义” “查找所有引用”能力，能区分同名符号的定义和调用——例如它知道 `authenticate` 在第 42 行是函数定义、在第 189 行是调用，而文本搜索只能找到所有包含该字符串的行。目前主流 coding agent 并未采用这一方法。
 
 这四种搜索方式构成互补的工具箱，实践中往往组合使用：先用语义搜索找到相关模块，再用正则匹配精确定位具体代码行，最后通过符号搜索追踪调用链——“从粗到细、从语义到语法”的渐进式策略。
+
+
+<!-- 原文结束 -->
+
+---
+
+[全书目录](../../../README.md) · [上级目录](README.md) · [上一篇：Coding Agent 的实现技巧](06-CodingAgent%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%8A%80%E5%B7%A7.md) · [下一篇：Coding Agent 中的文件编辑工具](08-CodingAgent%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7.md)
